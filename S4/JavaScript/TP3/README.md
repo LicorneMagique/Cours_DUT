@@ -1,5 +1,4 @@
-Lien sur le public_html :
-https://iutdoua-web.univ-lyon1.fr/~p1700007/JS_TP3/
+https://licornemagique.github.io/Cours_DUT/S4/JavaScript/TP3/index.html
 
 Nous avons implémenté les scores, ainsi qu'un petit système anti-triche ultra basique.
 
