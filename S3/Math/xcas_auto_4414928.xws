@@ -1,0 +1,61 @@
+// xcas version=1.4.9-69 fontsize=14 font=0 currentlevel=2 pixon=1
+// fltk N4xcas12History_FoldE 11 56 1874 152 14 0
+EX2
+// fltk N4xcas12History_PackE 11 75 1840 125 14 0
+[
+// fltk 7Fl_Tile 21 75 1830 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 21 75 1830 25 14 0
+15 ,
+705432^5 mod 11,
+// fltk N4xcas10Log_OutputE 21 100 1830 1 14 0
+
+,
+// fltk N4xcas8EquationE 21 101 1830 20 14 0 1
+(-1) % 11
+]
+,
+// fltk 7Fl_Tile 21 123 1830 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 21 123 1830 25 14 0
+17 ,
+13^23*27^41 mod 8,
+// fltk N4xcas10Log_OutputE 21 148 1830 1 14 0
+
+,
+// fltk N4xcas8EquationE 21 149 1830 20 14 0 1
+(-1) % 8
+]
+,
+// fltk 7Fl_Tile 21 171 1830 27 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 21 171 1830 26 14 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 21 197 1830 1 14 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 11 210 1874 55 14 0
+EX4
+// fltk N4xcas12History_PackE 11 229 1840 28 14 0
+[
+// fltk 7Fl_Tile 21 229 1830 26 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 21 229 1830 25 14 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 21 254 1830 1 14 0
+
+]
+]
+,
+// fltk 7Fl_Tile 11 267 1874 26 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 11 267 1874 25 14 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 11 292 1874 1 14 0
+
+]

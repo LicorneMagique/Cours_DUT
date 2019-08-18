@@ -1,0 +1,44 @@
+body
+{
+		background-color:LightSlateGray;
+		
+		
+}
+:link,:visited{
+	color: Blue;
+	text-decoration : none;
+}
+
+
+
+nav ul li {
+	
+}
+
+ul li:nth-child(2n)
+{
+	background-color : Lime;
+}
+
+ul li:nth-child(2n+1)
+{
+	background-color : #000080;
+}
+
+a::after
+{
+	text-color : Green;
+	content: " ►"
+}
+
+
+
+section:target
+{
+	display : block;
+}
+
+section
+{
+	display : none;
+}

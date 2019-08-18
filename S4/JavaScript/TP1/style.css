@@ -1,0 +1,96 @@
+form div {
+    margin: 0.6em;
+}
+* {
+    font-family: "Segoe UI", serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    margin: 0
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div p {
+    margin-left: 1rem;
+    display: list-item;
+    list-style-type: square;
+
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.13);
+
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d3d3d354;
+    padding : 2rem;
+    min-width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s linear;
+}
+
+form:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+span {
+    margin-left: 10px;
+}
+
+form div label {
+
+    display: inline-block;
+    min-width: 14rem;
+
+}
+
+button {
+    color: black;
+    margin-top: 0.25rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    padding : 0.5rem 1rem;
+    transition: all 0.3s ease-in;
+}
+
+button:hover {
+    background-color: rgba(64, 211, 76, 0.3);
+}
+button:disabled {
+    background-color: #adadad;
+}
+
+form div input {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in;
+
+}
+
+form div input:hover{
+    transform: scale(1.1);
+}
+
+
+

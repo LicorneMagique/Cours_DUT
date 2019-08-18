@@ -1,0 +1,3 @@
+Paris:Dijon:0101010101
+Toto:Paris:0202020202
+Titi:Villeurbanne:0303030303

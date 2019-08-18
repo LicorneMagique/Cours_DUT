@@ -1,0 +1,19 @@
+Je vais developper une module de BI :
+	extractions de données  sur les clients et le traitement de leurs commandes
+
+mettre à jour les outils devops (Jenkins, Gitlab, Sonar).
+Jenkins est un outil open source d'intégration continue
+GitLab est un gestionnaire Web de référentiels Git fournissant des fonctionnalités...
+Sonar s’avère être un excellent compagnon de combat pour la chasse aux divers bugs et autres erreurs/failles de programmation.
+
+j'ai le desir d'apprendre et le domaine des télécommunications m'interesse tout particulierement
+Les télécommunications sont définies comme la transmission à distance d’informations avec des moyens à base d'électronique
+	et d'informatique et de transmission filaire, optique ou électromagnétique
+
+Je maitrise PHP ainsi que les bases de donnees
+Comme visible dans mon cv je suis quelqu'un qui apprecie le contact et le travail d'equipe
+Comme le montrent les nombreuses competences que j'ai acquisent en autonomie,
+j'ai envie d'apprendre et de me perfectionner
+
+Par le passe j'ai effectue un stage en DSI, il s'agit d'une entite pour laquelle j'ai eu un grand interet
+et je serai ravis d'y participer et d'approfondir mon experience au sein de celle d'Orange.

@@ -1,0 +1,778 @@
+// xcas version=1.4.9-69 fontsize=18 font=0 currentlevel=6 pixon=1
+// fltk N4xcas12History_FoldE 13 -1295 890 2128 18 0
+EX2
+// fltk N4xcas12History_PackE 13 -1271 850 1946 18 0
+[
+// fltk 7Fl_Tile 35 -1271 1804 324 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -1271 1804 139 18 0
+298 ,
+A1:=matrix(3,3,[5,-3,2,6,-4,4,4,-4,5]); 
+A2:=matrix(3,3,[4,-5,0,2,2,0,0,0,1]); 
+A3:=matrix(3,3,[2,2,0,-2,-4,2,0,2,2]); 
+A4:=matrix(3,3,[2,1,-2,2,3,-4,1,1,-1]);
+A5:=matrix(4,4,[3,-1,1,-1,0,1,0,0,-4,2,-1,2,-2,1,-1,2]); 
+A6:=matrix(5,5,[-1,-4,4,-2,3,-4,-5,4,-4,-2,-2,-4,5,-2,-2,8,12,-8,9,5,0,0,0,0,1]),
+// fltk N4xcas10Log_OutputE 35 -1132 1804 0 18 0
+
+,
+// fltk N4xcas8EquationE 35 -1132 1804 185 18 0 1
+[[5,-3,2],[6,-4,4],[4,-4,5]],[[4,-5,0],[2,2,0],[0,0,1]],[[2,2,0],[-2,-4,2],[0,2,2]],[[2,1,-2],[2,3,-4],[1,1,-1]],[[3,-1,1,-1],[0,1,0,0],[-4,2,-1,2],[-2,1,-1,2]],[[-1,-4,4,-2,3],[-4,-5,4,-4,-2],[-2,-4,5,-2,-2],[8,12,-8,9,5],[0,0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 -945 1804 66 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -945 1804 30 18 0
+10 ,
+pcar(A2,x),
+// fltk N4xcas10Log_OutputE 35 -915 1804 6 18 0
+
+,
+// fltk N4xcas10Log_OutputE 35 -909 1804 30 18 0
+Impossible de lancer un thread. Appuyer sur STOP pour interrompre
+]
+,
+// fltk 7Fl_Tile 35 -877 1804 77 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -877 1804 28 18 0
+18 ,
+factor(pcar(A2,x)),
+// fltk N4xcas10Log_OutputE 35 -849 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -848 1804 48 18 0 1
+(x-1)*(x^2-6*x+18)
+]
+,
+// fltk 7Fl_Tile 35 -798 1804 68 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -798 1804 28 18 0
+19 ,
+cfactor(pcar(A2,x)),
+// fltk N4xcas10Log_OutputE 35 -770 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -769 1804 39 18 0 1
+(x-1)*(x-3+3*i)*(x-3-3*i)
+]
+,
+// fltk 7Fl_Tile 35 -728 1804 95 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 -728 1804 94 18 0
+Elle n'est pas diagonalisable sur R car complexe et pas trigonalisable£Valeurs propres : 1 d'ordre 1, 3+3i d'ordre 1, 3-3i d'ordre 1£Elle est diagonalisable sur C et aussi trigonalisable
+,
+// fltk N4xcas10Log_OutputE 35 -634 1804 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 -631 1804 139 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -631 1804 28 18 0
+10 ,
+jordan(A2),
+// fltk N4xcas10Log_OutputE 35 -603 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -603 1804 111 18 0 1
+[[0,-2+i,-1+2*i],[0,-1-i,1+i],[1,0,0]],[[1,0,0],[0,3-3*i,0],[0,0,3+3*i]]
+]
+,
+// fltk 7Fl_Tile 35 -490 1804 83 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -490 1804 28 18 0
+18 ,
+cfactor(pcar(A3,x),
+// fltk N4xcas10Log_OutputE 35 -462 1804 1 18 0
+Warning adding 1 ) at end of input£
+,
+// fltk N4xcas8EquationE 35 -462 1804 55 18 0 1
+(x-2)^2*(x+4)
+]
+,
+// fltk 7Fl_Tile 35 -405 1804 51 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 -405 1804 50 18 0
+Valeurs propres : 2 d'ordre 2 et -4 d'ordre 1
+,
+// fltk N4xcas10Log_OutputE 35 -355 1804 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 -352 1804 137 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -352 1804 28 18 0
+15 ,
+tran(ker(A3-2)),
+// fltk N4xcas10Log_OutputE 35 -324 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -324 1804 109 18 0 1
+[[-1],[0],[-1]]
+]
+,
+// fltk 7Fl_Tile 35 -213 1804 145 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -213 1804 28 18 0
+10 ,
+jordan(A3),
+// fltk N4xcas10Log_OutputE 35 -185 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -184 1804 116 18 0 1
+[[2,0,-1],[0,1,3],[2,3,-1]],[[2,1,0],[0,2,0],[0,0,-4]]
+]
+,
+// fltk 7Fl_Tile 35 -66 1804 139 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -66 1804 28 18 0
+10 ,
+jordan(A4),
+// fltk N4xcas10Log_OutputE 35 -38 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -37 1804 110 18 0 1
+[[1,2,0],[2,0,2],[1,1,1]],[[2,0,0],[0,1,0],[0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 75 1804 144 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 75 1804 28 18 0
+9 ,
+P^-1*A4*P,
+// fltk N4xcas10Log_OutputE 35 103 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 104 1804 115 18 0 1
+[[2,1,-2],[2,3,-4],[1,1,-1]]
+]
+,
+// fltk 7Fl_Tile 35 221 1804 174 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 221 1804 28 18 0
+10 ,
+jordan(A5),
+// fltk N4xcas10Log_OutputE 35 249 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 250 1804 145 18 0 1
+[[1,-1,0,0],[0,0,-1,0],[-2,0,0,-1],[-1,-2,1,-1]],[[2,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 397 1804 214 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 397 1804 28 18 0
+10 ,
+jordan(A6),
+// fltk N4xcas10Log_OutputE 35 425 1804 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 426 1804 185 18 0 1
+[[-1,0,11,-7,1],[0,-1,12,-5,0],[-1,0,6,-2,0],[0,2,-23,9,-1],[0,0,0,1,0]],[[3,0,0,0,0],[0,3,0,0,0],[0,0,1,1,0],[0,0,0,1,0],[0,0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 613 1804 29 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 613 1804 28 18 0
+Non diagonalisable car dim(E1) != mult(1)
+,
+// fltk N4xcas10Log_OutputE 35 641 1804 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 644 1804 29 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 644 1804 28 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 35 672 1804 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -1269 890 939 18 0
+EX3
+// fltk N4xcas12History_PackE 13 -1245 850 860 18 0
+[
+// fltk 7Fl_Tile 25 -1245 1814 141 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -1245 1814 28 18 0
+35 ,
+M:=matrix(3,3,[1,1,1,0,1,0,1,0,1]);,
+// fltk N4xcas10Log_OutputE 25 -1217 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -1216 1814 112 18 0 1
+[[1,1,1],[0,1,0],[1,0,1]]
+]
+,
+// fltk 7Fl_Tile 25 -1102 1814 137 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -1102 1814 28 18 0
+14 ,
+p,d:=jordan(M),
+// fltk N4xcas10Log_OutputE 25 -1074 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -1073 1814 108 18 0 1
+[[1,1,0],[0,0,-1],[-1,1,1]],[[0,0,0],[0,2,0],[0,0,1]]
+]
+,
+// fltk 7Fl_Tile 25 -963 1814 182 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -963 1814 28 18 0
+4 ,
+p^-1,
+// fltk N4xcas10Log_OutputE 25 -935 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -934 1814 153 18 0 1
+[[1/2,-1/2,-1/2],[1/2,1/2,1/2],[0,-1,0]]
+]
+,
+// fltk 7Fl_Tile 25 -779 1814 176 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -779 1814 57 18 0
+24 ,
+assume(n>0);
+matpow(d,n),
+// fltk N4xcas10Log_OutputE 25 -722 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -722 1814 119 18 0 1
+n,[[0,0,0],[0,2^n,0],[0,0,1]]
+]
+,
+// fltk 7Fl_Tile 25 -601 1814 183 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -601 1814 28 18 0
+18 ,
+p*matpow(d,n)*p^-1,
+// fltk N4xcas10Log_OutputE 25 -573 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -572 1814 154 18 0 1
+[[2^(n-1),2^(n-1),2^(n-1)],[0,1,0],[2^(n-1),(2^n-2)/2,2^(n-1)]]
+]
+,
+// fltk 7Fl_Tile 25 -416 1814 29 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -416 1814 28 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 -388 1814 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -1243 890 614 18 0
+EX4
+// fltk N4xcas12History_PackE 13 -1219 850 565 18 0
+[
+// fltk 7Fl_Tile 25 -1219 1814 140 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -1219 1814 28 18 0
+37 ,
+A:=matrix(3,3,[1,-1,0,a,1,1,0,1+a,3]),
+// fltk N4xcas10Log_OutputE 25 -1191 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -1190 1814 111 18 0 1
+[[1,-1,0],[a,1,1],[0,a+1,3]]
+]
+,
+// fltk 7Fl_Tile 25 -1077 1814 78 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -1077 1814 28 18 0
+18 ,
+cfactor(pcar(A,x)),
+// fltk N4xcas10Log_OutputE 25 -1049 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -1048 1814 49 18 0 1
+-2*a+x^3-5*x^2+6*x-2
+]
+,
+// fltk 7Fl_Tile 25 -997 1814 94 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -997 1814 28 18 0
+28 ,
+solve(subs(pcar(A,x),x=2),a),
+// fltk N4xcas10Log_OutputE 25 -969 1814 24 18 0
+Attention, l'argument n'est pas une √©quation, on r√©sout -2*a-2=0£
+,
+// fltk N4xcas8EquationE 25 -945 1814 42 18 0 1
+list[-1]
+]
+,
+// fltk 7Fl_Tile 25 -901 1814 69 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -901 1814 28 18 0
+5 ,
+a:=-1,
+// fltk N4xcas10Log_OutputE 25 -873 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -872 1814 40 18 0 1
+-1
+]
+,
+// fltk 7Fl_Tile 25 -830 1814 143 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -830 1814 28 18 0
+9 ,
+jordan(A),
+// fltk N4xcas10Log_OutputE 25 -802 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -801 1814 114 18 0 1
+[[1,-1,-1],[1,2,1],[0,3,0]],[[0,0,0],[0,3,0],[0,0,2]]
+]
+,
+// fltk 7Fl_Tile 25 -685 1814 29 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -685 1814 28 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 -657 1814 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -1217 890 884 18 0
+EX5
+// fltk N4xcas12History_PackE 13 -1245 850 912 18 0
+[
+// fltk N4xcas12History_FoldE 25 -1245 1814 70 18 0
+
+// fltk N4xcas12History_PackE 25 -1221 1774 31 18 0
+[
+// fltk 7Fl_Tile 37 -1221 1762 29 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 37 -1221 1762 28 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 37 -1193 1762 1 18 0
+
+]
+]
+,
+// fltk 7Fl_Tile 25 -1173 1814 655 18 0
+[
+// fltk N4xcas7EditeurE 25 -1173 1814 308 18 0
+323 ,
+proc1(M):={
+local P,n,vp,j,c;
+n:=size(M);P:=x->det(x*idn(n)-M);vp:=solve(P(x)); c:=0;
+if (size(vp)==n) {print("La matrice est propri√©t√© 1")}
+else {
+for (j:=1;j<=size(vp);j++){
+c:=c+(size(ker(M-vp(j)*idn(n))));
+};
+if (c==n) {print("La matrice est propri√©t√© 1")}
+else {print("La matrice n'est pas propri√©t√© 1")};
+};
+};
+,
+// fltk N4xcas10Log_OutputE 25 -865 1814 121 18 0
+// Attention: n,M,declar√©(s) comme variable(s) globale(s). Si vous avez besoin de variables symboliques, d√©clarez les en local et faites purge£// End defining P£// Interpr√®te proc1£// Attention: n,M,x,declar√©(s) comme variable(s) globale(s). Si vous avez besoin de variables symboliques, d√©clarez les en local et faites purge£// lors de la compilation proc1£
+,
+// fltk N4xcas8EquationE 25 -744 1814 226 18 0 1
+expr(" (M)-> £{ local P,n,vp,j,c; £  n:=size(M);  £  P:= (x)->det(x*idn(n)-M);  £  vp:=solve(P(x));  £  c:=0;  £  if (((size(vp))==n)) print(""La matrice est propri√©t√© 1""); else { £      for (j:=1;j<=(size(vp));j++) c:=c+size(ker(M-vp(j)*idn(n))); ;  £      if ((c==n)) print(""La matrice est propri√©t√© 1""); else print(""La matrice n'est pas propri√©t√© 1""); ;  £    }; ;  £}",0)
+]
+,
+// fltk 7Fl_Tile 25 -516 1814 119 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -516 1814 30 18 0
+9 ,
+proc1(A1),
+// fltk N4xcas10Log_OutputE 25 -486 1814 49 18 0
+Attention, l'argument n'est pas une √©quation, on r√©sout x^3-6*x^2+11*x-6=0£La matrice est propri√©t√© 1£
+,
+// fltk N4xcas8EquationE 25 -437 1814 40 18 0 1
+1
+]
+,
+// fltk 7Fl_Tile 25 -395 1814 60 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -395 1814 28 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 -367 1814 32 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -1191 890 2096 18 0
+EX6
+// fltk N4xcas12History_PackE 13 -1167 850 2049 18 0
+[
+// fltk 7Fl_Tile 35 -1167 828 29 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 -1167 828 28 18 0
+√Ä r√©cup√©rer : exercice type du premier DS en groupe
+,
+// fltk N4xcas10Log_OutputE 35 -1139 828 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 -1136 828 212 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -1136 828 43 18 0
+86 ,
+A := matrix(5,5,[b+1,0,0,0,b+1,0,b+1,0,b-1,0,0,1,1,1,0,0,b+1,0,b-1,0,b+1,0,0,0,b+1]);b,
+// fltk N4xcas10Log_OutputE 35 -1093 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -1092 828 168 18 0 1
+[[b+1,0,0,0,b+1],[0,b+1,0,b-1,0],[0,1,1,1,0],[0,b+1,0,b-1,0],[b+1,0,0,0,b+1]],b
+]
+,
+// fltk 7Fl_Tile 35 -922 828 197 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -922 828 28 18 0
+14 ,
+P,D:=jordan(A),
+// fltk N4xcas10Log_OutputE 35 -894 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -893 828 168 18 0 1
+[[b-1,0,0,0,1],[0,b-1,0,-2*b+1,0],[0,2,1,-2,0],[0,-b-1,0,-2*b+1,0],[-b+1,0,0,0,1]],[[0,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,2*b,0],[0,0,0,0,2*b+2]]
+]
+,
+// fltk 7Fl_Tile 35 -723 828 64 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -723 828 28 18 0
+9 ,
+B:=det(P),
+// fltk N4xcas10Log_OutputE 35 -695 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -694 828 35 18 0 1
+-8*b^3+12*b^2-4*b
+]
+,
+// fltk 7Fl_Tile 35 -657 828 75 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -657 828 28 18 0
+18 ,
+solve(det(P)=0, b),
+// fltk N4xcas10Log_OutputE 35 -629 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -628 828 46 18 0 1
+list[0,1/2,1]
+]
+,
+// fltk 7Fl_Tile 35 -580 828 52 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 -580 828 51 18 0
+La matrice P n'est pas inversible pour les valeurs de b 0 1/2 1£A est diagonilisable pour les autres valeurs
+,
+// fltk N4xcas10Log_OutputE 35 -529 828 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 -526 828 197 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -526 828 28 18 0
+14 ,
+C:=subs(A,b=0),
+// fltk N4xcas10Log_OutputE 35 -498 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -497 828 168 18 0 1
+[[1,0,0,0,1],[0,1,0,-1,0],[0,1,1,1,0],[0,1,0,-1,0],[1,0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 -327 828 197 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -327 828 28 18 0
+9 ,
+jordan(C),
+// fltk N4xcas10Log_OutputE 35 -299 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -298 828 168 18 0 1
+[[0,0,1,1,0],[2,-1,0,0,0],[-4,0,0,0,-1],[2,-3,0,0,0],[0,0,-1,1,0]],[[0,1,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,2,0],[0,0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 -128 828 29 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 -128 828 28 18 0
+Pour b=0 la matrice  n'est pas diagonalisable(1 sur la diagonale sup√©reure)
+,
+// fltk N4xcas10Log_OutputE 35 -100 828 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 -97 828 285 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -97 828 28 18 0
+16 ,
+D:=subs(A,b=1/2),
+// fltk N4xcas10Log_OutputE 35 -69 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -68 828 256 18 0 1
+[[3/2,0,0,0,3/2],[0,3/2,0,-1/2,0],[0,1,1,1,0],[0,3/2,0,-1/2,0],[3/2,0,0,0,3/2]]
+]
+,
+// fltk 7Fl_Tile 35 190 828 197 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 190 828 28 18 0
+9 ,
+jordan(D),
+// fltk N4xcas10Log_OutputE 35 218 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 219 828 168 18 0 1
+[[1,0,1,0,0],[0,1,0,0,1],[0,-4,0,2,-1],[0,3,0,0,1],[-1,0,1,0,0]],[[0,0,0,0,0],[0,0,0,0,0],[0,0,3,0,0],[0,0,0,1,1],[0,0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 389 828 29 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 389 828 28 18 0
+Pour b = 1/2 la matrice n'est pas diagonalisable
+,
+// fltk N4xcas10Log_OutputE 35 417 828 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 420 828 197 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 420 828 28 18 0
+14 ,
+E:=subs(A,b=1),
+// fltk N4xcas10Log_OutputE 35 448 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 449 828 168 18 0 1
+[[2,0,0,0,2],[0,2,0,0,0],[0,1,1,1,0],[0,2,0,0,0],[2,0,0,0,2]]
+]
+,
+// fltk 7Fl_Tile 35 619 828 197 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 619 828 28 18 0
+9 ,
+jordan(E),
+// fltk N4xcas10Log_OutputE 35 647 828 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 648 828 168 18 0 1
+[[1,0,1,0,0],[0,0,0,-1,0],[0,1,0,-2,-1],[0,-1,0,-1,0],[-1,0,1,0,0]],[[0,0,0,0,0],[0,0,0,0,0],[0,0,4,0,0],[0,0,0,2,0],[0,0,0,0,1]]
+]
+,
+// fltk 7Fl_Tile 35 818 828 29 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 818 828 28 18 0
+pour b=1 la matrice est diagonalisable sur R / (0; 1/2)
+,
+// fltk N4xcas10Log_OutputE 35 846 828 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 849 828 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 849 828 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 35 879 828 1 18 0
+
+]
+]
+,
+// fltk 7Fl_Tile 13 907 890 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 13 907 890 28 18 0
+2 ,
+  ,
+// fltk N4xcas10Log_OutputE 13 935 890 1 18 0
+
+,
+// fltk N4xcas8EquationE 13 936 890 24 18 0 1
+undef
+]
+,
+// fltk 7Fl_Tile 13 962 890 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 13 962 890 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 13 992 890 1 18 0
+
+]
+// context 1969 giac archive
+7 0 11 8 0 0 'cas_setup' 7 0 12 0 0 0
+0 0 0
+0 0 0
+0 1 0
+0 0 0
+7 0 2 1 Í-Åôóq=
+1 VÁûØ“<
+0 12 0
+7 0 4 0 4 0
+0 100 0
+0 0 0
+0 25 0
+0 0 0
+0 1 0
+0 0 0
+0 1 0
+8 0 0 'xyztrange' 7 0 16 1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1 afffffˆø
+1 ÅôôôôôÒ?
+0 1 0
+1        
+1      ?
+0 3 0
+7 0 0 7 0 0 8 0 15 7 1 2 7 11 5 7 0 5 8 0 1 7 1 2 6 1 b 0 1 0
+0 0 0
+0 0 0
+0 0 0
+8 0 1 7 1 2 6 1 b 0 1 0
+7 0 5 0 0 0
+8 0 1 7 1 2 6 1 b 0 1 0
+0 0 0
+8 0 1 7 1 2 6 1 b 0 -1 0
+0 0 0
+7 0 5 0 0 0
+0 1 0
+0 1 0
+0 1 0
+0 0 0
+7 0 5 0 0 0
+8 0 1 7 1 2 6 1 b 0 1 0
+0 0 0
+8 0 1 7 1 2 6 1 b 0 -1 0
+0 0 0
+7 0 5 8 0 1 7 1 2 6 1 b 0 1 0
+0 0 0
+0 0 0
+0 0 0
+8 0 1 7 1 2 6 1 b 0 1 0
+6 1 A 8 0 15 7 1 2 8 0 1 7 1 3 8 0 2 8 0 4 7 1 2 0 8 0
+8 0 7 7 1 2 6 1 b 0 3 0
+8 0 4 7 1 2 0 12 0
+8 0 7 7 1 2 6 1 b 0 2 0
+8 0 2 8 0 4 7 1 2 0 4 0
+6 1 b 6 1 B 8 0 15 7 1 2 7 11 5 7 0 5 0 1 0
+0 0 0
+0 0 0
+0 0 0
+0 1 0
+7 0 5 0 0 0
+0 1 0
+0 0 0
+0 -1 0
+0 0 0
+7 0 5 0 0 0
+0 1 0
+0 1 0
+0 1 0
+0 0 0
+7 0 5 0 0 0
+0 1 0
+0 0 0
+0 -1 0
+0 0 0
+7 0 5 0 1 0
+0 0 0
+0 0 0
+0 0 0
+0 1 0
+6 1 C 8 0 15 7 1 2 7 11 5 7 0 5 10 0 3 0
+0 2 0
+0 0 0
+0 0 0
+0 0 0
+10 0 3 0
+0 2 0
+7 0 5 0 0 0
+10 0 3 0
+0 2 0
+0 0 0
+10 0 -1 0
+0 2 0
+0 0 0
+7 0 5 0 0 0
+0 1 0
+0 1 0
+0 1 0
+0 0 0
+7 0 5 0 0 0
+10 0 3 0
+0 2 0
+0 0 0
+10 0 -1 0
+0 2 0
+0 0 0
+7 0 5 10 0 3 0
+0 2 0
+0 0 0
+0 0 0
+0 0 0
+10 0 3 0
+0 2 0
+6 1 D 8 0 15 7 1 2 7 11 5 7 0 5 0 2 0
+0 0 0
+0 0 0
+0 0 0
+0 2 0
+7 0 5 0 0 0
+0 2 0
+0 0 0
+0 0 0
+0 0 0
+7 0 5 0 0 0
+0 1 0
+0 1 0
+0 1 0
+0 0 0
+7 0 5 0 0 0
+0 2 0
+0 0 0
+0 0 0
+0 0 0
+7 0 5 0 2 0
+0 0 0
+0 0 0
+0 0 0
+0 2 0
+6 1 E 8 0 15 7 1 2 7 0 5 7 0 5 8 0 1 7 1 2 6 1 b 0 -1 0
+0 0 0
+0 0 0
+0 0 0
+0 1 0
+7 0 5 0 0 0
+8 0 1 7 1 2 6 1 b 0 -1 0
+0 0 0
+8 0 1 7 1 2 8 0 2 8 0 4 7 1 2 0 2 0
+6 1 b 0 1 0
+0 0 0
+7 0 5 0 0 0
+0 2 0
+0 1 0
+0 -2 0
+0 0 0
+7 0 5 0 0 0
+8 0 1 7 1 2 8 0 2 6 1 b 0 -1 0
+0 0 0
+8 0 1 7 1 2 8 0 2 8 0 4 7 1 2 0 2 0
+6 1 b 0 1 0
+0 0 0
+7 0 5 8 0 1 7 1 2 8 0 2 6 1 b 0 1 0
+0 0 0
+0 0 0
+0 0 0
+0 1 0
+6 1 P 8 0 0 'xcas_mode' 0 0 0
+

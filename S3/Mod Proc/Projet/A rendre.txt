@@ -1,0 +1,10 @@
+-UN pdf avec tous les diagrammes
+-Un document avec les interprétation éventuelles du sujet
+
+Diagramme de séquence Accorder accompte:
+- on considère qu'un étudiant ne peut faire qu'une seule demande d'accompte à la fois
+
+Diagramme d'activité Editer bulletin de versement d'indemnités: 
+- on considère qu'un étudiant ne peut participer qu'à une et une seule étude en même temps
+- on considère qu'il y a toujours des retenues
+

@@ -1,0 +1,79 @@
+http://www.anthonybusson.fr/index.php/teaching
+
+Execution :
+NOM=$1
+clear
+gcc -o $NOM $NOM.c
+./$NOM
+rm $NOM
+
+man 2 [nom commande] -> doc appelle système
+man 3 [nom commande] -> doc lib c
+
+strlen(maChaine); -> nombre de caractères
+sizeof(maChaine); -> taille en octets
+
+#include<unistd.h>
+write [id E/S] [adresse du msg à écrire] [nombre d'octets]
+
+TOUJOURS tester si les appelles systèmes ont fonctionnés avec un perror()
+
+Dans un programme de processus,
+wait(&monEntier) // Renvoi le pid du premier fils à s'être terminé --> à l'adresse passée en paramètre, il s'agit d'un appel bloquant, renvoi 0 ou -1 en cas d'erreur ou s'il n'y a pas de fils
+waitpid(pid, état : bloquant/non bloquant, &monEntier)
+
+Si un fils s'est déjà éxecuté avant qu'on fasse le wait, l'OS vide la pile du processus (vide son code), il ne s'éxecute pas mais l'OS a toujours les informations du processus vide en RAM.
+Seul le wait permet de nettoyer les informations des processus fils et ainsi d'empêcher de remplir la ram de zombies.
+
+Si un père meurt alors qu'il a encore un ou plusieurs fils en vie, du point de vue du système leur père devient le processus init
+
+WEXITSTATUS(retourExit) // Retourne le dernier octet (le plus à droite) parmis les 32 bits retournés par un processus. Cela correspond à la valeur retournée par le exit() : elle est comprise entre 0 et 255 (un -n deviendra n)
+
+"ls fichier > file 2>&1"
+La commande est lue de droite à gauche
+"2>&1" redirige toutes les sorties vers la sortie standard (erreur et réussite)
+et "> file" redirige la sortie standard dans le fichier "file"
+Le fichier "file" contient donc les messages de réussite et d'erreur sans distinction
+
+
+
+
+Redirection (cours de Jonathan)
+On part de "a.sh > test.txt
+On veut rediriger la sortie standard de "a.sh" vers l'entrée standard de "test.txt"
+Dans un processus, l'entrée standard est 0 et la sortie standard c'est 1
+On va dire à "a.sh" que sa sortie c'est "text.txt"
+On va déjà créer un fichier :
+int file = open(leNomDuFichier, O_WONLY | O_CREAT, 777);
+On gère les erreurs :
+if (file < 0) {
+    perror("Erreur open");
+}
+Il reste à exécuter a.sh en changeant sa sortie standard
+Vu qu'on est le programme, c'est notre sortie standard qui être changée
+file contient le descripteur de mon fichier de sortie
+On va donc remplacer notre sortie standard par file
+La commande "dup2" permet de "remplacer paramètre 1 par paramètre 2" :
+dup2([la nouvelle valeur du descripteur], [l'entrée standard]);
+--> int retourDup = dup2(file, 1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

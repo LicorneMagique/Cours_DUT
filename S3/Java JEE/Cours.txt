@@ -1,0 +1,12 @@
+JEE (Java Enterprise Edition) Web : JSP et servlet
+JEE :
+    -bibliothèques supplémentaires mieux adapté pour les applications professionnels
+    -définit l'architecture des projets (comme MVC en php)
+    -utilise un serveur d'application (Tomcat) comme les serveurs web
+On va travailler sur Java 8 (car Netbeans n'est pas encore compatible Java 9 / Java 10...)
+jre = java runtime environment -> permet d'executer du java compilé
+jdk = compilateur + jre -> permet de compiler ET d'executer
+javac nomFichier.java -> compile
+java nomFichier -> execute
+Compilation servlet :
+java -classpath adresse.jar

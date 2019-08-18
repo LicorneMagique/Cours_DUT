@@ -1,0 +1,80 @@
+﻿Exercice 1 : Gestion de droits
+
+1. Dans votre répertoire d'accueil, créer un fichier "private.txt" dont la lecture et l’écriture ne sont autorisées 
+que pour son propriétaire.
+
+Méthode 1 :
+Créer le fichier avec :
+touch ~/private.txt
+lui donner les droits de lecture et d'écriture avec :
+chmod u+rw ~/private.txt
+enlever les droits de lecture et d'écriture aux autres avec :
+chmod go-rw ~/private.txt
+
+Ce qui donne en une ligne :
+touch private.txt ; chmod u+rw private.txt ; chmod go-rw private.txt
+
+Méthode 2 :
+Créer le fichier avec :
+touch ~/private.txt
+et gérer tous ses droits avec :
+chmod 600 ~/private.txt
+
+Ce qui donne en une ligne :
+touch ~/private.txt ; chmod 600 ~/private.txt
+
+2.Tapez "ls -l private.txt". Quel est le résultat?
+
+-rw-------
+Cela permet de voir les droits d'accès au fichier.
+
+3. Ajoutez au groupe la possibilité de lire le fichier en utilisant la forme classique de chmod.
+
+Donner le droit de lecture au groupe avec :
+chmod g+r ~/private.txt
+
+4. Faites de même avec les autres utilisateurs, mais avec la forme octale.
+
+L'utilisateur a déjà le droit de lecture (4) plus celui d'écriture (2).
+On utilise donc la commande suivante :
+chmod 644 ~/private.txt
+
+5. Comment vérifiez-vous le bon fonctionnement de votre commande ?
+
+On visionne les droits sur le fichier avec :
+ls -l ~/private.txt
+
+6. Modifiez les droits pour tout interdire à tout le monde...
+
+'Aucun droit' correspond à '0'.
+On enlève donc tous les droits avec :
+chmod 000 ~/private.txt
+
+7. Essayez de lire le fichier. Que se passe-t-il?
+
+Si on essaie de lire le fichier en commande, on utilise  :
+cat ~/private.txt
+ce qui nous affiche :
+Permission non accordée
+
+Nous ne pouvons donc pas lire le fichier.
+
+8. Rétablissez les droits de lecture pour le propriétaire.
+
+On redonne le droit de lecture au propriétaire avec :
+chmod 400 ~/private.txt
+
+9. Essayez de modifier le contenu du fichier. Que se passe-t-il ?
+
+(On peut utiliser  la commande :
+gedit ~/private.txt
+pour ne pas avoir besoin de l'exploreur de fichier.)
+Il est impossible d'enregistrer des modifications sur le fichier car l'utilisateur n'a pas le droit d'écriture.
+Il est cependant possible d'enregistrer les modifications dans un autre fichier.
+
+10. Rétablissez les droits d’écriture pour le propriétaire.
+
+On réutilise la commande :
+chmod 600 ~/private.txt
+
+

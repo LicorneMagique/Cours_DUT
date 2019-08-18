@@ -1,0 +1,1 @@
+clear ; EX=3 ; gcc -o EX$EX EX$EX.c ; ./EX$EX ; rm EX$EX

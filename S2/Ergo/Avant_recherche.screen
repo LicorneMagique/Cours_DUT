@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" id="1" x="184" y="176" width="601" height="385" text="Sélectionner un contrat" measuredWidth="601" measuredHeight="385"/>
+  <widgets xsi:type="model:Combo" id="2" x="222" y="216" text="Marque" measuredWidth="68" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="3" x="304" y="216" text="Modèle" measuredWidth="67" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="4" x="222" y="256" width="526" height="249" text="N° contrat,N° Immatriculation, Marque,Modèle,Conducteur&#xA;" measuredWidth="526" measuredHeight="249" alternative="#eee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="7" x="614" y="520" text="Valider" measuredWidth="56" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="8" x="686" y="520" text="Annuler" measuredWidth="62" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="10" x="384" y="216" text="Immatriculation" measuredWidth="96" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="11" x="669" y="215" text="Rechercher" measuredWidth="79" measuredHeight="25" link="Apres_recherche.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 90%
+        }
+
+        #toolbar {
+            color: white;
+            position: absolute;
+        }
+
+        #toolbar a {
+            color: lightgrey;
+        }
+
+        #toolbar a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="toolbar">
+        <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene">Documentation</a>
+        <a href="mailto:adrien.peytavie@liris.cnrs.fr">adrien.peytavie@liris.cnrs.fr</a>
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        
+        // Initialisation of the scene / camera / renderer
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        document.body.appendChild(renderer.domElement);
+        camera.position.z = 5;
+
+        // Initialisation of your objects / materials / light
+        var geometry = new THREE.CircleGeometry( 5, 32 );
+		var material1 = new THREE.MeshBasicMaterial( { color: 0xffffff } );
+		var material2 = new THREE.MeshBasicMaterial( { color: 0x000000 } );
+		
+		var material3 = new THREE.LineBasicMaterial( { color: 0x0000ff, linewidth: 5 } );
+		
+		var circle = new THREE.Mesh( geometry, material1 );
+		scene.add( circle );
+		
+		var vcentre = new THREE.Vector2( 0, 0 );
+		var vheure = new THREE.Vector2( 0, 0 );
+		var vminute = new THREE.Vector2( 0, 0 );
+		var vseconde = new THREE.Vector2( 0, 0 );
+		
+		
+		var hline = new THREE.LineCurve(vcentre, vheure);
+		var mline = new THREE.LineCurve(vcentre, vminute);
+		var sline = new THREE.LineCurve(vcentre, vseconde);
+		
+		scene.add(hline);
+		scene.add(mline);
+		scene.add(sline);
+		
+		var date = new Date();
+
+        // This is executed for each frames
+        function render() {
+			requestAnimationFrame(render);
+			renderer.render(scene, camera);
+			
+			vheure.x = Math.cos(Math.PI * (date.getHours()%12) / 12);
+			vheure.y = Math.sin(Math.PI * date.getHours() / 12);
+			
+			vminute.x = Math.cos(Math.PI * date.getMinutes() / 60);
+			vminute.y = Math.sin(Math.PI * date.getMinutes() / 60);
+			
+			vseconde.x = Math.cos(Math.PI * date.getSecond() / 60);
+			vseconde.y = Math.sin(Math.PI * date.getSeconds() / 60);
+			
+			hline.verticesNeedUpdate = true;
+			mline.verticesNeedUpdate = true;
+			sline.verticesNeedUpdate = true;
+        }
+        render();
+    </script>
+</body>
+
+</html>

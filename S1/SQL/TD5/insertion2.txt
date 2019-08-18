@@ -1,0 +1,24 @@
+insert into CSP values( '1','	Agriculteur exploitants','Agriculteur',2000 ,300 ,50 ,490 );
+insert into CSP values( '2','Artisans commercant et chef entreprise','Artisans commercant et chef entreprise', 24456, 345, 23456, 456);
+insert into CSP values( '3','Cadre et prof intellectuelles superieures','Cadre sup au chomage', 123, 3456,1065 , 987);
+insert into CSP values( '4','Cadre et prof intellectuelles superieures','Cadre sup en activite', 123456, 9812,8765 ,34567 );
+insert into CSP values( '5','Employes','employe au chomage', 765,3456 , 453, 9874);
+insert into CSP values( '6','Employes','employe commerce', 123, 43, 34, 0);
+insert into CSP values( '7','Employes','employe entreprise', 123345, 43215, 34578,6541 );
+insert into CSP values( '8','Employes','employe fonction publique', 8312, 4567, 5432,123 );
+insert into CSP values( '9','Employes','militaire et policier', 13479, 76521, 3456, 123);
+insert into CSP values( '10','Employes','service aux particuliers', 456, 432, 234, 123);
+insert into CSP values( '11','Ouvriers','chauffeurs', 213,345 , 45,123 );
+insert into CSP values( '12','Ouvriers','ouvriers agricoles',234 ,32 ,456 ,187 );
+insert into CSP values( '13','Ouvriers','ouvriers au chomage', 879, 2347, 56783,23856 );
+insert into CSP values( '14','Ouvriers','ouvrier non qualifie',1234 ,4356 ,762 ,1256 );
+insert into CSP values( '15','Ouvriers','ouvrier qualifie', 12345, 762, 3456,9821 );
+insert into CSP values( '16','Profession intermediaires','Clerge religieux',12 ,234 ,124 ,34 );
+insert into CSP values( '17','Profession intermediaires','contremaitres et agents de maitrise',475 ,234 ,981 ,1234 );
+insert into CSP values( '18','Profession intermediaires','instituteur', 1234, 2345,5678 ,1234 );
+insert into CSP values( '19','Profession intermediaires','prof interm entreprise',1234 ,456 ,776 ,2345 );
+insert into CSP values( '20','Profession intermediaires','pro de la sante et du travail social',981 ,786 , 546,234 );
+insert into CSP values( '21','Profession intermediaires','prof interm fonction publique', 1356, 1234,4567 , 1234);
+insert into CSP values( '22','Profession intermediaires','Profession intermediaires au chomage',1274 ,385 ,3451 ,1092 );
+insert into CSP values( '23','Profession intermediaires','technicien', 1456, 1230, 1456, 1234);
+

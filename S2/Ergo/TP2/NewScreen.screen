@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" id="1" x="224" y="192" width="673" height="489" text="Formulaire de commande de DVDs" measuredWidth="673" measuredHeight="489"/>
+  <widgets xsi:type="model:DateField" id="4" x="559" y="274" width="97" text="    /    /    " measuredWidth="97" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="9" x="234" y="216" width="193" text="Commande" measuredWidth="193" measuredHeight="55">
+    <font size="35px"/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="10" x="248" y="312" width="625" height="289" text="Image,Série,=. Age. Kids,Likes,(align:center)&#xA;{image},Severin,41,[x],{computer}&#xA;{image},Severin,(bg:lightGreen).11,[],{train}&#xA;{image},Severin,66,[x],{note}" measuredWidth="625" measuredHeight="289" alternative="#eee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="11" x="762" y="624" width="111" height="31" text=" Valider commande" measuredWidth="111" measuredHeight="31" background="#6aa84f" style="pointright">
+    <font size="11px" bold="true" italic="false" underline="false"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="12" x="624" y="624" width="111" height="31" text="Annuler" measuredWidth="111" measuredHeight="31" style="pointleft">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="248" y="272" width="171" text="N°commande : 524678" measuredWidth="171" measuredHeight="28">
+    <font size="15px" bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="14" x="700" y="272" width="173" text="Rechercher série" measuredWidth="173" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="436" y="272" width="121" text="Date de livraison" measuredWidth="121" measuredHeight="28">
+    <font size="15px" bold="false"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

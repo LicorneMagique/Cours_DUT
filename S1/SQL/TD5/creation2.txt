@@ -1,0 +1,10 @@
+create table CSP
+( numCSP varchar(2) PRIMARY KEY ,
+CSP varchar(100),
+profession varchar(100), 
+annee_1975 integer, 
+annee_1982 integer, 
+annee_1990 integer, 
+annee_1996 integer 
+);
+

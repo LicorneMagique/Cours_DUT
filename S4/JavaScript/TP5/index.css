@@ -1,0 +1,35 @@
+body {
+	display: flex;
+	justify-content: center;
+}
+
+#canvas {
+	margin-top: 5em;
+	border: 1px solid black;
+}
+
+#items {
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+button {
+	height: 40px;
+}
+
+input[type=color] {
+	height: 23px;
+	width: 40px;
+}
+
+input[type=number] {
+	width: 45px;
+	height: 20px;
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}

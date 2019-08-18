@@ -1,0 +1,71 @@
+﻿Exercice 5 : Les filtres et les expressions régulières
+
+Constituer un annuaire de quelques correspondants avec le format suivant : 
+nom : ville : numéro de téléphone
+
+Ajouter dans cet annuaire :
+-"Paris" qui habite a Dijon et dont le numero de telephone est 0101010101.
+-"Toto" qui habite a Paris et dont le numero de telephone est 0202020202
+-"Titi" qui habite a Villeurbanne et dont le numero de telephone est 0303030303.
+
+Creer l'annuaire avec :
+echo "Paris":Dijon:0101010101 > annuaire.txt
+echo "Toto":Paris:0202020202 >> annuaire.txt
+echo "Titi":Villeurbanne:0303030303 >> annuaire.txt
+
+1. Visualiser uniquement les noms et numéros de téléphones de l’annuaire.
+
+Afficher uniquement la premiere et la troisieme colone, separes par ":" avec :
+cut -d : -f 1,3 annuaire.txt
+
+2. Visualiser les informations sur un correspondant connu par son nom.
+
+Par exemple pour visualiser les informations de "Titi" utiliser :
+egrep Titi annuaire.txt
+
+3. Visualiser l’annuaire trié sur le nom.
+
+Afficher les informations, separes par ":" triés par la premiere colone avec :
+sort -t : -k 1 annuaire.txt
+
+4. Constituer un nouvel annuaire en enlevant un correspondant.
+
+Enlever la ligne contenant "Titi" et rediriger la sortie vers "annuaire2" avec :
+egrep -v Titi annuaire.txt > annuaire2.txt
+
+Cependant cela ne marche pas pour Paris.
+
+5. Visualiser uniquement le nombre de correspondants.
+
+Methode 1 simple :
+Pour compter le nombre de lignes du fichier on utilise la commande :
+wc -l annuaire.txt
+qui renvoie :
+3 annuaire.txt
+
+Methode 1 avancee :
+On ne veut afficher que la premiere partie de "3 annuaire.txt".
+Pour cela il faut combiner la commande wc avec la commande cut : wc (blabla1)| cut (blabla2).
+D'abord on precise dans la commande qu'il faut utiliser les espaces comme separateurs : cut -d " ".
+Puis on affiche uniquement la premiere partie avec cut -f 1 :
+wc -l annuaire.txt | cut -d " " -f 1
+qui renvoie :
+3
+
+Methode 2 (facile mais pas propre) :
+Le but est toujours de compter et d'afficher uniquement le nombre de lignes dans le fichier.
+Cela revient a compter le nombre de lignes contenants un saut de ligne.
+Le saut de  ligne correspond au caractere vide : ""
+La commande est donc :
+egrep -c "" annuaire.txt
+qui renvoie egalement:
+3
+
+6. Visualiser les correspondants qui habitent Villeurbanne.
+
+La ville est entouree de ":".
+La commande conciste donc a afficher les lignes contenant :Villeurbanne:.
+On le fait avec egrep sans option :
+egrep :Villeurbanne: annuaire.txt
+
+

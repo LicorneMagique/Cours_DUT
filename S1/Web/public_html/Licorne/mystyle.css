@@ -1,0 +1,30 @@
+body
+{
+    background : black url(https://i.pinimg.com/736x/75/70/fd/7570fda4f9e5e7d2288017f978ac4aeb.jpg);
+    background-position : 0 -140px;
+}
+
+strong
+{
+    color : white;
+    font-size : 4em;
+}
+
+header p
+{
+    text-align : center;
+    margin-top : 40vh;
+}
+
+#msg
+{
+    display : inline;
+    text-align : center;
+    background-color : rgba(255, 0, 255, 0.6);
+    border-radius : 15px;
+    padding-top : 0.2em;
+    padding-bottom : 0.2em;
+    padding-left : 0.3em;
+    padding-right : 0.3em;
+    white-space: nowrap;
+}

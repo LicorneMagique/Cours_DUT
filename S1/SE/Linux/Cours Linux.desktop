@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Cours Linux
+Exec=firefox http://liris.cnrs.fr/~snndiaye/fichiers/Cours_Unix/
+Terminal=false
+Icon=browser

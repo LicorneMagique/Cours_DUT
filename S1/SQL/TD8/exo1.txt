@@ -1,0 +1,116 @@
+I-
+CREATE TABLE cond
+(
+nocond NUMBER(3) PRIMAARY KEY,
+nom VARCHAR(15),
+pren VARCHAR(15),
+rue VARCHAR(25),
+ville VARCHAR(25),
+cp VARCHAR(5),
+tel NUMBER(10)
+);
+
+CREATE TABLE train
+(
+notrain NUMBER(3) PRIMARY KEY,
+aff VARCHAR(15),
+typet VARCHAR(10),
+wr NUMBER(1) CHECK (0,1)
+) ;
+
+CREATE TABLE trajet
+(
+notrajet NUMBER(3) PRIMARY KEY,
+vd VARCHAR(25),
+va VARCHAR(25),
+hd NUMBER(4),
+ha NUMBER(4),
+notrain FOREIGN KEY REFERENCES train (notrain),
+nocond FOREIGN KEY REFERENCES cond (nocond)
+) ;
+
+
+II-
+CREATE TABLE liaison 
+(
+hd NUMBER(4) PRIMARY KEY,
+vd VARCHAR(25), 
+va VARCHAR(25),
+ha VARCHAR(25),
+notrain FOREIGN KEY REFERENCES train notrain,
+nocond FOREIGN KEY REFERENCES cond nocond
+);
+
+ALTER liaison ADD
+(
+CONSTRAINT fk_notrain PRIMARY KEY notrain,
+CONSTRAINT fk_nocond PRIMARY KEY nocond
+);
+
+
+III-
+INSERT INTO cond VALUES ( 1, "Deschamps", "Olivier", "6 Rue des Balances", "78956", "Villeurbanne", "0236521452");
+INSERT INTO cond VALUES ( 2, "Doubert", "Samantha", "16 Rue des Pedales", "78578", "Forestus", "027586523");
+INSERT INTO cond VALUES ( 3, "Dahbeur", "Sylvain", "3 Rue des Menteurs", "78458", "Marecages", "02666666");
+
+INSERT INTO train VALUES (à remplir);
+
+INSERT INTO liaison VALUES (à remplir);
+
+INSERT INTO trajet VALUES (à remplir);
+
+IV-
+CREATE TABLE TGV
+(
+notgv PRIMARY KEY,
+aff,
+wr
+AS SELECT notrain, aff, wr
+FROM train
+WHERE typet='TGV'
+) 
+
+V-
+CREATE TABLE stat
+(
+AS SELECT COUNT(notrain), aff
+FROM train
+GROUP BY aff
+);
+
+VI-
+DROP TABLE stat
+
+
+VII-
+ALTER TABLE train MODIFY
+(
+aff, VARCHAR(25)
+);
+
+VIII-
+ALTER TABLE cond ADD
+(
+dept NUMBER(2)
+);
+
+
+IX-
+UPDATE cond SET dept=,
+UPDATE cond SET dept=,
+UPDATE cond SET dept=;
+
+X-
+INSERT INTO train VALUES ( 130, "Dijon", "Corail", 0);
+
+XI-
+INSERT INTO cond VALUES ( 50, "Vapeur", "Jean, "12 Rue des Vignes", Select ville FROM cond WHERE pren='MICHELINE', "0");
+
+
+XII-
+DELETE from train WHERE notrain=130;
+
+
+XIII-
+DELETE from train WHERE aff='Bordeaux';
+DELETE from train WHERE train.notrain=trajet.notrain AND aff='Bordeaux';

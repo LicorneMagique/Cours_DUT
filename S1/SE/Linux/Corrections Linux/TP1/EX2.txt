@@ -1,0 +1,60 @@
+﻿Exercice 2 : Le système de gestion de fichiers
+
+1. Se déplacer dans le répertoire '/etc',  et copier le fichier "fstab" dans le répertoire TP01.
+
+Aller dans '/etc' avec :
+cd /etc
+puis copier 'fstab' dans TP01 avec :
+cp fstab ~/SELINUX/TP01/fstab
+
+2. Revenir dans TP01 et renommer "fstab" en "table".
+
+Aller dans TP01 avec :
+cd ~/SELINUX/TP01
+Renomer le fichier avec :
+mv fstab table
+
+3. Créer un répertoire "systeme" dans TP01.
+
+Méthode 1 :
+Créer le répertoire 'systeme' depuis n'importe ou avec :
+mkdir ~/SELINUX/TP01/systeme
+
+Methode 2 :
+À cause de la question 2 nous sommes déjà dans TP01.
+On peut donc directement créer 'systeme' avec :
+mkdir systeme
+
+4. En restant dans le répertoire TP01,  déplacer "table" dans "systeme".
+
+Deplacer le fichier avec :
+mv table systeme
+ou pour être plus clair :
+mv table systeme/
+
+5. En étant dans le répertoire TP01, faire une copie de "table" nommée "table1" dans votre répertoire accueil.
+
+Copier le répertoire dans le répertoire d'accueil avec :
+cp /systeme/table ~/table1
+
+6. Afficher le contenu du répertoire courant.
+
+Lister les fichiers et répertoires avec :
+ls ~/
+
+7. Afficher l’inode de table1.
+
+Afficher l'inode de 'table1' avec l'option '-i' de 'ls' avec :
+ls -i ~/table1
+
+8. Renommer "table1" en "table2".
+
+Renomer le fichier  avec :
+mv ~/table1 ~/table2
+
+9. Copier "table2" dans le répertoire "TP01" en le renommant "table3".
+
+Copier le fichier avec :
+cp ~/table2 ~/SELINUX/TP01/table3
+
+

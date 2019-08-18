@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 90%
+        }
+
+        #toolbar {
+            color: white;
+            position: absolute;
+        }
+
+        #toolbar a {
+            color: lightgrey;
+        }
+
+        #toolbar a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="toolbar">
+        <a href="https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene">Documentation</a>
+        <a href="mailto:adrien.peytavie@liris.cnrs.fr">adrien.peytavie@liris.cnrs.fr</a>
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        
+        // Initialisation of the scene / camera / renderer
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true;
+        document.body.appendChild(renderer.domElement);
+        camera.position.z = 5;
+
+        var controls =  new THREE.OrbitControls(camera);
+        controls.target.set(0, 0, 0);
+        controls.update();
+
+        // Initialisation of your objects / materials / light
+        var solarSystem = new THREE.Object3D();
+        var light = new THREE.PointLight( 0xffffff, 2, 0, 1 );
+        light.position.set( 0, 0, 0 );
+        scene.add(solarSystem);
+        scene.add(light);
+        light.castShadow = true;
+        var ball = new THREE.SphereGeometry(1, 60, 60);
+        var sunMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+        var jupMaterial = new THREE.MeshLambertMaterial({ color: 0xff7051 });
+        var marMaterial = new THREE.MeshLambertMaterial({ color: 0xff0000 });
+        var eurMaterial = new THREE.MeshLambertMaterial({ color: 0x00ff00 });
+
+        var sun = new THREE.Mesh(ball, sunMaterial);
+        var jup = new THREE.Mesh(ball, jupMaterial);
+        var mar = new THREE.Mesh(ball, marMaterial);
+        var eur = new THREE.Mesh(ball, eurMaterial);
+
+        jup.castShadow = true;
+        mar.castShadow = true;
+        eur.castShadow = true;
+
+        jup.receiveShadow = true;
+        mar.receiveShadow = true;
+        eur.receiveShadow = true;
+
+        var scaleSun = 0.5;
+        var scaleJup = 0.2;
+        var scaleMar = 0.1;
+        var scaleEur = 0.05;
+
+        sun.scale.set(scaleSun, scaleSun, scaleSun);
+        jup.scale.set(scaleJup, scaleJup, scaleJup);
+        mar.scale.set(scaleMar, scaleMar, scaleMar);
+        eur.scale.set(scaleEur, scaleEur, scaleEur);
+
+        solarSystem.add(sun);
+        solarSystem.add(jup);
+        solarSystem.add(mar);
+        solarSystem.add(eur);
+
+        var angle = 0;
+
+        var vitesseJup = 1;
+        var vitesseMar = 3;
+        var vitesseEur = 4;
+
+        var distanceJup = 2;
+        var distanceMar = 1;
+        var distanceEur = 0.5
+
+        // This is executed for each frames
+        function render() {
+            requestAnimationFrame(render);
+            // Animation code goes here
+            angle = (angle + 0.017) % (Math.PI * 2);
+            controls.update();
+            jup.position.x = distanceJup * Math.cos(angle * vitesseJup);
+            jup.position.y = distanceJup * Math.sin(angle * vitesseJup);
+
+            mar.position.x = distanceMar * Math.cos(angle * vitesseMar);
+            mar.position.y = distanceMar * Math.sin(angle * vitesseMar);
+
+            eur.position.x = (jup.position.x) + Math.cos(angle * vitesseEur) * distanceEur;
+            eur.position.y = (jup.position.y) + Math.sin(angle * vitesseEur) * distanceEur;
+
+            renderer.render(scene, camera);
+        }
+        render();
+    </script>
+</body>
+
+</html>

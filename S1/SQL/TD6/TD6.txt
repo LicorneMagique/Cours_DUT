@@ -1,0 +1,36 @@
+/*Question 1*/
+SELECT COUNT(numfilm)
+FROM films
+WHERE codenationalite = (
+    SELECT codenationalite
+    FROM nationalite
+    WHERE nomnationalite = 'Française'
+);
+
+/*Question 2*/
+SELECT typeage, nomfilm
+FROM age JOIN films ON age.codetypeage = films.codetypeage
+ORDER BY typeage;
+
+/*Question 3*/
+SELECT COUNT(numfilm)
+FROM films
+WHERE codetypeage = (
+    SELECT codetypeage
+    FROM age
+    WHERE typeage = 'Interdit aux moins de 16 ans'
+);
+
+/*Question 4*/
+SELECT codetypefilm
+FROM films
+GROUP BY codetypefilm
+HAVING COUNT(numfilm) > 4;
+
+/*Question 5*/
+SELECT nomfilm FROM films ORDER BY nomfilm;
+
+/*Question 6*/
+SELECT nomfilm, nomnationalite
+FROM films JOIN nationalite ON films.codenationalite = nationalite.codenationalite
+ORDER BY nomnationalite;

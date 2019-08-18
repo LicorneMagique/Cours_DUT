@@ -1,0 +1,22 @@
+﻿Exercice 4 : Les périphériques
+
+1. Essayer la commande "tty".
+Quelle est son utilité ?
+
+tty donne l'adresse du terminal.
+Ici cela donne :
+/dev/pts/0
+
+2. Ouvrer un deuxième terminal.
+Écrire dans le deuxième terminal depuis le premier.
+Quelle est la commande utilisée ?
+Expliquer.
+
+Utiliser la commande "tty" dans le deuxieme terminal.
+Ici cela donne :
+/dev/pts/1
+
+Pour écrire dans le deuxieme terminal depuis le premier il faut utiliser la commande :
+echo 42 > /dev/pts/1
+
+

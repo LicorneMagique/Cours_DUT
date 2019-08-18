@@ -1,0 +1,2147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>HTML — Introduction au Web</title>
+    <link rel="stylesheet" href="./HTML — Introduction au Web_files/sab-book.css" type="text/css">
+    <link rel="stylesheet" href="./HTML — Introduction au Web_files/pygments.css" type="text/css">
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2017-11-10',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="./HTML — Introduction au Web_files/jquery.js"></script>
+    <script type="text/javascript" src="./HTML — Introduction au Web_files/underscore.js"></script>
+    <script type="text/javascript" src="./HTML — Introduction au Web_files/doctools.js"></script>
+    <script type="text/javascript" src="./HTML — Introduction au Web_files/translations.js"></script>
+    <script type="text/javascript" src="./HTML — Introduction au Web_files/MathJax.js"></script>
+    <link rel="index" title="Index" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/genindex.html">
+    <link rel="search" title="Recherche" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/search.html">
+    <link rel="next" title="CSS" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html">
+    <link rel="prev" title="Historique et présentation" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/intro.html"> 
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+  <body><div id="MathJax_Message" style="display: none;"></div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/genindex.html" title="Index général" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html" title="CSS" accesskey="N">suivant</a> |</li>
+        <li class="right">
+          <a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/intro.html" title="Historique et présentation" accesskey="P">précédent</a> |</li>
+        <li class="nav-item nav-item-0"><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/index.html">Introduction au Web</a> »</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="html">
+<h1>HTML<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#html" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="un-langage-a-balises">
+<h2>Un langage à balises<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#un-langage-a-balises" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="notion-de-balise">
+<span id="index-0"></span><h3>Notion de balise<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#notion-de-balise" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li>HTML est un format textuel,<ul>
+<li>il peut donc être édité dans n’importe quel éditeur de texte.</li>
+</ul>
+</li>
+<li>Le texte normal sera affiché tel quel.</li>
+<li>Les <strong>balises</strong> sont des codes, qui ne sont pas affichés tels quels,
+mais servent à indiquer le rôle du texte balisé,<ul>
+<li>et donc <em>indirectement</em> comment il sera présenté.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition-vocabulaire admonition">
+<p class="first admonition-title">Vocabulaire</p>
+<p class="last">En anglais, les balises sont appelées <span class="eng">tags</span>;
+«&nbsp;langage à balise&nbsp;» se traduit par <span class="eng">markup language</span>.</p>
+</div>
+<div class="section" id="exemple">
+<h4>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exemple" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Si vous écrivez&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Qu'est-ce qu'une <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>balise<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>?
+</pre></div>
+</div>
+<div class="build docutils container">
+<div class="docutils container">
+<p>… vous verrez&nbsp;:</p>
+<p class="rendered">
+  Qu'est-ce qu'une <em>balise</em>?
+</p><p>Le mot «&nbsp;balise&nbsp;» est marqué comme important (em&nbsp;=&nbsp;emphase),
+c’est pourquoi il est affiché en italique.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="structure-des-balises">
+<span id="index-1"></span><h3>Structure des balises<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-des-balises" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Qu'est-ce qu'une <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>balise<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>?
+</pre></div>
+</div>
+<ul class="simple">
+<li>Tout texte entre les <strong>chevrons</strong> (en anglais <span class="eng">brackets</span>) <code class="docutils literal"><span class="pre">&lt;</span></code> et <code class="docutils literal"><span class="pre">&gt;</span></code>
+est considéré une balise.</li>
+<li><code class="docutils literal"><span class="pre">&lt;em&gt;</span></code> est une balise <em>ouvrante</em>,
+<code class="docutils literal"><span class="pre">&lt;/em&gt;</span></code> est la balise <em>fermante</em> qui lui correspond;
+elles délimitent le texte concerné.</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Astuce</p>
+<p class="last">Les éditeurs de texte reconnaissent les balises,
+et les mettent automatiquement en couleur
+pour faciliter la lecture du code HTML.</p>
+</div>
+<div class="section" id="emboitement">
+<span id="index-2"></span><h4>Emboîtement<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#emboitement" title="Lien permanent vers ce titre">¶</a></h4>
+<a class="float-right reference internal image-reference" href="./HTML — Introduction au Web_files/matroshka.jpg"><img alt="http://commons.wikimedia.org/wiki/File:Russian-Matroshka2.jpg" class="float-right align-right" src="./HTML — Introduction au Web_files/matroshka.jpg" style="height: 15ex;"></a>
+<p>On peut appliquer plusieurs balises au même texte,
+à condition de respecter la règle d”<strong>emboîtement</strong>&nbsp;:</p>
+<p>toute balise B ouverte à l’intérieur d’une balise A
+doit également être fermée à l’intérieur de A.</p>
+<p>Exemples&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Emboîtement <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>correct<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Emboîtement <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>incorrect<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="structure-en-arbre">
+<span id="index-3"></span><span id="id1"></span><h4>Structure en arbre<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-en-arbre" title="Lien permanent vers ce titre">¶</a></h4>
+<p>De la règle d’emboîtement,
+il découle que les balises confèrent une structure d”<strong>arbre</strong> au document&nbsp;:</p>
+<div class="big highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;&lt;</span><span class="nt">Y</span><span class="p">&gt;</span>Lorem <span class="p">&lt;</span><span class="nt">Z</span><span class="p">&gt;</span>ipsum<span class="p">&lt;/</span><span class="nt">Z</span><span class="p">&gt;&lt;/</span><span class="nt">Y</span><span class="p">&gt;</span> dolor <span class="p">&lt;</span><span class="nt">X</span><span class="p">&gt;</span>sit.<span class="p">&lt;/</span><span class="nt">X</span><span class="p">&gt;&lt;/</span><span class="nt">X</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<object data="./HTML — Introduction au Web_files/graphviz-eac8876500d285da5b19234ed4aec80aefbb869a.svg" type="image/svg+xml">
+            <p class="warning">graph  {
+
+  X -- Y
+   Y -- Lorem
+   Y -- Z
+    Z -- ipsum
+  X -- dolor
+  X -- X2
+    X2 -- "sit."
+
+  X  [ label="&lt;X&gt;", shape=box, style=rounded ]
+  Y  [ label="&lt;Y&gt;", shape=box, style=rounded ]
+  Z  [ label="&lt;Z&gt;", shape=box, style=rounded ]
+  X2 [ label="&lt;X&gt;", shape=box, style=rounded ]
+
+  Lorem  [ shape=elipse, style=filled ]
+  ipsum  [ shape=elipse, style=filled ]
+  dolor  [ shape=elipse, style=filled ]
+  "sit." [ shape=elipse, style=filled ]
+
+}</p></object>
+</div>
+<div class="section" id="attributs">
+<span id="index-4"></span><h4>Attributs<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#attributs" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Certaines balises, en plus du contenu textuel qu’elles délimitent,
+ont besoin d’information supplémentaire
+(mais qui n’apparaîtra pas dans le document).</p>
+<p>Cette information est donnée par des <strong>attributs</strong>,
+qui ont la forme <code class="docutils literal"><span class="pre">nom=valeur</span></code>
+et sont placés <em>entre les chevrons</em> de la balise ouvrante,
+après son nom.</p>
+<p>Par exemple&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://champin.net/"</span><span class="p">&gt;</span>P-A. Champin<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>n’affichera que le texte «&nbsp;P-A. Champin&nbsp;».</p>
+</div>
+<div class="section" id="balises-vides">
+<span id="balisevide"></span><span id="index-5"></span><h4>Balises vides<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#balises-vides" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Certaines balises particulières n’attendent pas de contenu textuel.
+Ces balises <strong>vides</strong> n’ont donc pas de balise fermante correspondante&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Cette balise <span class="p">&lt;</span><span class="nt">Y</span> <span class="na">a</span><span class="o">=</span><span class="s">"v"</span><span class="p">&gt;</span> n'a pas de contenu.
+</pre></div>
+</div>
+<p>On peut (mais ce n’est pas une obligation) indiquer explicitement
+l’absence de balise fermante en ajoutant la barre oblique
+à la fin de la balise ouvrante&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Cette balise <span class="p">&lt;</span><span class="nt">Y</span> <span class="na">a</span><span class="o">=</span><span class="s">"v"</span><span class="p">/&gt;</span> n'a pas de contenu.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="gestion-des-espaces">
+<h3>Gestion des espaces<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#gestion-des-espaces" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Si vous écrivez&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Gestion      des
+espaces.
+</pre></div>
+</div>
+<div class="build docutils container">
+<div class="docutils container">
+<p>… vous verrez&nbsp;:</p>
+<p class="rendered">
+  Gestion      des
+  espaces.
+</p></div>
+</div>
+<div class="section" id="explication">
+<span id="index-6"></span><h4>Explication<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#explication" title="Lien permanent vers ce titre">¶</a></h4>
+<p>HTML considère tous les caractères d’espacements
+(espaces, retours à la ligne…)
+comme des séparations entre mots,
+et les affiche comme une <em>simple espace</em>.</p>
+<p>Cela donne de la souplesse dans la mise en page du <em>code</em> HTML
+(notamment en utilisant l”<em>indentation</em>, comme en programmation).</p>
+<p>On va voir dans la suite comment faire afficher des retours à la ligne.</p>
+</div>
+</div>
+<div class="section" id="separation-fond-forme">
+<span id="index-7"></span><h3>Séparation fond&nbsp;/ forme<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#separation-fond-forme" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Depuis la version 4, HTML vise a décrire la <em>structure logique</em> du document,
+c’est à dire le <strong>fond</strong> et non la <strong>forme</strong>.</p>
+<p>La mise en forme (qu’on appelle parfois <em>structure physique</em>) est gérée par
+une <strong>feuille de style</strong> qui sera décrite en <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html"><span class="doc">CSS</span></a>.</p>
+<p>Cette séparation est indispensable pour assurer l”<strong>adaptabilité</strong> du contenu,
+et cette adaptabilité est incontournable dans un environnement ouvert comme le Web:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Responsive_design">responsive design</a></li>
+<li><a class="reference external" href="http://www.w3.org/standards/webdesign/accessibility">accessibilité</a></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Considérez que votre page web peut être visualisée sur</p>
+<ul class="last simple">
+<li>un ordinateur fixe (grand écran, clavier, souris)</li>
+<li>un ordinateur portable (écran moyen, clavier, touchpad)</li>
+<li>une tablette (écran moyen à petit, écran tactile, clavier éventuellement)</li>
+<li>un smartphone (petit écran tactile, accéléromètre?, voix?)</li>
+<li>un téléviseur (très grand écran, télécommande)</li>
+<li>un terminal pour non-voyant (lecteur d’écran, afficheur braille)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="structure-d-un-document">
+<h2>Structure d’un document<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-d-un-document" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="structure-globale">
+<span id="id4"></span><h3>Structure globale<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-globale" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-html"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Titre du document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    ...
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<div class="section" id="index-8">
+<span id="id5"></span><h4>Explication<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#index-8" title="Lien permanent vers ce titre">¶</a></h4>
+<ul class="simple">
+<li>La 1e ligne indique la version de HTML (ici, HTML5).</li>
+<li>Tout document html (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">html</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) comprend deux parties.<ul>
+<li>La tête (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">head</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) contient les méta-données,
+qui ne sont pas directement affichées&nbsp;:<ul>
+<li>le titre (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">title</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) est obligatoire,</li>
+<li>l’indication d’encodage (ligne 5) est facultative,
+mais recommandée&nbsp;;</li>
+</ul>
+</li>
+<li>Le corps (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">body</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) contient
+le contenu à proprement parler du document.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">On remarque que l’indication d’encodage est un exemple
+de balise sans contenu et possédant un attribut.</p>
+</div>
+</div>
+<div class="section" id="valideur">
+<h4>Valideur<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#valideur" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Le W3C fournit un service de validation en ligne&nbsp;:</p>
+<p><a class="reference external" href="http://validator.w3.org/">http://validator.w3.org/</a></p>
+<p>Son utilisation vous est <em>vivement</em> recommandée.</p>
+</div>
+</div>
+<div class="section" id="titres-et-paragraphes">
+<h3>Titres et paragraphes<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#titres-et-paragraphes" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Un document typique est une séquence de</p>
+<ul class="simple">
+<li>titres (ou en-tête, en anglais <span class="eng">heading</span>), et de</li>
+<li>paragraphes.</li>
+</ul>
+<p>Les titres ont différents niveaux d’importance,
+repérables à leur typographie (et parfois à leur numérotation),
+et donnent une structure <em>hiérarchique</em> au document
+(en parties, sous-parties, <em>etc</em>.).</p>
+<div class="build docutils container">
+<div class="admonition-question admonition">
+<p class="first admonition-title">Question</p>
+<p class="last">Identifiez-vous les différents niveaux de titre dans l’exemple suivant&nbsp;?</p>
+</div>
+</div>
+<div class="section" id="exemple-regle-du-jeu">
+<span id="id6"></span><h4>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exemple-regle-du-jeu" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="figure">
+<a class="shadow reference internal image-reference" href="./HTML — Introduction au Web_files/sujet1.png"><img alt="_images/sujet1.png" class="shadow" src="./HTML — Introduction au Web_files/sujet1.png" style="width: 100%;"></a>
+</div>
+<span class="target" id="balises-html"></span></div>
+<div class="section" id="titres-et-paragraphes-en-html">
+<span id="index-9"></span><h4>Titres et paragraphes en HTML<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#titres-et-paragraphes-en-html" title="Lien permanent vers ce titre">¶</a></h4>
+<ul class="simple">
+<li>Les paragraphes sont délimités par la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">p</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></li>
+<li>Les titres sont délimités par les balises <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h1</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>, <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h2</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>…, <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h6</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;;<ul>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h1</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> est le niveau le plus important,
+et <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h6</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> le moins important.</li>
+</ul>
+</li>
+</ul>
+<p>Illustration&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ceci est un titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un paragraphe.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un deuxième paragraphe.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="illustration-plus-elaboree">
+<h5>Illustration plus élaborée<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#illustration-plus-elaboree" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ma dissertation<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Thèse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraphe d'introduction<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Argument 1<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Argument 2<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Antithèse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Contre-argument 1<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Contre-argument 2<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Synthèse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Notez l’indentation pour faciliter la lecture.</p>
+</div>
+</div>
+<div class="section" id="coherence">
+<h4>Cohérence<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#coherence" title="Lien permanent vers ce titre">¶</a></h4>
+<p>⚠ L’enchaînement des niveaux de titre doit être cohérent&nbsp;:</p>
+<ul class="simple">
+<li>le premier titre devrait toujours être de niveau 1&nbsp;;</li>
+<li>un titre ne devrait pas monter de plus d’un niveau par rapport au précédent.</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p>«&nbsp;Mais si le <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h2</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> ne se différencie pas assez du <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h1</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>
+visuellement, j’ai le droit de mettre un <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h3</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> à la place&nbsp;?&nbsp;»</p>
+<p class="last">→ non; HTML doit être cohérent avec la <em>structure</em> du document.
+Pour changer la typographie, on modifiera plutôt le <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html"><span class="doc">CSS</span></a>.</p>
+</div>
+<div class="section" id="coherence-suite">
+<h5>Cohérence (suite)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#coherence-suite" title="Lien permanent vers ce titre">¶</a></h5>
+<p>NB&nbsp;: ces règles de cohérence ne sont pas <em>normatives</em>,
+leur non-respect n’est <em>pas</em> signalé par le valideur,
+mais il est tout de même à proscrire.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">C’est donc à vous d’être attentifs à bien les respecter.</p>
+</div>
+</div>
+<div class="section" id="exercice">
+<span id="exo-catane"></span><h5>Exercice<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exercice" title="Lien permanent vers ce titre">¶</a></h5>
+<ol class="arabic">
+<li><p class="first">Téléchargez le <a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_structure/texte.txt">texte</a> correspondant à l”<a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_structure/sujet.png">exemple ci-avant</a>
+en utilisant les balises <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">p</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> et <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">hN</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<p>NB&nbsp;: la mise en forme sera différente,
+mais cherchez surtout à reproduire la structure <em>logique</em> du document.</p>
+</li>
+<li><p class="first">Téléchargez le <a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_structure/modele.html">modèle HTML</a> correspondant à l’exemple,
+et recopiez votre code à l’intérieur de la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">body</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> .
+Ce modèle contient un lien vers la feuille de style appropriée.</p>
+</li>
+</ol>
+<p>Dans les deux cas, ne tenez pas compte pour l’instant
+des mots en gras, italique et souligné.</p>
+</div>
+</div>
+</div>
+<div class="section" id="sections">
+<h3>Sections<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#sections" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les titres définissent en fait une structure de plus haut niveau&nbsp;:</p>
+<ul class="simple">
+<li>chaque titre indique le début d’une <em>section</em>,</li>
+<li>qui se termine au prochain titre de même niveau&nbsp;;</li>
+</ul>
+<p>Une section contient donc</p>
+<blockquote>
+<div><ul class="simple">
+<li>un titre,</li>
+<li>éventuellement des paragraphes,</li>
+<li>éventuellement une ou plusieurs section(s) de niveau suivant.</li>
+</ul>
+</div></blockquote>
+<div class="section" id="sections-en-html">
+<span id="index-10"></span><h4>Sections en HTML<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#sections-en-html" title="Lien permanent vers ce titre">¶</a></h4>
+<ul class="simple">
+<li>Jusqu’à HTML 4.01, la structuration en sections était laissée implicite.</li>
+<li>Depuis HTML5, on <span class="del">peut</span> est encouragé à utiliser
+la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">section</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>,<ul>
+<li>d’autant que les anciens navigateurs l’ignoreront purement et simplement.</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="arbre-avec-des-sections-implicites">
+<h5>Arbre avec des sections implicites<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#arbre-avec-des-sections-implicites" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big docutils container">
+<object data="./HTML — Introduction au Web_files/graphviz-0e4df235288ad11da04315d4c8ba63aac07b7f2d.svg" type="image/svg+xml">
+            <p class="warning">graph {
+  node  [ shape=elipse, style=filled ]
+
+  body -- h1 -- "Ma dissertation"
+  body -- h2_1 -- "Thèse"
+  body -- p_1 -- "...1"
+  body -- h3_1 -- "Argument 1"
+  body -- p_2 -- "...2"
+  body -- p_3 -- "...3"
+  body -- h3_2 -- "Argument 2"
+  body -- p_4 -- "...4"
+  body -- p_5 -- "...5"
+  body -- h2_2 -- "Anti-thèse"
+  body -- h3_3 -- "Contre-argument 1"
+  body -- p_6 -- "...6"
+  body -- p_7 -- "...7"
+  body -- h3_4 -- "Contre-argument 2"
+  body -- p_8 -- "...8"
+  body -- p_9 -- "...9"
+  body -- h2_3 -- "Synthèse"
+  body -- p_10 -- "...10"
+
+  body [ label="&lt;body&gt;", shape=box, style=rounded ]
+  h1   [ label="&lt;h1&gt;", shape=box, style=rounded ]
+  h2_1 [ label="&lt;h2&gt;", shape=box, style=rounded ]
+  h2_2 [ label="&lt;h2&gt;", shape=box, style=rounded ]
+  h2_3 [ label="&lt;h2&gt;", shape=box, style=rounded ]
+  h3_1 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  h3_2 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  h3_3 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  h3_4 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  p_1 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_2 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_3 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_4 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_5 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_6 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_7 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_8 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_9 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_10 [ label="&lt;p&gt;", shape=box, style=rounded ]
+
+  "...1" [ label="..." ]
+  "...2" [ label="..." ]
+  "...3" [ label="..." ]
+  "...4" [ label="..." ]
+  "...5" [ label="..." ]
+  "...6" [ label="..." ]
+  "...7" [ label="..." ]
+  "...8" [ label="..." ]
+  "...9" [ label="..." ]
+  "...10" [ label="..." ]
+
+}</p></object>
+</div>
+</div>
+<div class="section" id="illustration-avec-sections">
+<h5>Illustration avec sections<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#illustration-avec-sections" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ma dissertation<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Thèse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraphe d'introduction<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Argument 1<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Argument 2<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Antithèse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Contre-argument 1<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Contre-argument 2<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Synthèse<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="arbre-avec-des-sections-explicites">
+<h5>Arbre avec des sections explicites<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#arbre-avec-des-sections-explicites" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big docutils container">
+<object data="./HTML — Introduction au Web_files/graphviz-9adcda433380d7fa3b06643e484d346d3da23b78.svg" type="image/svg+xml">
+            <p class="warning">graph {
+  node  [ shape=elipse, style=filled ]
+
+  body -- h1 -- "Ma dissertation"
+  body -- sec1
+  sec1 -- h2_1 -- "Thèse"
+  sec1 -- p_1 -- "...1"
+  sec1 -- sec2
+  sec2 -- h3_1 -- "Argument 1"
+  sec2 -- p_2 -- "...2"
+  sec2 -- p_3 -- "...3"
+  sec1 -- sec3
+  sec3 -- h3_2 -- "Argument 2"
+  sec3 -- p_4 -- "...4"
+  sec3 -- p_5 -- "...5"
+  body -- sec4
+  sec4 -- h2_2 -- "Anti-thèse"
+  sec4 -- sec5
+  sec5 -- h3_3 -- "Contre-argument 1"
+  sec5 -- p_6 -- "...6"
+  sec5 -- p_7 -- "...7"
+  sec4 -- sec6
+  sec6 -- h3_4 -- "Contre-argument 2"
+  sec6 -- p_8 -- "...8"
+  sec6 -- p_9 -- "...9"
+  body -- sec7
+  sec7 -- h2_3 -- "Synthèse"
+  sec7 -- p_10 -- "...10"
+
+  body [ label="&lt;body&gt;", shape=box, style=rounded ]
+  h1   [ label="&lt;h1&gt;", shape=box, style=rounded ]
+  sec1 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  sec2 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  sec3 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  sec4 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  sec5 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  sec6 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  sec7 [ label="&lt;section&gt;", shape=box, style=rounded ]
+  h2_1 [ label="&lt;h2&gt;", shape=box, style=rounded ]
+  h2_2 [ label="&lt;h2&gt;", shape=box, style=rounded ]
+  h2_3 [ label="&lt;h2&gt;", shape=box, style=rounded ]
+  h3_1 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  h3_2 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  h3_3 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  h3_4 [ label="&lt;h3&gt;", shape=box, style=rounded ]
+  p_1 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_2 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_3 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_4 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_5 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_6 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_7 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_8 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_9 [ label="&lt;p&gt;", shape=box, style=rounded ]
+  p_10 [ label="&lt;p&gt;", shape=box, style=rounded ]
+
+  "...1" [ label="..." ]
+  "...2" [ label="..." ]
+  "...3" [ label="..." ]
+  "...4" [ label="..." ]
+  "...5" [ label="..." ]
+  "...6" [ label="..." ]
+  "...7" [ label="..." ]
+  "...8" [ label="..." ]
+  "...9" [ label="..." ]
+  "...10" [ label="..." ]
+
+}</p></object>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>À ce stade, on pourrait arguer que l’ordinateur <em>peut</em> reconstruire
+la structure des sections à partir des niveaux de titre,
+et donc qu’il est superflu d’alourdir le code HTML
+avec cette information redondante.</p>
+<p class="last">Lorsqu’on étudiera <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html"><span class="doc">CSS</span></a> et les scripts (<a class="reference external" href="http://champin.net/enseignement/intro-js">l’an prochain</a>),
+on comprendra mieux l’intérêt de rendre cette structure explicite.</p>
+</div>
+</div>
+<div class="section" id="exo-catane2">
+<span id="id11"></span><h5>Exercice<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exo-catane2" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Améliorez votre version de l”<a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_structure/sujet.png">exemple ci-avant</a>
+en ajoutant les balises <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">section</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+</div>
+</div>
+<div class="section" id="redondance-et-compatibilite">
+<h4>Redondance et compatibilité<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#redondance-et-compatibilite" title="Lien permanent vers ce titre">¶</a></h4>
+<p>RMQ: l’emboîtement des sections suffit à déterminer leur niveau,
+donc l’information portée par le numéro de titre est <em>redondante</em>.</p>
+<p>→ en HTML5, on peut en théorie n’utiliser que <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">h1</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> à tous les niveaux,</p>
+<blockquote>
+<div><ul class="simple">
+<li>les navigateurs compatibles adapteront la typographie
+en fonction de la «&nbsp;profondeur&nbsp;».</li>
+</ul>
+</div></blockquote>
+<p>⚠ cependant, en pratique on évitera de le faire, car</p>
+<blockquote>
+<div><ul class="simple">
+<li>ce n’est pas compatible avec les anciens navigateurs,</li>
+<li>certains outils (moteurs de recherche, lecteurs d’écran)
+attendent un <em>unique</em> <code class="docutils literal"><span class="pre">h1</span></code> dans la page.</li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pour ces raisons,
+le valideur HTML du W3C émet un <em>warning</em> lorsqu’une page contient plusieurs <code class="docutils literal"><span class="pre">h1</span></code>.</p>
+</div>
+<div class="section" id="illustration">
+<h5>Illustration<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#illustration" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ma dissertation<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Thèse<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraphe d'introduction<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Argument 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Argument 2<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Antithèse<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Contre-argument 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Contre-argument 2<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Synthèse<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sections-specialisees">
+<span id="index-11"></span><h4>Sections spécialisées<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#sections-specialisees" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les balises suivantes représentent
+des sections avec une sémantique particulière.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%">
+<col width="70%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">main</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>contenu principal de la page</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">article</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>contenu auto-suffisant</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">aside</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>encart</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">header</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>en-tête de la section parent (ou du doc)</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">footer</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>pied de la section parent (ou du doc)</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">nav</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>section contenant des liens de navigation</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id13">
+<h5>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id13" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big highlight-html"><div class="highlight"><pre><span></span><span class="c">&lt;!-- this examples comes from http://www.w3.org/TR/html5/ --&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My wonderful blog<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>My tagline<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- this aside contains two sections that are tangentially related</span>
+<span class="c">  to the page, namely, links to other blogs, and links to blog posts</span>
+<span class="c">  from this blog --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My blogroll<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://blog.example.com/"</span><span class="p">&gt;</span>Example Blog<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Archives<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">ol</span> <span class="na">reversed</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/last-post"</span><span class="p">&gt;</span>My last post<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/first-post"</span><span class="p">&gt;</span>My first post<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- this aside is tangentially related to the page also, it</span>
+<span class="c">  contains twitter messages from the blog author --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Twitter Feed<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">cite</span><span class="o">=</span><span class="s">"http://twitter.example.net/t31351234"</span><span class="p">&gt;</span>
+   I'm on vacation, writing my blog.
+  <span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">cite</span><span class="o">=</span><span class="s">"http://twitter.example.net/t31219752"</span><span class="p">&gt;</span>
+   I'm going to go on vacation soon.
+  <span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- this is a blog post --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My last post<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is my last post.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/last-post"</span> <span class="na">rel</span><span class="o">=</span><span class="s">bookmark</span><span class="p">&gt;</span>Permalink<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- this is also a blog post --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My first post<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is my first post.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- this aside is about the blog post, since it's inside the</span>
+<span class="c">   &lt;article&gt; element; it would be wrong, for instance, to put the</span>
+<span class="c">   blogroll here, since the blogroll isn't really related to this post</span>
+<span class="c">   specifically, only to the page as a whole --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Posting<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>While I'm thinking about it, I wanted to say something about
+   posting. Posting is fun!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/first-post"</span> <span class="na">rel</span><span class="o">=</span><span class="s">bookmark</span><span class="p">&gt;</span>Permalink<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/archives"</span><span class="p">&gt;</span>Archives<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> —
+   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/about"</span><span class="p">&gt;</span>About me<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> —
+   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"/copyright"</span><span class="p">&gt;</span>Copyright<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="quelques-balises-utiles">
+<h3>Quelques balises utiles<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#quelques-balises-utiles" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Nous allons maintenant présenter un certain nombre de balises
+qui peuvent être utilisées à l’intérieur des balises de paragraphe ou de titre.</p>
+<div class="section" id="balises-generiques">
+<span id="index-12"></span><h4>Balises génériques<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#balises-generiques" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Voici quelques balises utiles, avec leur sémantique,
+et leur mise en forme <em>par défaut</em>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%">
+<col width="42%">
+<col width="23%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">em</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>emphase</td>
+<td>italique</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">strong</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>emphase forte</td>
+<td>gras</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">dfn</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>définition</td>
+<td>italique</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">cite</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>titre d’ouvrage</td>
+<td>italique</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">q</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>citation</td>
+<td>guillemets</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id14">
+<h5>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id14" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Selon <span class="p">&lt;</span><span class="nt">cite</span><span class="p">&gt;</span>Wikipedia<span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;</span>, la <span class="p">&lt;</span><span class="nt">dfn</span><span class="p">&gt;</span>prose<span class="p">&lt;/</span><span class="nt">dfn</span><span class="p">&gt;</span> est&nbsp;:
+<span class="p">&lt;</span><span class="nt">q</span><span class="p">&gt;</span>la forme <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>ordinaire<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span> de l'expression verbale.<span class="p">&lt;/</span><span class="nt">q</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p class="rendered">
+ Selon <cite>Wikipedia</cite>, la <dfn>prose</dfn> est&nbsp;:
+ <q>la forme <em>ordinaire</em> de l'expression verbale.</q>
+</p><p class="rendered alt">
+ Selon <cite>Wikipedia</cite>, la <dfn>prose</dfn> est&nbsp;:
+ <q>la forme <em>ordinaire</em> de l'expression verbale.</q>
+</p></div>
+</div>
+<div class="section" id="documentation-informatique">
+<span id="index-13"></span><h4>Documentation informatique<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#documentation-informatique" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les balises suivantes sont utiles pour écrire
+des documentations informatiques (ou scientifiques).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%">
+<col width="42%">
+<col width="23%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">code</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>code informatique</td>
+<td>non-prop</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">kbd</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>entrée clavier</td>
+<td>non-prop</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">samp</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>sortie de programme</td>
+<td>non-prop</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">var</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>variable</td>
+<td>italique</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id15">
+<h5>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id15" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span>La boucle <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>while<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span> affiche <span class="p">&lt;</span><span class="nt">samp</span><span class="p">&gt;</span>1 2 3 4<span class="p">&lt;/</span><span class="nt">samp</span><span class="p">&gt;</span>,
+soient toutes les valeurs prises par <span class="p">&lt;</span><span class="nt">var</span><span class="p">&gt;</span>i<span class="p">&lt;/</span><span class="nt">var</span><span class="p">&gt;</span>.
+</pre></div>
+</div>
+<p class="rendered">
+ La boucle <code>while</code> affiche <samp>1 2 3 4</samp>,
+ soient toutes les valeurs prises par <var>i</var>.
+</p><p class="rendered alt">
+ La boucle <code>while</code> affiche <samp>1 2 3 4</samp>,
+ soient toutes les valeurs prises par <var>i</var>.
+</p></div>
+</div>
+<div class="section" id="document-evolutif">
+<span id="index-14"></span><h4>Document évolutif<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#document-evolutif" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les balises suivantes sont utiles pour faire apparaître
+les évolutions d’un document.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%">
+<col width="42%">
+<col width="23%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">ins</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>texte inséré</td>
+<td>souligné</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">del</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>texte supprimé</td>
+<td>barré</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id16">
+<h5>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id16" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Je <span class="p">&lt;</span><span class="nt">del</span><span class="p">&gt;</span>ne<span class="p">&lt;/</span><span class="nt">del</span><span class="p">&gt;</span> connais
+<span class="p">&lt;</span><span class="nt">del</span><span class="p">&gt;</span>rien à<span class="p">&lt;/</span><span class="nt">del</span><span class="p">&gt;&lt;</span><span class="nt">ins</span><span class="p">&gt;</span>bien<span class="p">&lt;/</span><span class="nt">ins</span><span class="p">&gt;</span> HTML.
+</pre></div>
+</div>
+<p class="rendered">
+ Je <del>ne</del> connais
+ <del>rien à</del><ins>bien</ins> HTML.
+</p><p class="rendered alt">
+ Je <del>ne</del> connais
+ <del>rien à</del><ins>bien</ins> HTML.
+</p></div>
+</div>
+<div class="section" id="balises-historiques">
+<span id="index-15"></span><h4>Balises historiques<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#balises-historiques" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Ces balises datent des premières versions de HTML,
+où la séparation fond&nbsp;/ forme n’était pas encore de rigueur.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%">
+<col width="69%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">b</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>texte en gras</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">i</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>texte en italique</td>
+</tr>
+<tr class="row-odd"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">u</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>texte souligné</td>
+</tr>
+<tr class="row-even"><td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">br</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+<td>saut de ligne (sans contenu)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">Elles sont encore valides en HTML5, (et donc acceptées par le valideur)
+mais la plupart du temps,
+il faut leur préférer une balise avec une sémantique plus précise.</p>
+</div>
+<div class="section" id="exo-catane3">
+<span id="id17"></span><h5>Exercice<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exo-catane3" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Reprenez votre code HTML reproduisant l”<a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_structure/sujet.png">exemple ci-avant</a>,
+et ajoutez les balises manquantes.</p>
+<p>Le rendu doit maintenant être très proche de celui de l’exemple.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="listes">
+<h2>Listes<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#listes" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="motivation">
+<h3>Motivation<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#motivation" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Une liste est un paragraphe d’un type particulier,
+contenant une énumération d’éléments.</p>
+</div>
+<div class="section" id="liste-non-ordonnee">
+<span id="index-16"></span><h3>Liste non ordonnée<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#liste-non-ordonnee" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>sucre<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>céréales<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>lait<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<section class="rendered">
+ <ul>
+   <li>sucre</li>
+   <li>céréales</li>
+   <li>lait</li>
+ </ul>
+</section></div>
+<div class="section" id="liste-ordonnee">
+<span id="index-17"></span><h3>Liste ordonnée<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#liste-ordonnee" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>sucre<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>céréales<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>lait<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<section class="rendered">
+ <ol>
+   <li>sucre</li>
+   <li>céréales</li>
+   <li>lait</li>
+ </ol>
+</section><div class="section" id="remarque">
+<h4>Remarque<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#remarque" title="Lien permanent vers ce titre">¶</a></h4>
+<p>On note que&nbsp;:</p>
+<ul class="simple">
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">ul</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> signifie <span class="eng">unordered list</span></li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">ol</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> signifie <span class="eng">ordered list</span></li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">li</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> signifie <span class="eng">list item</span></li>
+</ul>
+<p>Dans une liste ordonnée, les éléments sont <em>automatiquement</em> numérotés
+(mais cette numérotation peut être contrôlée avec une feuille de style).</p>
+</div>
+<div class="section" id="styles-alternatifs-pour-les-listes">
+<h4>Styles alternatifs pour les listes<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#styles-alternatifs-pour-les-listes" title="Lien permanent vers ce titre">¶</a></h4>
+<section class="rendered alt">
+ <ul>
+   <li>sucre</li>
+   <li>céréales</li>
+   <li>lait</li>
+ </ul>
+</section><section class="rendered alt">
+ <ol>
+   <li>sucre</li>
+   <li>céréales</li>
+   <li>lait</li>
+ </ol>
+</section><div class="section" id="id19">
+<h5>Exercice<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id19" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Dans l”<a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_structure/sujet.png">exemple ci-avant</a> pouvez-vous identifier une liste&nbsp;?
+Reprenez votre code HTML reproduisant cet exemple et
+modifiez-le en conséquence.</p>
+<p>Le rendu doit maintenant être identique à celui de l’exemple.</p>
+<span class="nav-seance"></span></div>
+</div>
+</div>
+</div>
+<div class="section" id="liens-et-contenus-embarques">
+<span id="liens"></span><h2>Liens et contenus embarqués<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#liens-et-contenus-embarques" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="urls">
+<span id="index-18"></span><h3>URLs<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#urls" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="figure">
+<a class="reference internal image-reference" href="./HTML — Introduction au Web_files/url-structure.svg"><img alt="_images/url-structure.svg" src="./HTML — Introduction au Web_files/url-structure.svg" width="80%"></a>
+</div>
+<ul class="simple">
+<li>Le nom local a une structure hiérarchique
+(similaire à la structure des fichiers).</li>
+<li>Comme pour les fichiers,
+on peut spécifier une URL <em>relativement</em> à une autre.</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">Malgré cette similitude,
+les ressources ne correspondent <em>pas toujours</em> à des fichiers.</p>
+</div>
+<div class="section" id="url-relative">
+<h4>URL relative<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#url-relative" title="Lien permanent vers ce titre">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%">
+<col width="87%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>«&nbsp;&nbsp;»</td>
+<td>l’URL de base</td>
+</tr>
+<tr class="row-even"><td>«&nbsp;toto&nbsp;»</td>
+<td>la ressource <code class="docutils literal"><span class="pre">toto</span></code> dans le «&nbsp;dossier&nbsp;» courant</td>
+</tr>
+<tr class="row-odd"><td>«&nbsp;.&nbsp;»</td>
+<td>le «&nbsp;dossier&nbsp;» courant</td>
+</tr>
+<tr class="row-even"><td>«&nbsp;..&nbsp;»</td>
+<td>le «&nbsp;dossier&nbsp;» parent du «&nbsp;dossier&nbsp;» courant</td>
+</tr>
+<tr class="row-odd"><td>«&nbsp;/&nbsp;»</td>
+<td>le «&nbsp;dossier&nbsp;» racine du serveur</td>
+</tr>
+</tbody>
+</table>
+<p>On peut ensuite combiner ces éléments en les séparant par «&nbsp;/&nbsp;».</p>
+<p>Étant données une URL de base et une URL relative,
+on peut calculer l’URL absolue correspondante
+simplement par un jeu d’écriture.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Plus précisément,
+c’est une manipulation purement <em>syntaxique</em>,
+qui est donc indépendante de
+la structure des éventuels fichiers sur le serveur.</p>
+<p>Il est même possible que l’URL relative et le nom de fichier relatif
+donnent des résultats différents, exemple&nbsp;:</p>
+<ul class="last simple">
+<li><code class="docutils literal"><span class="pre">http://example.org/pchampin/</span></code> correspond au répertoire
+<code class="docutils literal"><span class="pre">/home/pchampin/public_html/</span></code> sur le serveur&nbsp;;</li>
+<li>l’URL relative <code class="docutils literal"><span class="pre">../jdoe/</span></code> conduit à l’URL <code class="docutils literal"><span class="pre">http://example.org/jdoe/</span></code>,
+qui correspond au répertoire <code class="docutils literal"><span class="pre">/home/jdoe/public_html/</span></code>,</li>
+<li>alors que le nom de fichier relatif <code class="docutils literal"><span class="pre">../jdoe/</span></code> conduit au répertoire
+<code class="docutils literal"><span class="pre">/home/pchampin/jdoe/</span></code> qui n’a pas d’URL correspondante
+(et d’ailleurs n’existe probablement pas).</li>
+</ul>
+</div>
+</div>
+<div class="section" id="exercices">
+<h4>Exercices<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exercices" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Combinez chacune des URLs de base de gauche
+avec chacune des URLs relatives de droite.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="65%">
+<col width="35%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">URLs absolues</th>
+<th class="head">URLs relatives</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li><a class="reference external" href="http://example.com/foo/bar/toto">http://example.com/foo/bar/toto</a></li>
+<li><a class="reference external" href="http://example.com/foo/bar/tata">http://example.com/foo/bar/tata</a></li>
+<li><a class="reference external" href="http://example.com/foo/bar/titi/">http://example.com/foo/bar/titi/</a></li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li>.</li>
+<li>tata</li>
+<li>../tata</li>
+<li>baz/tutu</li>
+<li>../../there</li>
+<li>/somewhere/else</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="exercices-suite">
+<h5>Exercices (suite)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exercices-suite" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Considérant l’URL de base <a class="reference external" href="http://example.com/foo/bar/p1.html">http://example.com/foo/bar/p1.html</a> ,
+donnez une URL relative pour&nbsp;:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://example.com/foo/bar/p2.html">http://example.com/foo/bar/p2.html</a></li>
+<li><a class="reference external" href="http://example.com/foo/assets/style.css">http://example.com/foo/assets/style.css</a></li>
+<li><a class="reference external" href="http://example.com/foo/bar/img/photo.jpg">http://example.com/foo/bar/img/photo.jpg</a></li>
+<li><a class="reference external" href="http://example.com/global.css">http://example.com/global.css</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="image">
+<span id="index-19"></span><h3>Image<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#image" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li>Une image peut être insérée avec la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">img</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</li>
+<li>Cette balise est une <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#balisevide"><span class="std std-ref">balise vide</span></a></li>
+<li>Elle a deux attributs obligatoires&nbsp;:<ul>
+<li><code class="code html docutils literal"><span class="pre">src</span></code>&nbsp;: l’URL (absolue ou relative) de l’image,</li>
+<li><code class="code html docutils literal"><span class="pre">alt</span></code>&nbsp;: une description textuelle de l’image.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>La description textuelle est obligatoire pour les situations où l’image
+ne peut pas être affichée&nbsp;:</p>
+<ul class="last simple">
+<li>elle n’a pas pu être chargée,</li>
+<li>elle n’est pas reconnue par le navigateur,</li>
+<li>le navigateur ne peut pas afficher d’image (<em>e.g.</em> lecteur d’écran)…</li>
+</ul>
+</div>
+<div class="section" id="id21">
+<h4>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id21" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/monalisa-small.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Portrait de Mona Lisa"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p class="rendered">
+  <img src="./HTML — Introduction au Web_files/monalisa-small.jpg" alt="Portrait de Mona Lisa" style="max-width: 100%; height: 10em">
+</p><p>Source image <a class="reference external" href="http://en.wikipedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg">Wikipedia</a></p>
+</div>
+<div class="section" id="images-et-droit-d-auteur">
+<h4>Images et droit d’auteur<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#images-et-droit-d-auteur" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">Le fait qu’une image soit disponible sur le Web ne signifie pas
+que vous avez toute latitude pour la réutiliser sur votre propre site.</p>
+</div>
+<p>Ce qu’il faut faire&nbsp;:</p>
+<ul class="simple">
+<li>vérifier les droits associés<ul>
+<li>au besoin, en contactant le propriétaire,</li>
+</ul>
+</li>
+<li>citer les sources.</li>
+</ul>
+<div class="section" id="images-reutilisables">
+<h5>Images réutilisables<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#images-reutilisables" title="Lien permanent vers ce titre">¶</a></h5>
+<ul class="simple">
+<li>Domaine publique</li>
+<li><a class="reference external" href="http://creativecommons.org/">Creative Commons</a><ul>
+<li>réutilisables sous condition</li>
+<li><a class="reference external" href="http://www.flickr.com/search/advanced/?">la recherche avancée de flickr</a> permet de filtre les résultats
+par license (cc)</li>
+</ul>
+</li>
+<li>voyez aussi <a class="reference external" href="http://commons.wikimedia.org/">Wikimedia Commons</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="index-20">
+<span id="id26"></span><h3>Liens<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#index-20" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li>La balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">a</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> transforme son contenu en lien hypertexte.</li>
+<li>Elle doit contenir un attribut <code class="code html docutils literal"><span class="pre">href</span></code>,
+qui contient l’URL (absolue ou relative) vers lequel dirige ce lien.</li>
+</ul>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Bienvenue à
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://iut.univ-lyon1.fr/"</span><span class="p">&gt;</span>l'IUT de Lyon<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p class="rendered">
+  Bienvenue à
+  <a href="http://iut.univ-lyon1.fr/">
+  l'IUT de Lyon
+  </a>
+</p><div class="section" id="contenu-de-la-balise-a">
+<h4>Contenu de la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">a</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code><a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#contenu-de-la-balise-a" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Rien n’empêche bien sûr la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">a</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> de contenir d’autres balises.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>Bienvenue à
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://iut.univ-lyon1.fr/"</span><span class="p">&gt;</span>
+  l'<span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>IUT<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> de Lyon
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/logo-lyon1.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Logo de Lyon1"</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p class="rendered">
+  Bienvenue à
+  <a href="http://iut.univ-lyon1.fr/">l'<strong>IUT</strong> de Lyon
+  <img src="./HTML — Introduction au Web_files/logo-lyon1.jpg" alt="Logo de Lyon1"></a>
+</p></div>
+<div class="section" id="lien-interne">
+<span id="index-21"></span><span id="id27"></span><h4>Lien interne<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#lien-interne" title="Lien permanent vers ce titre">¶</a></h4>
+<ul class="simple">
+<li>Il peut être utile de faire pointer un lien vers un <strong>fragment</strong> particulier
+d’un document plutôt que vers son intégralité.</li>
+<li>En HTML, toute balise délimite une partie du document.
+On peut donner un nom à ce fragment en ajoutant à la balise
+l’attribut <code class="code html docutils literal"><span class="pre">id</span></code>.</li>
+<li>L’URL du fragment est constituée en concaténant&nbsp;:<ul>
+<li>l’URL du document,</li>
+<li>le caractère «&nbsp;#&nbsp;», et</li>
+<li>l’identifiant du fragment.</li>
+</ul>
+</li>
+<li>NB&nbsp;: une URL relative commençant par «&nbsp;#&nbsp;» désigne donc un fragment
+du document courant.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Deux éléments du même document ne <em>peuvent pas</em> avoir
+la même valeur pour l’attribut <code class="code html docutils literal"><span class="pre">id</span></code>
+(ce qui serait contradictoire avec la notion d’identifiant).</p>
+<p>Dans les anciennes versions d’HTML,
+on utilisait une balise vide de la forme:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">name</span><span class="o">=</span><span class="s">"identifier"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p class="last">mais cette syntaxe est obsolète.</p>
+</div>
+<div class="section" id="exemples">
+<h5>Exemples<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exemples" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#sec1"</span><span class="p">&gt;</span>
+  pointe vers le fragment #sec1 du document courant<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"other.html#sec2"</span><span class="p">&gt;</span>
+  pointe vers le fragment #sec2 d'un autre document<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"http://en.wikipedia.org/wiki/Lyon#Details"</span><span class="p">&gt;</span>
+  pointe vers la section "Détails" d'un article
+  Wikipedia<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">id</span><span class="o">=</span><span class="s">"sec1"</span><span class="p">&gt;</span>
+  La section vers laquelle pointe le 1er lien ci-dessus.
+  ...<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="exercice-livre-dont-vous-etes-le-heros">
+<span id="donjon"></span><h4>Exercice&nbsp;: livre dont vous êtes le héros<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exercice-livre-dont-vous-etes-le-heros" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Téléchargez <a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_liens/sujet.html">ce fichier html</a>. Il contient un livre dont vous êtes le héros minimaliste.</p>
+<ol class="arabic simple">
+<li>Faites en une version interactive avec des liens internes.</li>
+<li>Faites en une version interactive ou chaque entrée
+est une page HTML distincte (en utilisant <a class="reference external" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_liens/chapitres.tar.gz">ces fichiers HTML</a>).</li>
+</ol>
+</div>
+<div class="section" id="organisation-des-fichiers">
+<span id="orga-fichiers"></span><h4>Organisation des fichiers<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#organisation-des-fichiers" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Lorsque le nombre de fichiers constituant un site croît,
+il devient important de penser leur organisation. Quelques conseils&nbsp;:</p>
+<ul class="simple">
+<li>séparer les pages HTML des fichiers «&nbsp;utilitaires&nbsp;»
+(feuilles de styles, images) en plaçant ces derniers dans un sous-répertoire,</li>
+<li>calquer la hiérarchie des répertoires sur la structure logique du site,</li>
+<li>utiliser des fichiers <code class="docutils literal"><span class="pre">index.html</span></code> comme «&nbsp;point d’entrée&nbsp;» de chaque
+répertoire.</li>
+</ul>
+<div class="section" id="id30">
+<h5>Exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#id30" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="big tree highlight-text"><div class="highlight"><pre><span></span>├ assets/
+│ ├ style.css
+│ ├ img1.png
+│ └ ...
+├ index.html
+├ page1.html
+├ page2.html
+│
+├ sous-site1/
+│ ├ assets/
+│ │ └ ...
+│ ├ index.html
+│ └ page2.html
+└ sous-site2/
+  └ ...
+</pre></div>
+</div>
+<span class="nav-seance"></span></div>
+</div>
+</div>
+<div class="section" id="video">
+<span id="index-22"></span><span id="id31"></span><h3>Vidéo<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#video" title="Lien permanent vers ce titre">¶</a></h3>
+<p>En plus des images, HTML5 permet d’inclure des vidéos,
+grâce à la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">video</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/Chrome_ImF.webm"</span><span class="p">&gt;</span>
+  Ici, une vidéo représentant...
+<span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <video src="_static/Chrome_ImF.webm">
+   Ici, une vidéo représentant...
+ </video>
+</div><p>Source vidéo&nbsp;: <a class="reference external" href="http://google.com/">Google</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Le contenu textuel de la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">video</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>,
+affiché uniquement si le navigateur ne supporte pas cette balise,
+joue le rôle de l’attribut <code class="code html docutils literal"><span class="pre">alt</span></code> des images.</p>
+</div>
+<div class="section" id="attributs-de-la-balise-video">
+<span id="index-23"></span><h4>Attributs de la balise video<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#attributs-de-la-balise-video" title="Lien permanent vers ce titre">¶</a></h4>
+<p>La balise video supporte les attributs suivants&nbsp;:</p>
+<ul class="simple">
+<li><code class="code html docutils literal"><span class="pre">autoplay</span></code>&nbsp;: lance la lecture automatiquement</li>
+<li><code class="code html docutils literal"><span class="pre">controls</span></code>&nbsp;: affiche l’interface de lecture</li>
+<li><code class="code html docutils literal"><span class="pre">loop</span></code>&nbsp;: reprend automatiquement la lecture à la fin de la vidéo</li>
+<li><code class="code html docutils literal"><span class="pre">muted</span></code>&nbsp;: fixe le volume sonore à 0</li>
+<li><code class="code html docutils literal"><span class="pre">poster</span></code>&nbsp;: URL d’une image à afficher avant la lecture</li>
+</ul>
+<p>NB&nbsp;: à part <code class="code html docutils literal"><span class="pre">poster</span></code>, ces attributs n’ont pas besoin de valeur&nbsp;;
+la simple <em>présence</em> de l’attribut active son effet.
+Il n’est donc même pas indispensable de leur donner une valeur&nbsp;;
+au lieu de <code class="code html docutils literal"><span class="pre">autoplay=""</span></code>, on peut écrire simplement <cite>autoplay</cite>.</p>
+<div class="section" id="attributs-de-la-balise-video-exemple">
+<h5>Attributs de la balise video (exemple)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#attributs-de-la-balise-video-exemple" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/Chrome_ImF.webm"</span>
+       <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span><span class="p">&gt;</span>
+  Ici, une vidéo représentant...
+<span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/Chrome_ImF.webm"</span>
+       <span class="na">controls</span> <span class="na">poster</span><span class="o">=</span><span class="s">"_static/sun.png"</span><span class="p">&gt;</span>
+  Ici, une vidéo représentant...
+<span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <video src="_static/Chrome_ImF.webm" autoplay="" loop="" muted="">
+   Ici, une vidéo représentant...
+ </video>
+ <video src="_static/Chrome_ImF.webm" controls="" poster="_static/sun.png">
+   Ici, une vidéo représentant...
+ </video>
+</div><p>Source vidéo&nbsp;: <a class="reference external" href="http://google.com/">Google</a>, image: <a class="reference external" href="http://openclipart.org/user-detail/johnny_automatic">johnny_automatic</a>.</p>
+</div>
+</div>
+<div class="section" id="probleme-de-compatibilite">
+<span id="index-24"></span><h4>Problème de compatibilité<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#probleme-de-compatibilite" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les navigateurs ne supportent pas tous les même formats vidéo.
+Il peut donc être nécessaire de fournir plusieurs sources alternatives
+pour la même vidéo.</p>
+<p>La balise vidéo peut donc, à la place de l’attribut <code class="code html docutils literal"><span class="pre">src</span></code>,
+contenir plusieurs balises <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">source</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> ayant chacune&nbsp;:</p>
+<blockquote>
+<div><ul class="simple">
+<li>un attribut <code class="code html docutils literal"><span class="pre">src</span></code> avec l’URL d’une version de la vidéo,</li>
+<li>éventuellement un attribut <code class="code html docutils literal"><span class="pre">type</span></code> décrivant son format.</li>
+</ul>
+</div></blockquote>
+<p>Avec les formats <a class="reference external" href="http://fr.wikipedia.org/wiki/WebM">WebM</a> et <a class="reference external" href="http://fr.wikipedia.org/wiki/MPEG-4_Part_14">MP4</a> (H264+AAC),
+on couvre la grande majorité des navigateurs.</p>
+<div class="section" id="probleme-de-compatibilite-exemple">
+<h5>Problème de compatibilité (exemple)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#probleme-de-compatibilite-exemple" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">video</span> <span class="na">autoplay</span> <span class="na">loop</span> <span class="na">muted</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/Chrome_ImF.webm"</span>
+          <span class="na">type</span><span class="o">=</span><span class="s">'video/webm; codecs="vp8, vorbis"'</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">"_static/Chrome_ImF.mp4"</span>
+          <span class="na">type</span><span class="o">=</span><span class="s">'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'</span><span class="p">&gt;</span>
+  Ici, une vidéo représentant...
+<span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <video autoplay="" loop="" muted="">
+   <source src="_static/Chrome_ImF.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+   <source src="_static/Chrome_ImF.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+   Ici, une vidéo représentant...
+ </video>
+</div><p>Source vidéo&nbsp;: <a class="reference external" href="http://google.com/">Google</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="html-avance">
+<span id="id32"></span><h2>HTML avancé<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#html-avance" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="entites">
+<span id="index-25"></span><h3>Entités<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#entites" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les caractères suivants ont une signification spéciale en HTML,
+donc il faut utiliser un code spécial (<em>entité</em>) pour les afficher&nbsp;:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%">
+<col width="41%">
+<col width="41%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&lt;</td>
+<td><code class="docutils literal"><span class="pre">&amp;lt;</span></code></td>
+<td>lower than</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td><code class="docutils literal"><span class="pre">&amp;gt;</span></code></td>
+<td>greater than</td>
+</tr>
+<tr class="row-odd"><td>«&nbsp;</td>
+<td><code class="docutils literal"><span class="pre">&amp;quote;</span></code></td>
+<td>quote</td>
+</tr>
+<tr class="row-even"><td>“</td>
+<td><code class="docutils literal"><span class="pre">&amp;apos;</span></code></td>
+<td>apostrophe</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">&amp;</span></code></td>
+<td><code class="docutils literal"><span class="pre">&amp;amp;</span></code></td>
+<td>ampersand</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="autres-entites">
+<h4>Autres entités<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#autres-entites" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Il existe d’autres entités pour de nombreux caractères non-SCII,
+par exemple <code class="docutils literal"><span class="pre">&amp;eacute;</span></code> pour é, <code class="docutils literal"><span class="pre">&amp;Agrave;</span></code> pour À, <code class="docutils literal"><span class="pre">&amp;ccedil;</span></code> pour ç…</p>
+<p>Cependant, HTML supporte désormais unicode,
+donc ces entités ne sont plus nécessaires.
+En revanchent elles nuisent à la lisibilité du code HTML.
+Leur utilisation est donc déconseillée.</p>
+</div>
+</div>
+<div class="section" id="commentaires">
+<h3>Commentaires<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#commentaires" title="Lien permanent vers ce titre">¶</a></h3>
+<p>En HTML, tout texte commençant par <code class="code html docutils literal"><span class="comment"><span class="pre">&lt;!–</span></span></code>
+et se terminant par <code class="code html docutils literal"><span class="pre">--&gt;</span></code>
+est considéré comme un commentaire.
+Tout ce qu’il contient (texte et balises) sera ignoré.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span>hello <span class="c">&lt;!--</span>
+<span class="c">  &lt;strong&gt;wonderful&lt;/strong&gt;</span>
+<span class="c">--&gt;</span> world
+</pre></div>
+</div>
+<p class="rendered">
+  hello <!--
+    <strong>wonderful</strong>
+  --> world
+</p><div class="section" id="utilite">
+<h4>Utilité<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#utilite" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les commentaires servent à</p>
+<ul class="simple">
+<li>documenter la structure d’un document compliqué,</li>
+<li>cacher temporairement une partie d’un document
+(pour le debug, notamment).</li>
+</ul>
+<p>Notons que le commentaire ne concerne pas que l’affichage&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span> <span class="na">href</span><span class="o">=</span><span class="s">"style1.css"</span><span class="p">/&gt;</span>
+<span class="c">&lt;!--</span>
+<span class="c">&lt;link rel="stylesheet" type="text/css" href="style2.css"/&gt;</span>
+<span class="c">  inhibe temporairement la 2e feuille de style --&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="meta-donnees">
+<span id="index-26"></span><h3>Méta-données<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#meta-donnees" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li>Les balises <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">meta</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> sont situées dans l’élément <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">head</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>
+du document.</li>
+<li>Elles contiennent des <em>méta-données</em>&nbsp;: des données sur le document lui-même
+(littéralement, des «&nbsp;données à propos des données&nbsp;»).</li>
+</ul>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span>
+      <span class="na">content</span><span class="o">=</span><span class="s">"apprenez plus de tours en HTML"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"author"</span>
+      <span class="na">content</span><span class="o">=</span><span class="s">"Pierre-Antoine Champin"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span> <span class="na">content</span><span class="o">=</span><span class="s">"html web iut"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">On a <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-globale"><span class="std std-ref">déjà</span></a> rencontré la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">meta</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>
+pour spécifier l’encodage du document.</p>
+</div>
+<div class="section" id="meta-donnees-pour-les-robots">
+<h4>Méta-données pour les robots<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#meta-donnees-pour-les-robots" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Avec le nom <code class="docutils literal"><span class="pre">robot</span></code>,
+la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">meta</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> peut être utilisée
+pour fournir des instructions aux moteurs de recherche&nbsp;:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">index/noindex</span></code>: doivent-ils indexer cette page ou non&nbsp;?</li>
+<li><code class="docutils literal"><span class="pre">follow/nofollow</span></code>: doivent-ils suivre les liens ou non&nbsp;?</li>
+</ul>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"robot"</span> <span class="na">content</span><span class="o">=</span><span class="s">"index,nofollow"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="langue-des-meta-donnees">
+<span id="index-27"></span><h4>Langue des méta-données<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#langue-des-meta-donnees" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les méta-données peuvent être fournies dans différentes langues,
+spécifiées dans l’attribut <code class="code html docutils literal"><span class="pre">lang</span></code>
+à l’aide d’un code spécifié par <a class="reference external" href="http://www.ietf.org/rfc/bcp/bcp47.txt">BCP47</a>.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span>
+      <span class="na">content</span><span class="o">=</span><span class="s">"learn advanced tricks in HTML"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">lang</span><span class="o">=</span><span class="s">"fr"</span>
+      <span class="na">content</span><span class="o">=</span><span class="s">"apprenez plus de tours en HTML"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>NB&nbsp;: l’attribut <code class="code html docutils literal"><span class="pre">lang</span></code> peut en fait être utilisé
+sur <em>n’importe quelle</em> balise,
+y compris dans le corps (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">body</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) du document.</p>
+</div>
+</div>
+<div class="section" id="span-et-div">
+<span id="index-28"></span><h3>Span et div<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#span-et-div" title="Lien permanent vers ce titre">¶</a></h3>
+<p>HTML fournit deux balises <em>neutres</em> (c.à.d. sans sémantique particulière)&nbsp;:</p>
+<ul class="simple">
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">span</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> qui s’affiche en mode <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html#inline"><span class="std std-ref">inline</span></a>, et</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">div</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> qui d’affiche en mode <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html#block"><span class="std std-ref">block</span></a>.</li>
+</ul>
+<p>Ces éléments sont utiles pour rajouter de la structuration au document,
+notamment en portant des <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html#class"><span class="std std-ref">classes</span></a> personnalisées.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">Même lorsqu’on utilise des classes personnalisées,
+il est préférable de les associer, autant que possible,
+à une balise dont la sémantique est proche,
+plutôt qu’à une balise neutre.</p>
+</div>
+<span class="nav-seance"></span></div>
+</div>
+<div class="section" id="tableaux">
+<span id="table"></span><span id="index-29"></span><h2>Tableaux<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#tableaux" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="structure-d-un-tableau">
+<h3>Structure d’un tableau<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-d-un-tableau" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Un tableau (ou une table) permet d’organiser des information sur deux dimensions.</p>
+<p>Une table (<span class="eng">table</span>) est composée de lignes (<span class="eng">rows</span>),
+elles-mêmes composées de cellules (<span class="eng">cells</span>).</p>
+<p>On considère deux sortes de cellules&nbsp;:
+les cellules d’en-tête (<span class="eng">header cells</span>) et
+les cellules de données (<span class="eng">data cells</span>).</p>
+<table class="example">
+  <tbody><tr>
+    <td colspan="3" class="no-border"> the table </td>
+  </tr>
+  <tr>
+    <td colspan="3"> a row </td>
+  </tr>
+  <tr>
+    <th> a header cell </th>
+    <td> a data cell </td>
+    <td> another data cell </td>
+  </tr>
+</tbody></table><div class="section" id="tableau-en-html">
+<h4>Tableau en HTML<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#tableau-en-html" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les différents éléments d’un tableau sont représentés par</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%">
+<col width="59%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>table</td>
+<td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">table</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+</tr>
+<tr class="row-even"><td>row</td>
+<td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tr</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+</tr>
+<tr class="row-odd"><td>header cell</td>
+<td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">th</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+</tr>
+<tr class="row-even"><td>data cell</td>
+<td><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">td</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#example" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Medium<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Large<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Americano<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.50€<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.90€<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Latte<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.90€<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2.10€<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Cappucino<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1.90€<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2.10€<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="example-resultat">
+<h4>Example (résultat)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#example-resultat" title="Lien permanent vers ce titre">¶</a></h4>
+<table class="rendered example">
+  <tbody><tr>
+    <td></td> <th>Medium</th> <th>Large</th>
+  </tr>
+  <tr>
+    <th>Americano</th> <td>1.50€</td> <td>1.90€</td>
+  </tr>
+  <tr>
+    <th>Latte</th> <td>1.90€</td> <td>2.10€</td>
+  </tr>
+  <tr>
+    <th>Cappucino</th> <td>1.90€</td> <td>2.10€</td>
+  </tr>
+</tbody></table></div>
+</div>
+<div class="section" id="cellules-etendues">
+<span id="index-30"></span><h3>Cellules étendues<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#cellules-etendues" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Une cellule peut s’étendre
+sur plusieurs lignes (vers le bas) et/ou colonnes (vers la droite)
+à l’aide des attributs <code class="code html docutils literal"><span class="pre">rowspan</span></code> et <code class="code html docutils literal"><span class="pre">colspan</span></code>.</p>
+<div class="admonition hint">
+<p class="first admonition-title">Indice</p>
+<p class="last">Dans ce cas, le nombre de <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">td</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> ou <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">th</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>
+pourra varier d’une <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tr</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> à l’autre…</p>
+</div>
+<table class="rendered example">
+  <caption>Exemple</caption>
+  <colgroup><col width="25%"><col width="25%"><col width="25%"><col width="25%">
+  </colgroup><tbody><tr><td rowspan="2">rowspan=2</td><td colspan="2">colspan=2</td><td>.
+  </td></tr><tr><td>.</td><td colspan="2" rowspan="2">colspan=2 rowspan=2
+  </td></tr><tr><td>.</td><td>.
+</td></tr></tbody></table></div>
+<div class="section" id="exo-calculette1">
+<span id="id33"></span><h3>Exercice<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exo-calculette1" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Reproduisez le modèle ci-dessous représentant une calculatrice.</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_calculette/sujet_table.png"><img alt="calculette" src="./HTML — Introduction au Web_files/sujet_table.png" style="width: 50%;"></a>
+</div>
+</div>
+<div class="section" id="pour-aller-plus-loin">
+<span id="index-31"></span><h3>Pour aller plus loin<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#pour-aller-plus-loin" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">caption</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: légende du tableau (premier fils de <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">table</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>)</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">thead</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: ensemble de lignes (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tr</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) constituant l’en-tête (par ex. intitulés de colonnes)</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tbody</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: ensemble de lignes (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tr</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) constituant le corps (données à proprement parler)</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tfoot</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>&nbsp;: ensemble de lignes (<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">tr</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>) constituant le pied (par ex. rappel des intitulés de colonnes, ou somme des valeurs par colonne)</li>
+<li><code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">colgroup</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> et <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">col</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> permettent d’identifier les colonnes (par exemple pour les besoins du CSS)</li>
+</ul>
+<p>Pour plus de détails, voir <a class="reference external" href="http://www.w3.org/TR/html5/tabular-data.html#table-model">http://www.w3.org/TR/html5/tabular-data.html#table-model</a> .</p>
+<div class="section" id="tableaux-et-mise-en-pages">
+<h4>Tableaux et mise en pages<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#tableaux-et-mise-en-pages" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Avant que CSS ne s’impose, les tableaux ont souvent été utilisés
+pour faciliter la mise en page des sites
+(en tête et pied de page, menu latéral, présentation sur plusieurs colonnes).</p>
+<p>Aujourd’hui, cette pratique est <em>fortement déconseillée</em>,
+car elle est beaucoup moins flexible
+que l’utilisation de CSS pour le <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html#position"><span class="std std-ref">positionnement</span></a>.</p>
+<p>C’est aussi une violation de la séparation entre fond et forme&nbsp;:
+l’utilisation de <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">table</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> se justifie lorsque les éléments situés sur la même ligne
+(resp. la même colonne) ont quelque-chose qui les relie.</p>
+<div class="section" id="contre-exemple">
+<h5>Contre-exemple<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#contre-exemple" title="Lien permanent vers ce titre">¶</a></h5>
+<p>L’utilisation d’un tableau pour afficher une galerie d’image sur deux colonnes est une
+mauvaise solution.</p>
+<p>Il est plus judicieux d’utiliser CSS pour obtenir le même résultat,
+d’autant que ce résultat pourra adapter le nombre de colonnes
+(éventuellement pour le réduire à 1)
+en fonction du type d’affichage.</p>
+<span class="nav-seance"></span></div>
+</div>
+</div>
+</div>
+<div class="section" id="formulaires-et-interactivite">
+<span id="form"></span><h2>Formulaires et interactivité<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#formulaires-et-interactivite" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="champs-de-saisie">
+<span id="index-32"></span><h3>Champs de saisie<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#champs-de-saisie" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Certaines pages HTML comportent des <strong>champs</strong>
+permettant à l’utilisateur de saisir de l’information.
+La balise offrant cette possibilité est la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">input</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p class="rendered">
+ <input>
+</p><div class="section" id="types-de-champs">
+<span id="index-33"></span><h4>Types de champs<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#types-de-champs" title="Lien permanent vers ce titre">¶</a></h4>
+<p>HTML offre un certain nombre de types de champs,
+les plus utilisés étant</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="70%">
+<col width="30%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="text"&gt;</span></code></td>
+<td><div class="first last"><input type="text"></div></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="password"&gt;</span></code></td>
+<td><div class="first last"><input type="password"></div></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="checkbox"&gt;</span></code></td>
+<td><div class="first last"><input type="checkbox"></div></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="radio"&gt;</span></code></td>
+<td><div class="first last"><input type="radio"></div></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="file"&gt;</span></code></td>
+<td><div class="first last"><input type="file"></div></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="number"&gt;</span></code></td>
+<td><div class="first last"><input type="number"></div></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">&lt;input</span> <span class="pre">type="range"&gt;</span></code></td>
+<td><div class="first last"><input type="range"></div></td>
+</tr>
+</tbody>
+</table>
+<p>NB&nbsp;: HTML5 définit d’autres <a class="reference external" href="http://www.w3.org/TR/html5/forms.html#states-of-the-type-attribute">types de champs</a> (par exemple <code class="docutils literal"><span class="pre">date</span></code> ou <code class="docutils literal"><span class="pre">color</span></code>),
+mais ils ne sont pas encore largement implémentés.</p>
+</div>
+<div class="section" id="libelle">
+<span id="index-34"></span><h4>Libellé<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#libelle" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les champs de saisie sont le plus souvent associés à un libellé.</p>
+<p>Ceci est représenté en encapsulant
+le libellé (n’importe quel code HTML) <em>et</em> la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>
+dans une balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">label</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Nom&nbsp;: <span class="p">&lt;</span><span class="nt">input</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">checkbox</span><span class="p">&gt;</span> tarif réduit<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <div><label>Nom&nbsp;: <input></label></div>
+ <div><label><input type="checkbox"> tarif réduit</label></div>
+</div><p>Une autre méthode consiste à</p>
+<ul class="simple">
+<li>nommer le <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> avec l’attribut <code class="code html docutils literal"><span class="pre">id</span></code>, et</li>
+<li>lui lier le <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">label</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> avec l’attribut <code class="code html docutils literal"><span class="pre">for</span></code>.</li>
+</ul>
+<p>Par exemple&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"name"</span><span class="p">&gt;</span>Nom&nbsp;:<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"name"</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">"gname"</span><span class="p">&gt;</span>Prénom&nbsp;:<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">"gname"</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <table>
+   <tbody><tr><td><label for="name">Nom&nbsp;:</label></td>
+       <td><input id="name"></td></tr>
+   <tr><td><label for="gname">Prénom&nbsp;:</label></td>
+       <td><input id="gname"></td></tr>
+ </tbody></table>
+</div><div class="section" id="importance-de-lier-le-libelle-au-champs">
+<span id="index-35"></span><h5>Importance de lier le libellé au champs<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#importance-de-lier-le-libelle-au-champs" title="Lien permanent vers ce titre">¶</a></h5>
+<p>L’association du libellé au champs explicite la sémantique du document,
+ce qui permet notamment d’améliorer&nbsp;:</p>
+<ul>
+<li><p class="first">l’ergonomie&nbsp;:</p>
+<p>lorsqu’on clique sur un libellé, c’est le champs qui prend le focus&nbsp;;</p>
+</li>
+<li><p class="first">l’accessibilité&nbsp;:</p>
+<p>l’adaptation du formulaire (par exemple pour un lecteur d’écran)
+peut se faire de manière plus pertinente.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Considérez par exemple le formulaire suivant,
+et sa lecture par un lecteur d’écran&nbsp;:</p>
+<div class="last"><table>
+<tbody><tr>
+  <td><label for="name2">Nom&nbsp;:</label></td>
+  <td><label for="gname2">Prénom&nbsp;:</label></td>
+</tr>
+<tr>
+  <td><input id="name2"></td>
+  <td><input id="gname2"></td>
+</tr>
+<tr>
+  <td colspan="2">Adresse (<label for="addr_street">rue</label>,
+                         <label for="addr_city">ville</label>,
+                         <label for="addr_country">pays</label>)&nbsp;:</td>
+</tr>
+<tr>
+  <td colspan="2"><input id="addr_street" style="width:100%"></td>
+</tr>
+<tr>
+  <td colspan="2"><input id="addr_city" style="width:100%"></td>
+</tr>
+<tr>
+  <td colspan="2"><input id="addr_country" style="width:100%"></td>
+</tr>
+<tr>
+  <td><label for="phone">Téléphone&nbsp;:</label></td>
+  <td><input id="phone"></td>
+</tr>
+</tbody></table></div></div>
+</div>
+<div class="section" id="alternative-au-libelle">
+<h5>Alternative au libellé<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#alternative-au-libelle" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Pour les champs de type <code class="docutils literal"><span class="pre">text</span></code> ou <code class="docutils literal"><span class="pre">password</span></code>,
+une alternative au libellé consiste à utiliser l’attribut <code class="code html docutils literal"><span class="pre">placeholder</span></code>&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">input</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"identifiant"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"password"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"mot de passe"</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <input placeholder="identifiant">
+ <input type="password" placeholder="mot de passe">
+</div></div>
+</div>
+<div class="section" id="liste">
+<span id="index-36"></span><h4>Liste<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#liste" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Un autre type de champ permet de sélectionner (ou ou plusieurs) éléments dans une liste.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Georges<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>John<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Paul<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Ringo<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <select>
+   <option>Georges</option>
+   <option>John</option>
+   <option>Paul</option>
+   <option>Ringo</option>
+ </select>
+</div><p>L’attribut <code class="code html docutils literal"><span class="pre">multiple</span></code> autorise la sélection de plusieurs éléments.</p>
+</div>
+<div class="section" id="zone-de-texte">
+<span id="index-37"></span><h4>Zone de texte<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#zone-de-texte" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Le champ <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> ne permet pas la saisie de texte sur plusieurs lignes.
+Pour cela, on utilise le champ <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">textarea</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"type your message"</span><span class="p">&gt;</span>Hello
+world<span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+<textarea placeholder="type your message">Hello
+world</textarea>
+</div><p>NB : contrairement à <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>,
+<code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">textarea</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> attend une balise fermante
+(car le texte contenu dans le champ est le contenu de la balise).</p>
+</div>
+<div class="section" id="boutons">
+<span id="index-38"></span><h4>Boutons<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#boutons" title="Lien permanent vers ce titre">¶</a></h4>
+<p>La balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">button</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> permet de créer des boutons.</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Ok<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;</span><span class="nt">em</span><span class="p">&gt;</span>Annuler<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <button>Ok</button> <button><em>Annuler</em></button>
+</div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Historiquement, les boutons étaient générés par la balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>
+avec des types spécifiques (<code class="docutils literal"><span class="pre">button</span></code> et <code class="docutils literal"><span class="pre">submit</span></code> notamment).</p>
+</div>
+</div>
+</div>
+<div class="section" id="formulaire">
+<span id="index-39"></span><h3>Formulaire<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#formulaire" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les champs sont généralement regroupés dans une balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">form</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code>,
+qu’on appelle un <strong>formulaire</strong>.</p>
+<p>Cette balise requiert l’attribut <code class="code html docutils literal"><span class="pre">action</span></code>, qui contient
+l’URL de la ressource qui traitera les données du formulaire.</p>
+<div class="section" id="champs-d-un-formulaire">
+<span id="index-40"></span><h4>Champs d’un formulaire<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#champs-d-un-formulaire" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Pour pouvoir être traités,
+les champs d’un formulaire doivent tous être identifiés par un nom,
+porté par l’attribut <code class="code html docutils literal"><span class="pre">name</span></code>&nbsp;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"_static/formproc/debug"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"name"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"identifiant"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"tel"</span>  <span class="na">placeholder</span><span class="o">=</span><span class="s">"n° de tel"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Je m'inscris<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="rendered">
+ <form action="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/formproc/debug">
+   <input name="name" placeholder="identifiant">
+   <input name="tel" placeholder="n° de tel">
+   <button>Je m'inscris</button>
+ </form>
+</div></div>
+<div class="section" id="cases-a-cocher-et-boutons-radio">
+<span id="index-41"></span><h4>Cases à cocher et boutons radio<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#cases-a-cocher-et-boutons-radio" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les champs ayant le type <code class="docutils literal"><span class="pre">checkbox</span></code> ou <code class="docutils literal"><span class="pre">radio</span></code> vont souvent par groupe.
+Tous les membres d’un groupe ont le même nom,
+et se différencient par une <strong>valeur</strong> portée par un attribut <code class="code html docutils literal"><span class="pre">value</span></code>.</p>
+<p>Pour les cases à cocher, le nom se voit affecter l’ensemble des valeurs sélectionnées.</p>
+<p>Pour les boutons radio, une seule valeur peut-être affectée
+(l’activation d’un bouton du groupe désactive automatiquement les autres).</p>
+<div class="section" id="exemple-source">
+<h5>Exemple (source)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exemple-source" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"_static/formproc/debug"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Taille&nbsp;:
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"size"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">value</span><span class="o">=</span><span class="s">"s"</span><span class="p">&gt;</span> Petite<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"size"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">value</span><span class="o">=</span><span class="s">"m"</span><span class="p">&gt;</span> Moyenne<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"size"</span> <span class="na">type</span><span class="o">=</span><span class="s">"radio"</span> <span class="na">value</span><span class="o">=</span><span class="s">"l"</span><span class="p">&gt;</span> Grande<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Garniture&nbsp;:
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"topping"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">"ch"</span><span class="p">&gt;</span> Fromage<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"topping"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">"ol"</span><span class="p">&gt;</span> Olives<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">"topping"</span> <span class="na">type</span><span class="o">=</span><span class="s">"checkbox"</span> <span class="na">value</span><span class="o">=</span><span class="s">"mu"</span><span class="p">&gt;</span> Champignons<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Commander<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exemple-rendu">
+<h5>Exemple (rendu)<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exemple-rendu" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="rendered">
+ <form action="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/formproc/debug">
+   <p>Taille&nbsp;:
+     <label><input name="size" type="radio" value="s"> Petite</label>
+     <label><input name="size" type="radio" value="m"> Moyenne</label>
+     <label><input name="size" type="radio" value="l"> Grande</label>
+   </p>
+   <p>Garniture&nbsp;:
+     <label><input name="topping" type="checkbox" value="ch"> Fromage</label>
+     <label><input name="topping" type="checkbox" value="ol"> Olives</label>
+     <label><input name="topping" type="checkbox" value="mu"> Champignons</label>
+   </p>
+   <button>Commander</button>
+ </form>
+</div></div>
+</div>
+<div class="section" id="boutons-et-formulaires">
+<h4>Boutons et formulaires<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#boutons-et-formulaires" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les boutons ont trois fonctionnalités possibles, portées par l’attribut <code class="code html docutils literal"><span class="pre">type</span></code>&nbsp;:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">submit</span></code>&nbsp;: envoie les données du formulaire (défaut)</li>
+<li><code class="docutils literal"><span class="pre">reset</span></code>&nbsp;: remet tous les champs du formulaire à leur valeur initiale</li>
+<li><code class="docutils literal"><span class="pre">button</span></code>&nbsp;: aucun comportement par défaut</li>
+</ul>
+<p>Les boutons du dernier type sont utiles en conjonction avec des scripts
+(hors-programme pour cette année).</p>
+</div>
+<div class="section" id="methode">
+<span id="index-42"></span><h4>Méthode<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#methode" title="Lien permanent vers ce titre">¶</a></h4>
+<p>La balise <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">form</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> accepte un attribut <code class="code html docutils literal"><span class="pre">method</span></code>, qui peut prendre deux valeurs&nbsp;:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">get</span></code>&nbsp;: les données sont passée <em>via</em> l’URL (défaut)</li>
+<li><code class="docutils literal"><span class="pre">post</span></code>&nbsp;: les données sont passées dans la requête HTTP</li>
+</ul>
+<p>La méthode <code class="docutils literal"><span class="pre">get</span></code> doit être employée&nbsp;:</p>
+<ul class="simple">
+<li>lorsque les données ne sont pas trop volumineuses, et surtout;</li>
+<li>lorsque le traitement des données n’a <strong>pas d’effet de bord</strong>.</li>
+</ul>
+<p>Dans tous les autres cas, la méthode <code class="docutils literal"><span class="pre">post</span></code> doit être utilisée.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Bien que les données du formulaire n’apparaissent pas directement avec la méthode <code class="docutils literal"><span class="pre">post</span></code>,
+celle-ci n’est pas plus sécurisée que la méthode <code class="docutils literal"><span class="pre">get</span></code>&nbsp;:
+les données circulent en clair sur le réseau.</p>
+<p class="last">La bonne manière de faire transiter des données de manière sûre sur le Web
+consiste à utiliser le protocole HTTPS au lieu de HTTP.</p>
+</div>
+</div>
+<div class="section" id="envoi-de-fichier">
+<h4>Envoi de fichier<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#envoi-de-fichier" title="Lien permanent vers ce titre">¶</a></h4>
+<p>L’emploi de <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">input</span></span> <span class="name attribute"><span class="pre">type</span></span><span class="operator"><span class="pre">=</span></span><span class="literal string"><span class="pre">&nbsp;»file&nbsp;»</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> pour envoyer le contenu d’un fichier
+nécessite deux précautions au niveau du <code class="code html docutils literal"><span class="punctuation"><span class="pre">&lt;</span></span><span class="name tag"><span class="pre">form</span></span><span class="punctuation"><span class="pre">&gt;</span></span></code> englobant&nbsp;:</p>
+<ul class="simple">
+<li><code class="code html docutils literal"><span class="pre">method="post"</span></code></li>
+<li><code class="code html docutils literal"><span class="pre">enctype="multipart/form-data"</span></code></li>
+</ul>
+<p>sans quoi c’est le <em>nom</em> du fichier, et non son contenu, qui sera envoyé au serveur.</p>
+</div>
+</div>
+<div class="section" id="exo-calculette2">
+<span id="id35"></span><h3>Exercices<a class="headerlink" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exo-calculette2" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Reprenez <a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#exo-calculette1"><span class="std std-ref">votre code représentant une calculatrice</span></a>
+et améliorez le pour qu’il soit conforme au modèle ci-dessous.</p>
+<div class="figure">
+<a class="reference external image-reference" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_static/exo_calculette/sujet_form.png"><img alt="calculette" src="./HTML — Introduction au Web_files/sujet_form.png" style="width: 45%;"></a>
+</div>
+<p>Ajoutez ensuite la ligne suivante dans le <code class="docutils literal"><span class="pre">&lt;head&gt;</span></code> de votre document:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/javascript"</span> <span class="na">src</span><span class="o">=</span><span class="s">"http://champin.net/enseignement/intro-web/_static/exo_calculette/calculette.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>et essayez votre calculette…</p>
+<p>Dans un nouveau document, créer un formulaire
+(par exemple, pour commander des pizzas),
+en expérimentant les différents types de champs
+avec le processeur fourni à l’adresse suivante &nbsp;:</p>
+<p><a class="reference external" href="http://champin.net/enseignement/intro-web/_static/formproc/debug">http://champin.net/enseignement/intro-web/_static/formproc/debug</a></p>
+<span class="nav-seance"></span><span class="target" id="exo-form-debug"></span></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/index.html">Table des Matières</a></h3>
+  <ul>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#">HTML</a><ul>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#un-langage-a-balises">Un langage à balises</a></li>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#structure-d-un-document">Structure d’un document</a></li>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#listes">Listes</a></li>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#liens-et-contenus-embarques">Liens et contenus embarqués</a></li>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#html-avance">HTML avancé</a></li>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#tableaux">Tableaux</a></li>
+<li><a class="reference internal" href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/html.html#formulaires-et-interactivite">Formulaires et interactivité</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Sujet précédent</h4>
+  <p class="topless"><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/intro.html" title="Chapitre précédent">Historique et présentation</a></p>
+  <h4>Sujet suivant</h4>
+  <p class="topless"><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html" title="Chapitre suivant">CSS</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Cette page</h3>
+    <ul class="this-page-menu">
+      <li><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/_sources/html.rst.txt" rel="nofollow">Montrer le code source</a></li>
+    </ul>
+   </div>
+  <h3>Slides</h3>
+  <ul class="this-page-menu">
+    <li><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/slides/html.html" rel="nofollow">View as slides</a></li>
+  </ul>
+<div id="searchbox" style="" role="search">
+  <h3>Recherche rapide</h3>
+    <form class="search" action="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/search.html" method="get">
+      <div><input type="text" name="q"></div>
+      <div><input type="submit" value="Go"></div>
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/genindex.html" title="Index général">index</a></li>
+        <li class="right">
+          <a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/css.html" title="CSS">suivant</a> |</li>
+        <li class="right">
+          <a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/intro.html" title="Historique et présentation">précédent</a> |</li>
+        <li class="nav-item nav-item-0"><a href="http://liris.cnrs.fr/~pchampin/enseignement/intro-web/index.html">Introduction au Web</a> »</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        © Copyright 2013-2017, Département Informatique (IUT Lyon1).
+      Créé avec <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
+  
+</body></html>

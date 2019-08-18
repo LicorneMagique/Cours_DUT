@@ -1,0 +1,181 @@
+create table minibus (
+nominibus number(2),
+capacite number(2) not null,
+constraint pk_minibus primary key (nominibus)
+);
+
+create table sortie (
+nosortie number(4),
+libelle varchar2(50) not null,
+constraint pk_sortie primary key (nosortie)
+);
+
+create table adherent (
+noadherent number(4),
+nomadh varchar2(30) not null,
+prenomadh varchar2(30) not null,
+constraint pk_adherent primary key (noadherent)
+);
+
+create table inscription_sortie (
+noadherent number(4),
+nosortie number(4),
+date_inscription date not null,
+nominibus number(2),
+constraint pk_inscription_sortie primary key (noadherent, nosortie)
+);
+
+create table ERREURS (
+message varchar2(255)
+);
+
+alter table inscription_sortie
+
+add constraint fk_inscription_adh foreign key (noadherent) references adherent
+add constraint fk_inscription_sortie foreign key (nosortie) references sortie
+add constraint fk_inscription_minibus foreign key (nominibus) references minibus;
+
+insert into minibus values (1, 6);
+insert into minibus values (2, 8);
+
+insert into sortie values (1, 'City tour de Paris');
+insert into sortie values (2, 'City tour de Lyon');
+insert into sortie values (3, 'Excursion Monte Carlo');
+
+insert into adherent values (1, 'Assie','Alexandre');
+insert into adherent values (2, 'Bourges','Amelie');
+insert into adherent values (3, 'Brioude','Damien');
+insert into adherent values (4, 'Bellaton','Maxime');
+insert into adherent values (5, 'Eouzan','Ophelie');
+insert into adherent values (6, 'Colombain','Charly');
+insert into adherent values (7, 'Belotti','Tom');
+insert into adherent values (8, 'Zeichner','Kevin');
+insert into adherent values (9, 'Descroix','Thomas');
+insert into adherent values (10, 'Razy','Victor');
+insert into adherent values (11, 'Montelimard','Virginie');
+insert into adherent values (12, 'Mancini','Corentin');
+insert into adherent values (13, 'ElAzhar','Adil');
+insert into adherent values (14, 'LeDonge','Romain');
+insert into adherent values (15, 'Rebeca','Julien');
+insert into adherent values (16, 'Varagnat','Kevin');
+
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,1,'10/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,3,'9/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,5,'15/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,7,'1/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,8,'11/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,10,'16/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,11,'4/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,12,'10/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,13,'10/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,14,'5/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,15,'20/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,16,'20/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,4,'21/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,6,'1/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (1,9,'14/08/14');
+
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (2,2,'10/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (2,4,'15/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (2,10,'18/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (2,6,'16/08/14');
+insert into inscription_sortie(nosortie,noadherent,date_inscription) values (2,8,'14/08/14');
+
+commit ;
+
+
+
+/*1)*/
+
+DROP TABLE erreurs;
+CREATE TABLE erreurs (
+message VARCHAR2(255BYTE),
+"DATE" DATE
+);
+
+create or replace PACKAGE pksorties IS
+    TYPE type_minibus IS TABLE OF minibus%ROWTYPE INDEX BY BINARY_INTEGER;
+    FUNCTION les_minibus RETURN NUMBER;
+    FUNCTION affectations_minibus(p_nosortie sortie.nosortie%TYPE) RETURN NUMBER;
+END pksorties;
+
+/*2)*/
+
+create or replace PACKAGE BODY pksorties IS
+    v_tab_minibus type_minibus;
+    
+    FUNCTION les_minibus
+    RETURN NUMBER
+    IS
+        v_nb_minibus NUMBER(3);
+        v_index NUMBER(3) := 1;
+        err_code INT(6);
+        err_msg VARCHAR2(255);
+    BEGIN
+        SELECT COUNT(nominibus)
+        INTO v_nb_minibus
+        FROM minibus;
+
+        FOR ligne IN (
+            SELECT nominibus, capacite
+            FROM minibus
+            ORDER BY capacite DESC) LOOP
+            v_tab_minibus(v_index).nominibus := ligne.nominibus;
+            v_tab_minibus(v_index).capacite := ligne.capacite;
+            v_index := v_index + 1;
+        END LOOP;
+        
+        RETURN v_nb_minibus;
+        
+        EXCEPTION
+            WHEN OTHERS THEN
+                err_code := SQLCODE;
+                err_msg := SUBSTR(SQLERRM, 1, 200);
+                INSERT INTO erreurs (message, "DATE") VALUES ('Erreur n° ' || err_code || ' , ' || err_msg, CURRENT_DATE);
+                RETURN -1;
+
+    END les_minibus;
+    
+    
+    
+    FUNCTION affectations_minibus(p_nosortie sortie.nosortie%TYPE)
+	RETURN NUMBER
+    IS
+        CURSOR c_inscrits IS SELECT * FROM inscription_sortie WHERE nosortie = p_nosortie ORDER BY DATE_INSCRIPTION;
+        CURSOR c_minibus IS SELECT * FROM minibus;
+        nb_minibus NUMBER;
+        minibus_actuel NUMBER;
+        nb_passagers NUMBER;
+        err_msg VARCHAR2(255);
+        err_code INT(6);
+    BEGIN
+        nb_minibus := les_minibus;
+        minibus_actuel := 0;
+        nb_passagers := 0;
+        FOR v_inscrits IN c_inscrits LOOP
+             IF nb_passagers = v_tab_minibus(minibus_actuel).capacite THEN
+                minibus_actuel := minibus_actuel + 1;
+                nb_passagers := 0;
+            END IF;
+            IF (minibus_actuel <= nb_minibus) THEN
+                UPDATE inscription_sortie SET
+                nominibus = v_tab_minibus(minibus_actuel).nominibus
+                WHERE noadherent = v_inscrits.noadherent;
+                nb_passagers := nb_passagers + 1;
+            END IF;
+        END LOOP;
+        IF minibus_actuel > nb_minibus THEN 
+            RETURN nb_minibus;
+        ELSE
+            RETURN minibus_actuel;
+        END IF;
+        EXCEPTION
+            WHEN OTHERS THEN
+                ROLLBACK;
+                err_msg := sqlerrm;
+                INSERT INTO erreurs (message, "DATE") VALUES ('Erreur n° ' || err_code || ' , ' || err_msg, CURRENT_DATE);
+                COMMIT;
+                RETURN -1;
+	END affectations_minibus;
+
+END pksorties;

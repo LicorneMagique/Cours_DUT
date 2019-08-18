@@ -1,0 +1,479 @@
+// xcas version=1.4.9-69 fontsize=18 font=0 currentlevel=6 pixon=1
+// fltk N4xcas12History_FoldE 13 -426 1866 228 18 0
+EX1
+// fltk N4xcas12History_PackE 13 -402 1826 227 18 0
+[
+// fltk 7Fl_Tile 25 -402 802 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -402 802 28 18 0
+19 ,
+isprime(n:=2^607-1),
+// fltk N4xcas10Log_OutputE 25 -374 802 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -373 802 23 18 0 1
+true
+]
+,
+// fltk 7Fl_Tile 25 -348 802 69 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -348 802 28 18 0
+21 ,
+nextprime(n:=2^607-1),
+// fltk N4xcas10Log_OutputE 25 -320 802 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -319 802 40 18 0 1
+531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728613
+]
+,
+// fltk 7Fl_Tile 25 -277 802 69 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -277 802 28 18 0
+32 ,
+nextprime(nextprime(n:=2^607-1)),
+// fltk N4xcas10Log_OutputE 25 -249 802 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -248 802 40 18 0 1
+531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728673
+]
+,
+// fltk 7Fl_Tile 25 -206 802 29 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -206 802 28 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 -178 802 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -378 1866 531 18 0
+EX2
+// fltk N4xcas12History_PackE 13 -354 1826 564 18 0
+[
+// fltk 7Fl_Tile 35 -354 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -354 794 28 18 0
+6 ,
+A:=792,
+// fltk N4xcas10Log_OutputE 35 -326 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -325 794 23 18 0 1
+792
+]
+,
+// fltk 7Fl_Tile 35 -300 794 62 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -300 794 28 18 0
+10 ,
+ifactor(A),
+// fltk N4xcas10Log_OutputE 35 -272 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -271 794 33 18 0 1
+2^3*3^2*11
+]
+,
+// fltk 7Fl_Tile 35 -236 794 25 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 35 -236 794 24 18 0
+A poss√®de (4+1)(2+1)(1+1)=4*3*2=24
+,
+// fltk N4xcas10Log_OutputE 35 -212 794 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 35 -209 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -209 794 28 18 0
+14 ,
+L:=ifactors(A),
+// fltk N4xcas10Log_OutputE 35 -181 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -180 794 23 18 0 1
+[2,3,3,2,11,1]
+]
+,
+// fltk 7Fl_Tile 35 -155 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -155 794 28 18 0
+26 ,
+(L(2)+1)*(L(4)+1)*(L(6)+1),
+// fltk N4xcas10Log_OutputE 35 -127 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -126 794 23 18 0 1
+24
+]
+,
+// fltk 7Fl_Tile 35 -101 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -101 794 28 18 0
+15 ,
+size(idivis(A)),
+// fltk N4xcas10Log_OutputE 35 -73 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -72 794 23 18 0 1
+24
+]
+,
+// fltk 7Fl_Tile 35 -47 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 -47 794 28 18 0
+7 ,
+k:=2*11,
+// fltk N4xcas10Log_OutputE 35 -19 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 -18 794 23 18 0 1
+22
+]
+,
+// fltk 7Fl_Tile 35 7 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 7 794 28 18 0
+18 ,
+sqrt(ifactor(k*A)),
+// fltk N4xcas10Log_OutputE 35 35 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 36 794 23 18 0 1
+132
+]
+,
+// fltk 7Fl_Tile 35 61 794 62 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 61 794 28 18 0
+19 ,
+B:=57892;ifactor(B),
+// fltk N4xcas10Log_OutputE 35 89 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 90 794 33 18 0 1
+57892,2^2*41*353
+]
+,
+// fltk 7Fl_Tile 35 125 794 52 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 125 794 28 18 0
+19 ,
+k:=41*353;sqrt(k*B),
+// fltk N4xcas10Log_OutputE 35 153 794 1 18 0
+
+,
+// fltk N4xcas8EquationE 35 154 794 23 18 0 1
+14473,28946
+]
+,
+// fltk 7Fl_Tile 35 179 794 29 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 35 179 794 28 18 0
+6 ,
+c:=103,
+// fltk N4xcas10Log_OutputE 35 207 794 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -295 1866 471 18 0
+EX3
+// fltk N4xcas12History_PackE 13 -276 1826 444 18 0
+[
+// fltk 7Fl_Tile 25 -276 1814 71 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -276 1814 28 18 0
+14 ,
+ifactors(500!),
+// fltk N4xcas10Log_OutputE 25 -248 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -247 1814 42 18 0 1
+[2,494,3,247,5,124,7,82,11,49,13,40,17,30,19,27,23,21,29,17,31,16,37,13,41,12,43,11,47,10,53,9,59,8,61,8,67,7,71,7,73,6,79,6,83,6,89,5,97,5,101,4,103,4,107,4,109,4,113,4,127,3,131,3,137,3,139,3,149,3,151,3,157,3,163,3,167,2,173,2,179,2,181,2,191,2,193,2,197,2,199,2,211,2,223,2,227,2,229,2,233,2,239,2,241,2,251,1,257,1,263,1,269,1,271,1,277,1,281,1,283,1,293,1,307,1,311,1,313,1,317,1,331,1,337,1,347,1,349,1,353,1,359,1,367,1,373,1,379,1,383,1,389,1,397,1,401,1,409,1,419,1,421,1,431,1,433,1,439,1,443,1,449,1,457,1,461,1,463,1,467,1,479,1,487,1,491,1,499,1]
+]
+,
+// fltk 7Fl_Tile 25 -203 1814 281 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -203 1814 28 18 0
+14 ,
+ifactor(1000!),
+// fltk N4xcas10Log_OutputE 25 -175 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -174 1814 252 18 0 1
+2^994*3^498*5^249*7^164*11^98*13^81*17^61*19^54*23^44*29^35*31^33*37^27*41^24*43^23*47^21*53^18*59^16*61^16*67^14*71^14*73^13*79^12*83^12*89^11*97^10*101^9*103^9*107^9*109^9*113^8*127^7*131^7*137^7*139^7*149^6*151^6*157^6*163^6*167^5*173^5*179^5*181^5*191^5*193^5*197^5*199^5*211^4*223^4*227^4*229^4*233^4*239^4*241^4*251^3*257^3*263^3*269^3*271^3*277^3*281^3*283^3*293^3*307^3*311^3*313^3*317^3*331^3*337^2*347^2*349^2*353^2*359^2*367^2*373^2*379^2*383^2*389^2*397^2*401^2*409^2*419^2*421^2*431^2*433^2*439^2*443^2*449^2*457^2*461^2*463^2*467^2*479^2*487^2*491^2*499^2*503*509*521*523*541*547*557*563*569*571*577*587*593*599*601*607*613*617*619*631*641*643*647*653*659*661*673*677*683*691*701*709*719*727*733*739*743*751*757*761*769*773*787*797*809*811*821*823*827*829*839*853*857*859*863*877*881*883*887*907*911*919*929*937*941*947*953*967*971*977*983*991*997
+]
+,
+// fltk 7Fl_Tile 25 80 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 80 1814 28 18 0
+21 ,
+solve((n+1)¬≤*3=12,n),
+// fltk N4xcas10Log_OutputE 25 108 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 109 1814 24 18 0 1
+list[-3,1]
+]
+,
+// fltk 7Fl_Tile 25 135 1814 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 135 1814 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 165 1814 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -269 1866 378 18 0
+EX5
+// fltk N4xcas12History_PackE 13 -245 1826 339 18 0
+[
+// fltk 7Fl_Tile 25 -245 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -245 1814 28 18 0
+12 ,
+igcd(12,230),
+// fltk N4xcas10Log_OutputE 25 -217 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -216 1814 24 18 0 1
+2
+]
+,
+// fltk 7Fl_Tile 25 -190 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -190 1814 28 18 0
+11 ,
+lcm(12,230),
+// fltk N4xcas10Log_OutputE 25 -162 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -161 1814 24 18 0 1
+1380
+]
+,
+// fltk 7Fl_Tile 25 -135 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -135 1814 28 18 0
+17 ,
+igcd(390,720,450),
+// fltk N4xcas10Log_OutputE 25 -107 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -106 1814 24 18 0 1
+30
+]
+,
+// fltk 7Fl_Tile 25 -80 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -80 1814 28 18 0
+18 ,
+igcdex(35657,9864),
+// fltk N4xcas10Log_OutputE 25 -52 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 -51 1814 24 18 0 1
+[-2503,9048,1]
+]
+,
+// fltk 7Fl_Tile 25 -25 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 -25 1814 28 18 0
+20 ,
+igcdex(12345,-54903),
+// fltk N4xcas10Log_OutputE 25 3 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 4 1814 24 18 0 1
+[6044,1359,3]
+]
+,
+// fltk 7Fl_Tile 25 30 1814 29 18 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 25 30 1814 28 18 0
+Le PGCD des 2 nombres (12345 et -54903) est 3 (6044*12345-54903*1359=3)
+,
+// fltk N4xcas10Log_OutputE 25 58 1814 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 25 61 1814 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 61 1814 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 91 1814 1 18 0
+
+]
+]
+,
+// fltk N4xcas12History_FoldE 13 -243 1866 1117 18 0
+EX12
+// fltk N4xcas12History_PackE 13 -219 1826 1078 18 0
+[
+// fltk 7Fl_Tile 25 -219 1814 357 18 0
+[
+// fltk N4xcas7EditeurE 25 -219 1814 356 18 0
+57 ,
+fonction f(x)
+  local k;
+  
+  retourne x*x;
+ffonction:;
+
+,
+// fltk N4xcas10Log_OutputE 25 137 1814 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 25 140 1814 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 140 1814 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 170 1814 1 18 0
+
+]
+,
+// fltk 7Fl_Tile 25 173 1814 596 18 0
+[
+// fltk N4xcas7EditeurE 25 173 1814 504 18 0
+267 ,
+fonction nbFacteur(x)
+  a := [];
+  nbMax := 2;
+  for (j := 1; j <= x; j++) {
+    if (size(idivis(j)) = nbMax) {
+      a := concat(a,[j]);
+    }
+    if (size(idivis(j)) > nbMax) {
+      a := [j];
+      nbMax :=  size(idivis(j));
+    }
+  }
+return [a,nbMax];
+ffonction:;,
+// fltk N4xcas10Log_OutputE 25 677 1814 68 18 0
+// Interpr√®te nbFacteur£// Attention: a,nbMax,j,declar√©(s) comme variable(s) globale(s). Si vous avez besoin de variables symboliques, d√©clarez les en local et faites purge£// lors de la compilation nbFacteur£
+,
+// fltk N4xcas8EquationE 25 745 1814 24 18 0 1
+"Done"
+]
+,
+// fltk 7Fl_Tile 25 771 1814 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 771 1814 28 18 0
+15 ,
+nbFacteur(100);,
+// fltk N4xcas10Log_OutputE 25 799 1814 1 18 0
+
+,
+// fltk N4xcas8EquationE 25 800 1814 24 18 0 1
+[[60,72,84,90,96],12]
+]
+,
+// fltk 7Fl_Tile 25 826 1814 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 25 826 1814 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 25 856 1814 1 18 0
+
+]
+]
+,
+// fltk 7Fl_Tile 13 876 1866 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 13 876 1866 28 18 0
+38 ,
+idivis(826-7) intersect idivis(4373-8),
+// fltk N4xcas10Log_OutputE 13 904 1866 1 18 0
+
+,
+// fltk N4xcas8EquationE 13 905 1866 24 18 0 1
+set[1,3,9]
+]
+,
+// fltk 7Fl_Tile 13 931 1866 53 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 13 931 1866 28 18 0
+7 ,
+4373%%9,
+// fltk N4xcas10Log_OutputE 13 959 1866 1 18 0
+
+,
+// fltk N4xcas8EquationE 13 960 1866 24 18 0 1
+[485,8]
+]
+,
+// fltk 7Fl_Tile 13 986 1866 31 18 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 13 986 1866 30 18 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 13 1016 1866 1 18 0
+
+]
+// context 1443 giac archive
+7 0 14 8 0 0 'cas_setup' 7 0 12 0 0 0
+0 0 0
+0 0 0
+0 1 0
+0 0 0
+7 0 2 1 Í-Åôóq=
+1 VÁûØ“<
+0 12 0
+7 0 4 0 4 0
+0 100 0
+0 0 0
+0 25 0
+0 0 0
+0 1 0
+0 0 0
+0 1 0
+8 0 0 'xyztrange' 7 0 16 1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1 afffffˆø
+1 ÅôôôôôÒ?
+0 1 0
+1        
+1      ?
+0 3 0
+7 0 0 7 0 0 8 0 15 7 1 2 0 792 0
+6 1 A 8 0 15 7 1 2 0 57892 0
+6 1 B 8 0 15 7 1 2 7 0 6 0 2 0
+0 3 0
+0 3 0
+0 2 0
+0 11 0
+0 1 0
+6 1 L 8 0 15 7 1 2 7 0 5 0 60 0
+0 72 0
+0 84 0
+0 90 0
+0 96 0
+6 1 a 8 0 15 7 1 2 0 101 0
+6 1 j 8 0 15 7 1 2 0 14473 0
+6 1 k 8 0 15 7 1 2 2 531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728127
+6 1 n 8 0 15 7 1 2 8 0 73 7 1 3 7 1 1 6 1 x 7 1 1 0 0 0
+8 0 72 7 1 4 8 0 15 7 1 2 7 0 0 6 1 a 8 0 15 7 1 2 0 2 0
+6 5 nbMax 8 0 71 7 0 4 8 0 15 7 1 2 0 1 0
+6 1 j 8 0 36 7 1 2 6 1 j 6 1 x 8 0 75 6 1 j 8 0 72 7 1 2 8 0 70 7 0 3 8 124 74 7 1 2 8 124 0 size 8 124 0 'idivis' 6 1 j 6 5 nbMax 8 124 15 7 1 2 8 124 0 'concat' 7 1 2 6 1 a 7 0 1 6 1 j 6 1 a 0 0 0
+8 0 70 7 0 3 8 124 37 7 1 2 8 124 0 size 8 124 0 'idivis' 6 1 j 6 5 nbMax 8 124 72 7 1 2 8 124 15 7 1 2 7 0 1 6 1 j 6 1 a 8 124 15 7 1 2 8 124 0 size 8 124 0 'idivis' 6 1 j 6 5 nbMax 0 0 0
+8 0 43 7 0 2 6 1 a 6 5 nbMax 6 9 nbFacteur 8 0 15 7 1 2 0 12 0
+6 5 nbMax 8 0 0 'xcas_mode' 0 0 0
+

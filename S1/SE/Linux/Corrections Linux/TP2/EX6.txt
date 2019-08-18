@@ -1,0 +1,47 @@
+﻿Exercice 6 : Les filtres et les expressions régulières (suite)
+
+Créer un fichier "fruits.txt" contenant les mots suivant (un par ligne) : tomate, poire, pomme, cerise, Fraise, fraise, courgette, POMME3, afraise.
+
+echo tomate > fruits.txt ; echo poire >> fruits.txt ; echo pomme >> fruits.txt ; echo cerise >> fruits.txt ; echo Fraise >> fruits.txt ; echo fraise >> fruits.txt ; echo courgette >> fruits.txt ; echo POMME3 >> fruits.txt ; echo afraise >> fruits.txt
+
+
+Afficher uniquement : 
+1. Les lignes dont le nom est "Fraise" ou "fraise"
+
+On utilise egrep sans option :
+On recherche les lignes avec "F" ou "f" au debut : ^[Ff]
+Puis "raise" pour la suite (Fraise ou fraise) :
+egrep ^[Ff]raise fruits.txt
+
+2. Les lignes dont le nom se finit en "se"
+
+On cherche les lignes avec "se" avant la fin de ligne ($) :
+egrep *se$ fruits.txt
+
+3. Les lignes ou "ai" est présent dans le nom
+
+On affiches ces lignes juste avec :
+egrep ai fruits.txt
+
+4. Les lignes dont le nom contient un chiffre
+
+De même qu'à la 3 mais "ai" doit être un chiffre :
+egrep [0123456789] fruits.txt
+MAIS il existe une syntaxe plus simple qu'il faut utiliser :
+egrep [0-9] fruits.txt
+
+5. Les lignes dont le nom fait exactement 5 lettres
+
+Pour trouver les mots composes uniquement de 5 lettres on utilise :
+"egrep -i" pour ignorer le type des lettres (majuscule ou minuscule)
+puis on indique le debut avec "^"
+On indique les caracteres possibles : [a-z]
+et on precise le nombre de caracteres avec "{5}$
+Ce qui donne :
+egrep -i ^[a-z]{5}$ fruits.txt
+
+ATTENTION la correction de M. Samba n'est pas bonne pour cette question.
+Sa version est :
+egrep ^.{5}$ fruits.txt
+Ce qui affiche tous les mots de 5 caractères (lettre ou chiffre).
+

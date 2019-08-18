@@ -1,0 +1,61 @@
+CREATE TABLE emprunteurs
+ ( idemprunteur integer PRIMARY KEY ,
+   nom VARCHAR(30),
+   prenom VARCHAR(30),
+   adresse VARCHAR(200),
+   code VARCHAR(5),
+   ville VARCHAR(60),
+   telephone VARCHAR(14),
+   sexe VARCHAR(1),
+   datenaiss VARCHAR(12),
+   nbretards integer);
+
+CREATE TABLE editeurs 
+( idediteur integer, 
+  nom VARCHAR(100), 
+  adresse VARCHAR (100), 
+  code integer, 
+  ville VARCHAR (100), 
+  pays VARCHAR (100), 
+  telephone VARCHAR(15),
+  fax VARCHAR(15),
+ constraint pk_edit primary key (idediteur )
+);
+
+CREATE TABLE auteurs 
+( idauteur integer, 
+  nom VARCHAR(100),
+  prenom VARCHAR(100), 
+ datenaiss VARCHAR(12), 
+ datedeces VARCHAR(12), 
+ bibliographie VARCHAR(200),
+constraint pk_aut primary key (idauteur )
+);
+
+
+CREATE TABLE livres
+ ( idlivre integer PRIMARY KEY,
+   isbn VARCHAR(13),
+   titre VARCHAR(100),
+   nbpages integer,
+   dateparu VARCHAR(12),
+   prix integer,
+   idediteur integer references editeurs(idediteur),
+   idauteur integer references auteurs(idauteur),
+   format VARCHAR(20),
+   nbtotal integer,
+   nbdispo integer,
+   theme VARCHAR(15), 
+   resume VARCHAR(15)
+);
+
+CREATE TABLE emprunts
+( idlivre integer references livres(idlivre),
+  idemprunteur integer references emprunteurs(idemprunteur), 
+  datepret VARCHAR(12), 
+  daterendu VARCHAR(12), 
+  constraint pk_emp primary key (idlivre, idemprunteur)
+);
+
+
+

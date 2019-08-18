@@ -1,0 +1,76 @@
+/*
+QUESTION 1
+*/
+
+CREATE TABLE COND (
+nocond NUMBER(3) PRIMARY KEY,
+nom VARCHAR2(15),
+pren VARCHAR2(15),
+rue VARCHAR2(25),
+cp VARCHAR2(5),
+ville VARCHAR2(25),
+tel NUMBER(10)
+);
+
+CREATE TABLE TRAIN (
+notrain NUMBER(3) PRIMARY KEY,
+aff VARCHAR2(15),
+typet VARCHAR2(10),
+wr NUMBER(1) CHECK (wr=0 OR wr=1)
+);
+
+CREATE TABLE TRAJET (
+notrajet NUMBER(3) PRIMARY KEY,
+vd VARCHAR2(25),
+hd NUMBER(4),
+va VARCHAR2(25),
+ha NUMBER(4),
+notrain NUMBER(3) REFERENCES TRAIN(notrain),
+nocond NUMBER(3) REFERENCES COND(nocond)
+);
+
+/*
+select * from cond, train, trajet;
+*/
+
+/*
+QUESTION 2
+*/
+
+CREATE TABLE LIAISON (
+notrain NUMBER(3) REFERENCES TRAIN(notrain),
+nocond NUMBER(3) REFERENCES COND(nocond),
+vd VARCHAR2(25),
+hd NUMBER(4),
+va VARCHAR2(25),
+ha NUMBER(4),
+CONSTRAINT clef_primaire_composee PRIMARY KEY (
+notrain,
+nocond,
+vd,
+ha)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

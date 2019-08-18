@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.3.0.3248"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model ID="{200BE66D-7C15-460B-ADDF-88D651D8538F}" Name="Diagramme de classes UML_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de classes UML_1.moo"/>
+		<Model ID="{AE73BCAA-0FB4-4210-B2CD-46328BADDAF8}" Name="ModeleOrienteObjet_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="ModeleOrienteObjet_1.moo"/>
+		<Model Expanded="Yes" ID="{DC50E7C8-EAD2-4AFC-B96A-B267BF755DF7}" Name="ModeleOrienteObjet_2" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="ModeleOrienteObjet_2.moo"/>
+		<Model Expanded="Yes" ID="{A4A110FA-ACDD-4BFF-8089-BC6B9B2533BD}" Name="ModeleOrienteObjet_3" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="ModeleOrienteObjet_3.moo"/>
+		<Model Expanded="Yes" ID="{A5CE40B0-7B7C-4228-897C-F3D0826F4B63}" Name="Diagramme de séquence UML_1" Selected="Yes" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de séquence UML_1.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>

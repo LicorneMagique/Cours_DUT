@@ -1,0 +1,30 @@
+create table age
+(codetypeage varchar(100) PRIMARY KEY ,
+typeage varchar(100)
+);
+
+create table nationalite
+(codenationalite varchar(100) PRIMARY KEY,
+ nomnationalite varchar(100) 
+);
+
+create table semaine
+(numsemaine varchar(100) PRIMARY KEY,
+ libsemaine varchar(100)
+);
+
+create table films
+(numfilm varchar(100) PRIMARY KEY, 
+nomfilm varchar(100), 
+codetypefilm varchar(100), 
+durefilm varchar(100),
+codetypeage references age(codetypeage),
+codenationalite references nationalite(codenationalite)
+);
+
+create table entree
+(numfilm varchar(100) references films(numfilm ),
+ numsemaine varchar(100) references semaine(numsemaine ),
+nbentree integer,
+constraint pk_entr primary key (numfilm , numsemaine )
+); 

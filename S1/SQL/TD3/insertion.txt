@@ -1,0 +1,49 @@
+insert into equipement values( '1', 'Refrigerateur');
+insert into equipement values('2','Cuisiniere');
+insert into equipement values('3','Salon de jardin');
+insert into equipement values('4','Cafetiere');
+insert into equipement values('5','Couvertures');
+insert into equipement values('6','Draps');
+insert into equipement values('7','Friteuse');
+insert into equipement values('8','Bidon eau');
+insert into equipement values('9','Plaque de cuisson');
+
+insert into type_hebergement values('1','Bungalow','6');
+insert into type_hebergement values('2','Caravane','4');
+insert into type_hebergement values('3','Mobil-home','6');
+
+insert into possession values('1','1'); 
+insert into possession values('1','3'); 
+insert into possession values('2','1'); 
+insert into possession values('2','3'); 
+insert into possession values('3','1'); 
+insert into possession values('3','3'); 
+insert into possession values('4','1'); 
+insert into possession values('4','2'); 
+insert into possession values('4','3'); 
+insert into possession values('5','1'); 
+insert into possession values('5','2'); 
+insert into possession values('5','3'); 
+insert into possession values('6','1'); 
+insert into possession values('7','1'); 
+insert into possession values('8','2'); 
+insert into possession values('9','2'); 
+
+insert into zone values('1','La belle epoque');
+insert into zone values('2','Les annees folles');
+insert into zone values('3','Les annees Twist');
+insert into zone values('4','Far-west');
+
+insert into habitation values('1','Petit jardin devant le bungalow','1','1');
+insert into habitation values('2','RAS','2','2');
+insert into habitation values('3','RAS','3','2');
+insert into habitation values('4','RAS','4','2');
+insert into habitation values('5','Television installee','1','2');
+insert into habitation values('6','RAS','1','3');
+insert into habitation values('7','RAS','4','3');
+insert into habitation values('8','RAS','3','2');
+insert into habitation values('9','RAS','3','1');
+insert into habitation values('10','Logement pour velos','4','3');
+
+
+

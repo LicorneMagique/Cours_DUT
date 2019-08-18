@@ -1,0 +1,8 @@
+[Desktop Entry]
+name=Cours Web
+Exec=firefox http://liris.cnrs.fr/~pchampin/enseignement/intro-web/
+Type=Application
+Terminal=False
+StartupNotify=false
+Icon=browser
+Name[fr_FR]=Cours

@@ -1,0 +1,135 @@
+/*
+Chapitre 1
+*/
+
+"echo" permet d'afficher un message. Exemple :
+echo Bonjour
+=
+echo "Bonjour"
+
+";" permet de separer des commandes sur une seule ligne. Exemple :
+echo bonjour ; echo bonsoir
+
+"cat chemin_du_fichier/nom_du_fichier" : affiche le contenu du fichier. Exemple :
+cat ~/Bureau/exemple.txt
+
+"more" : alternative pour visualiser le contenu d’un fichier. Le fonctionnement est exactement le meme.
+
+"stat" : affiche les caractéristiques d’un fichier. Exemple :
+stat ~/Bureau/exemple.txt
+
+"ls" : affiche une liste de fichiers dans un repertoire, eventuellement avec leurs caracteristiques. Exemple :
+ls ~/ --> affiche la liste des fichiers visibles du repertoire d'accueil
+ls -a ~/ --> affiche la liste des fichiers visibles ou caches du repertoire d'accueil
+ls ~/Bureau/exemple.txt --> Affiche  "exemple.txt" si le fichier existe a l'adresse donnee
+ls -i ~/Bureau/exemple.txt --> Affiche l'inode du fichier suivi de son nom
+
+
+"rm" : supprime un fichier. Exemple :
+rm ~/Bureau/exemple.txt
+
+"touch" : permet de créer un fichier vide (en pratique), s'il n'existe pas deja. Exemple :
+touch ~/Bureau/exemple.txt
+
+"cp" : permet de copier un fichier, voire de le renomer. Exemple :
+cp ~/Bureau/exemple.txt ~/Exercice/exemple.txt --> envoie une copie du fichier dans le dossier Exercice
+cd ~/Bureau/exemple.txt ~/Bureau/exemple_2.txt --> cree une copie du fichier, nomee exemple_2.txt sur le Bureau
+
+"mv" : permet de déplacer ou de renommer un fichier. Exemple :
+mv ~/Bureau/exemple.txt ~/Exercice/exemple.txt --> deplace le fichier dans le dossier Exercice
+mv ~/Bureau/exemple.txt ~/Bureau/exemple_2.txt --> renome le fichier en "exemple_2.txt"
+
+"cd" : permet de changer le répertoire courant. Exemple :
+cd ~/Bureau --> va sur le Bureau
+cd .. --> va dans le repertoire parent du repertoire courant. (cd ~/Bureau ; cd .. <-> cd ~/)
+
+"pwd" : donne le chemin absolu du répertoire courant. Exemple :
+pwd --> donne directement l'adresse absolu du repertoire courant.
+cd ~/Bureau ; pwd --> donne "/home/julien/Bureau" chez moi
+
+"mkdir" : permet de créer un répertoire. Exemple :
+mkdir ~/Bureau/Cours_Linux
+ou pour avoir un nom de dossier plus beau :
+mkdir '~/Bureau/Cours Linux'
+
+"alias" permet de créer un alias :
+alias --> Affiche tous les allias qui existent deja
+alias test_alias='echo Ceci est un teste de la commande alias' --> Executera la commande echo juste en mettant "test_alias"
+(unalias test_alias --> supprime l'alias, pas dans le cours)
+
+"ln" permet de creer un lien (physique par defaut) entre deux fichiers :
+ln ~/Bureau/exemple.txt ~/Bureau/exemple_2.txt --> cree le fichier "exemple_2.txt" en lien physique avec "exemple.txt"
+ln -s ~/Bureau/exemple.txt ~/Bureau/exemple_2.txt --> cree le raccourci "exemple_2.txt" qui redirige vers "exemple.txt"
+
+"|" le 'tuple' permet de rediriger la sortie d'une commande vers une autre :
+(echo mot_1 mot_2 mot_3 mot_4 mot_5 --> affichera 5 mots)
+(cut -d " " -f 2-5 -> affiche les mots numero 2 a 4 d'une liste)
+echo mot_1 mot_2 mot_3 mot_4 mot_5 | cut -d " " -f 2-4 ==> Affichera "mot_2 mot_3 mot_4"
+
+"id" : affiche l’identité de l’utilisateur :
+id --> donne les informations
+
+"man" : permet d’obtenir la documentation :
+man ls --> affiche la doc de la commande ls
+
+/*
+"gzip"
+        --> Un jour
+"tar"
+*/
+
+
+
+
+
+/*
+Chapitre 2
+*/
+
+"chmod" permet de modifier les droits d'un fichier :
+Utilisation : "chmod utilisateurs operateurs droits_d'acces fichier"
+Utilisateurs : u (user=l'utilisateur actuel), g (groupe) et o (other)
+Operateurs : +, - et =
+Droits d'acces : r (read-lecture), w (write-ecriture) et x (eXecuter)
+chmod ugo+rw o-x fichier --> donne le droit de lecture/ecriture a l'utilisateur/groupe et enleve le droit d'execution aux autres
+chmod u+rwx g=u fichier--> donne tous les droits a l'utilisateur et au groupe
+chmod ugo-rwx fichier --> retire tous les droits de tout le  monde
+Forme octale :
+Utilisation : "chmod chiffre1Chiffre2Chiffre3 fichier"
+r=4, w=2, x=1
+chiffre1=u, chiffre2=g, chiffre3=o
+pour connaitre la valeur du chiffre, on additionne la valeur des droits qu'on veut donner :
+0=aucun droit
+1=execution sans lecture ni ecriture
+2=ecriture sans lecture ni execution
+3=execution et ecriture sans lecture
+4=lecture
+5=lecture et execution sans ecriture
+6=lecture et ecriture sans execution
+7=lecture, ecriture et execution
+chmod 640 fichier --> droit de lecture/ecriture pour l'utilisateur, lecture pour le groupe et aucun droit pour les autres
+
+"chown" change le proprietaire d'un fichier :
+chown nouveau_proprio ficher
+
+"chgrp" change le groupe proprietaire d'un fichier :
+chgrp nouveau_groupe fichier
+
+">" redirige la sortie vers un fichier :
+echo bonjour > test.txt --> ecrit "bonjour" dans le fichier "test.txt", s'il existait deja il est efface avant
+
+">>" redirige la sortie vers la fin d'un fichier :
+meme fonctionnement que ">" mais sans effacer le contenu du fichier
+
+
+
+
+
+
+
+
+
+
+
+
+

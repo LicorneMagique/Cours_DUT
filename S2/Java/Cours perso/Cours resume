@@ -1,0 +1,101 @@
+Structure du programme :
+
+----------------------------------------------
+public class Nom_du_fichier_sans_le_.java {
+    
+	/*
+	Tous
+	vos
+	commentaires
+	ici
+	*/
+
+    public static void main(String[] args) {
+    
+    // Toutes les instructions du main ici
+    // Exemple :
+    System.out.println("Hello World !");
+    
+    }
+    
+}
+----------------------------------------------
+
+Types de variables :
+
+	Numeriques :
+		-byte de 1 octet (entre -128 et +127)
+			----------------------------------------------
+			byte temperature;
+			temperature = 64;
+			----------------------------------------------
+
+		-short de 2 octets (entre -32768 et +32767)
+			----------------------------------------------
+			short vitesseMax;
+			vitesseMax = 32000;
+			----------------------------------------------
+
+		-int de 4 octets (entre -2^109 et 2^109)
+			----------------------------------------------
+			int temperatureSoleil;
+			temperatureSoleil = 15600000; //La température est exprimée en kelvins
+			----------------------------------------------
+
+		-long de 8 octets (entre -9*10^18 et 9*10^18)
+		 il faudra mettre un 'L' a la fin du nombre
+			----------------------------------------------
+			long anneeLumiere;
+			anneeLumiere = 9460700000000000L;
+			----------------------------------------------
+
+		-float de 4 octets avec virgule
+		 il faudra mettre un 'f' a la fin du nombre
+			----------------------------------------------
+			float pi;
+			pi = 3.141592653f;
+
+			OU
+
+			float nombre;
+			nombre = 2.0f;
+			----------------------------------------------
+
+		-double de 8 octets avec une virgule
+		 il faudra mettre un 'd' a la fin du nombre
+			----------------------------------------------
+			double division;
+			division = 0.333333333333333333333333333333333333333333334d;
+			----------------------------------------------
+
+	Caractere :
+		-char avec des petites apostrophes : 'A'
+			----------------------------------------------
+			char caractere;
+			caractere = 'A';
+			----------------------------------------------
+
+	Booleen :
+		-boolean avec =true ou =false
+			----------------------------------------------
+			boolean question;
+			question = true;
+			----------------------------------------------
+
+	Chaine de caractere :
+		-String avec des double guillemets : "Hello World !"
+			----------------------------------------------
+			//Première méthode de déclaration
+			String phrase;
+			phrase = "Titi et Grosminet";
+
+			//Deuxième méthode de déclaration
+			String str = new String();
+			str = "Une autre chaîne de caractères";
+
+			//Troisième méthode de déclaration
+			String string = "Une autre chaîne";
+
+			//Quatrième méthode de déclaration
+			String chaine = new String("Et une de plus !");
+			----------------------------------------------

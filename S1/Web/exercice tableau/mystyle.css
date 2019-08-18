@@ -1,0 +1,35 @@
+table
+{
+	border : 1px grey solid;
+	border-radius : 5px;
+	padding : 0.5em;
+	padding-left : 0.15em;
+	padding-right : 0.15em;
+	background-color : #DDDDDD
+}
+
+
+td
+{
+	text-align : center;
+	height : 1.5em;
+}
+
+
+button
+{
+	height : 100%;
+	width : 100%
+}
+
+
+
+.a_droite input
+{
+	text-align: right;
+	height : 100%;
+	color : Blue;
+	background-color : LightBlue;
+	padding-right : 0.5em;
+	border : 0.5px grey solid
+}

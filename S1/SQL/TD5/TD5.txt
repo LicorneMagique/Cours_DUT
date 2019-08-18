@@ -1,0 +1,47 @@
+/*Question 1*/
+SELECT profession FROM csp ORDER BY profession DESC;
+
+/*Question 2*/
+SELECT profession FROM csp ORDER BY ANNEE_1975 DESC;
+
+/*Question 3*/
+SELECT csp, profession FROM csp ORDER BY csp, annee_1996;
+
+/*Question 4*/
+SELECT csp, profession FROM csp GROUP BY csp, profession;
+
+/*Question 5*/
+SELECT profession FROM csp WHERE annee_1996 >= 300 AND annee_1996 <= 1000 ORDER BY profession;
+
+/*Question 6*/
+SELECT profession FROM csp WHERE csp = 'Employes' AND annee_1996 > 1000 ORDER BY profession;
+
+/*Question 7*/
+SELECT profession FROM csp WHERE annee_1996 < 300 OR annee_1996 > 2000 ORDER BY profession;
+
+/*Question 8*/
+SELECT profession FROM csp WHERE csp = 'Ouvriers' ORDER BY profession;
+
+/*Question 9*/
+SELECT profession FROM csp WHERE csp = 'Ouvriers' AND annee_1996 > 1000 ORDER BY profession;
+
+/*Question 10*/
+SELECT profession, annee_1982, annee_1990, annee_1996 FROM csp WHERE csp = 'Ouvriers' ORDER BY annee_1996;
+
+/*Question 11*/
+SELECT csp, SUM(annee_1996) "Total effectifs" FROM csp GROUP BY csp;
+
+/*Question 12*/
+SELECT csp, MAX(annee_1996) "Effectif max" FROM csp GROUP BY csp;
+
+/*Question 13*/
+SELECT csp, COUNT(profession) "Nombre de profession" FROM csp GROUP BY csp;
+
+/*Question 14*/
+SELECT MIN(annee_1975) "Effectif 1975 min" FROM csp WHERE csp = 'Ouvriers' OR csp = 'Employes';
+
+/*Question 15*/
+SELECT csp FROM csp GROUP BY csp HAVING COUNT(profession) > 3;
+
+/*Question 16*/
+SELECT csp FROM csp GROUP BY csp HAVING SUM(annee_1990) > 1500;

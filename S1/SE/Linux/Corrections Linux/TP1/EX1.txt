@@ -1,0 +1,84 @@
+﻿Exercice 1 : Commandes de base (cd, mkdir, ls, cp, cat, rm, echo, id, date).
+
+1. Créer un répertoire SELINUX dans votre répertoire d’accueil.
+
+mkdir ~/SELINUX
+
+2. Créer dans SELINUX un répertoire TPXX par séance. Aujourd’hui, il faut donc créer le répertoire TP01.
+
+Méthode 1 :
+cd ~/SELINUX
+mkdir TP01
+
+Méthode 1 en une ligne :
+cd ~/SELINUX ; mkdir TP01
+
+Méthode 2 :
+mkdir ~/SELINUX/TP01
+
+3. Vérifier que les répertoires ont bien été créés.
+
+Méthode 1 :
+Vérifier la présence de SELINUX avec :
+ls ~/
+puis aller dans SELINUX avec :
+cd ~/SELINUX
+puis vérifier la presence de TP01 (dans SELINUX) avec :
+ls
+
+Méthode 2 :
+Vérifier la présence deSELINUX avec :
+ls ~/
+puis vérifier la présence de TP01 (dans SELINUX) avec :
+ls ~/SELINUX
+
+Méthode 3 :
+Vérifier directement la présence de TP01 dans SELINUX avec :
+ls ~/SELINUX
+S'il y a bien TP01 dans SELINUX alors les deux existent.
+
+4. Copier le fichier /etc/passwd dans le répertoire TP01.
+
+Méthode 1 :
+Aller dans TP01 avec :
+cd ~/SELINUX/TP01
+puis copier le fichier avec :
+cp /etc/passwd passwd
+
+Méthode 2 :
+Copier directement le fichier dans TP01 avec :
+cp /etc/passwd ~/SELINUX/TP01/passwd
+
+5. Afficher le contenu de ce fichier.
+
+Méthode 1 :
+Aller dans TP01 (si vous n'y etes pas) avec :
+cd ~/SELINUX/TP01
+puis lire le fichier avec :
+cat passwd
+
+Méthode 2 :
+Lire directement le fichier avec :
+cat ~/SELINUX/TP01/passwd
+
+6. Effacer cette copie.
+
+Méthode 1 :
+Aller dans TP01 (si vous n'y etes pas) avec :
+cd ~/SELINUX/TP01
+puis supprimer le fichier avec :
+rm passwd
+
+Méthode 2 :
+Supprimer directement le fichier avec :
+rm ~/SELINUX/TP01/passwd
+
+7. Afficher "bonjour" à l’écran.
+
+Méthode 1 :
+echo bonjour
+
+Méthode 2 :
+echo "bonjour"
+
+

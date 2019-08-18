@@ -1,0 +1,6 @@
+Pour ceux qui veulent utiliser les mails de l'IUT sur leur téléphone, voici comment faire :
+- Ouvrez votre application de mail et créez un nouveau compte en configuration manuelle IMAP4
+- L'adresse IMAP est : accesbv.univ-lyon1.fr sur le port 993 en SSL
+- L'adresse smtp est : smtpbv.univ-lyon1.fr sur le port 587 en TLS
+- Votre nom d'utilisateur n'est pas votre mail mais votre numéro étudiant (pxxxxxxx)
+- Votre mot de passe est celui de l'IUT

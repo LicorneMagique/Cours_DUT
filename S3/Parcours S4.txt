@@ -1,0 +1,3 @@
+1 groupe études courtes (groupe 1)
+2 groupes études longues (groupe 2 et 3)
+    --> Le groupe 2 est mieux pour aller en licence informatique

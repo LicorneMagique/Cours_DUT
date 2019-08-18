@@ -1,0 +1,109 @@
+﻿Exercice 3 : Les liens
+
+1. Faire une copie nommée "cp_passwd" du fichier '/etc/passwd' dans votre répertoire d’accueil.
+Quel est l’inode de cette copie ?
+Comparer-le avec l’inode de '/etc/passwd'.
+
+Faire la copie avec :
+cp /etc/passwd ~/cp_passwd
+Trouver l'inode avec :
+ls -i ~/cp_passwd
+Comparer avec l'inode de '/etc/passwd' :
+Trouver l'inode de  '/etc/passwd' avec :
+ls -i /etc/passwd
+
+Dans mon cas les inodes sont :
+530253 /home/julien/cp_passwd
+et
+656434 /etc/passwd
+
+On constate donc que les inodes sont différentes.
+
+2. Créer un lien physique, nommé "ln_passwd", de "cp_passwd" dans le répertoire où se trouve "cp_passwd".
+
+Créer le lien physique avec :
+ln ~/cp_passwd ~/ln_passwd
+
+3. Modifier le fichier "cp_passwd", par exemple en ajoutant une ligne quelconque en haut du fichier.
+
+Utiliser l'interface graphique, ajouter une ligne est suffisant.
+On dira qu'on a ajouté "test" en haut du fichier "cp_passwd"
+
+4. Ouvrer le fichier "ln_passwd".
+Est-il modifié ?
+Pourquoi ?
+Quel est son inode ?
+
+On l'ouvre avec l'interface graphique.
+On constate que la ligne ajoutée sur "cp_passwd" est également sur "ln_passwd".
+C'est normal car "cp_passwd" et "ln_passwd" sont un lien physique.
+Ils partagent donc la même inode.
+On peut le vérifier avec :
+ls -i ~/ln_passwd
+et
+ls -i ~/cp_passwd
+
+Dans mon cas cela donne :
+530253 /home/julien/ln_passwd
+530253 /home/julien/cp_passwd
+
+Les inodes sont bien identiques.
+
+5. Supprimer le fichier "cp_passwd".
+Le fichier "ln_passwd" est il supprimé ?
+Si non, est-il possible de lire son contenu ?
+
+Supprimer le fichier avec :
+rm ~/cp_passwd
+Le fichier "ln_passwd" n'est pas supprimé.
+On peut le lire.
+
+6. Recommencer les étapes 2 à 5 en remplaçant le lien physique par un lien symbolique.
+Commenter les différences.
+
+On commence par supprimer le fichier restant avec :
+rm ~/ln_passwd
+Puis créer de nouveau "cp_passwd" avec :
+cp /etc/passwd ~/cp_passwd
+
+6.2. Créer un lien symbolique, nommé "ln_passwd", de "cp_passwd" dans le répertoire où se trouve "cp_passwd".
+
+Créer le lien symbolique avec :
+ln -s ~/cp_passwd ~/ln_passwd
+
+6.3. Modifier le fichier "cp_passwd", par exemple en ajoutant une ligne quelconque en haut du fichier.
+
+Utiliser l'interface graphique, ajouter une ligne est suffisant.
+On dira qu'on a ajouté "test" en haut du fichier "cp_passwd"
+
+6.4. Ouvrer le fichier "ln_passwd".
+Est-il modifié ?
+Pourquoi ?
+Quel est son inode ?
+
+On l'ouvre avec l'interface graphique.
+On constate que la ligne ajoutée sur "cp_passwd" est également visible sur "ln_passwd".
+C'est normal car "ln_passwd" est un lien symbolique (raccourci) vers "cp_passwd".
+Cela veut dire que quand on ouvre "ln_passwd" cela renvoie vers "cp_passwd"
+Ils ne partagent cependant pas la meme inode.
+On peut le vérifier avec :
+ls -i ~/ln_passwd
+et
+ls -i ~/cp_passwd
+
+Dans mon cas cela donne :
+530255 /home/julien/ln_passwd
+530254 /home/julien/cp_passwd
+
+Les inodes sont bien differentes.
+
+6.5. Supprimer le fichier "cp_passwd".
+Le fichier "ln_passwd" est il supprimé ?
+Si non, est-il possible de lire son contenu ?
+
+Supprimer le fichier avec :
+rm ~/cp_passwd
+Le fichier "ln_passwd" n'est pas supprimé.
+On ne peut cependant pas voir son contenu car il renvoie vers un fichier qui n'existe plus.
+
+

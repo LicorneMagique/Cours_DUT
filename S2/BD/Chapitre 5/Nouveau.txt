@@ -1,0 +1,13 @@
+/*11 b
+SET SERVEROUTPUT ON
+DECLARE
+  v_Return BOOLEAN;
+BEGIN
+    v_Return := CK_SAL(118);
+CASE v_Return
+    WHEN TRUE THEN DBMS_OUTPUT.PUT_LINE('Salaire > moyenne des salaires');
+    WHEN FALSE THEN DBMS_OUTPUT.PUT_LINE('Salaire < moyenne des salaires');
+    ELSE DBMS_OUTPUT.PUT_LINE('La fonction a renvoyé NULL à cause d''une exception');
+END CASE;
+END;
+*/

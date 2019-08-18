@@ -1,0 +1,28 @@
+/*1)*/
+ALTER TABLE dept ADD moy_sal NUMBER(7,2);
+UPDATE dept SET moy_sal = (SELECT AVG(sal) FROM emp WHERE deptno = dept.deptno);
+
+/*2)*/
+CREATE OR REPLACE TRIGGER update_emp
+AFTER INSERT OR UPDATE ON emp
+DECLARE
+    --Déclaration de la variable de stockage du nouveau salaire moyen par dept
+    v_nb emp.sal%TYPE;
+BEGIN
+    --Si on update le salaire (ou en cas d'insertion)
+    IF INSERTING OR UPDATING ('sal') THEN
+        --Pour chaque dept
+        FOR enr IN (SELECT deptno FROM dept GROUP BY deptno) LOOP
+            --Sélectionner la nouvelle moyenne des emp du dept
+            SELECT AVG(sal) INTO v_nb FROM emp WHERE deptno = enr.deptno;
+            --Mettre à jour cette moyenne dans la table dept, au numéro de dept correspondant
+            UPDATE dept SET moy_sal = v_nb WHERE deptno = enr.deptno;
+        END LOOP;
+    END IF;
+END;
+
+/*3)
+	Voir les commentaires du 2)*/
+
+/*4)*/
+SELECT * FROM user_triggers WHERE trigger_name = 'UPDATE_EMP';

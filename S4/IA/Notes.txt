@@ -1,0 +1,104 @@
+Cours 1 : Intro → https://perso.liris.cnrs.fr/amelie.cordier/teaching/intro-ai/slides/index.html#1
+
+"L'IA étudie les manières dont nous pouvons concevoir, construire et fabriquer des agents capables d'agir intelligemment."
+On peut dire que l'IA a pour but de simuler l'intelligence humaine.
+
+Une IA faible est un programme informatique spécialisé dans une tache (reconnaissance, jeu de go...). Il possède donc une forme d'intelligence.
+Une IA forte n'est pas spécialisée dans un domaine, elle est capable d'apprendre des choses dans un domaine et de les transposer dans un autre domaine.
+
+Les agents sont ceux qui peuvent agir dans un environnement (les humains, les animaux, les robots d'une chaine de montage...).
+
+Apprendre à reconnaître une image permet de mieux en créee : on inverse le processus et ça augmente la créativité de l'IA.
+
+Méthode 1 face à un problème : comprendre les mécanismes pour créer un programme qui répondre au problème
+Méthode 2 : regarder où se trouve la solution (dans le cerveau, chez les animaux style fourmis) et simuler cet environnement pour y faire résoudre le problème → simulation de réseau de norones
+
+Les deux grand courants de l'IA : L'IA Symbolique et l'IA Numérique
+L'IA symbolique : on essaie de donner un maximum de connaissances de haut niveau à l'IA et on y fait des calculs pour déterminer les actions à faire
+L'IA numérique = machine learning : on a un modèle mathématique (réseau de norones par exemple), on lui donne en entrée une image, il doit nous dire si c'est ou non une image de chat, si c'est la bonne on lui dit, sinon on oui dit aussi... en boucle jusqu'à ce qu'il comprenne
+
+Le CONNEXIONNISME est le fait d'utiliser un réseau de norones. Toute la dificulté du connexionnisme est de savoir combien de norones il faut et comment connecter les norones entre eux
+
+-------------------------------------------------------------------------------
+
+Cours 2 : Recherche de chemins → https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-ia/parts/chemins.html
+
+Site de visualisation des algorithmes de recherche : https://qiao.github.io/PathFinding.js/visual/
+
+Dijkstra : ne marche que dans un graph à coûts positif ou nul
+
+A* [a star] : espèce de version de Dijkstra qui prend en compte une heuristique optimiste (la plus courte distance possible ou moins)
+Heuristique Euclidienne → distance mathématique la plus courte
+Heuristique Manhattan → distance "escalier" la plus courte
+Si l'heuristique n'est pas optimiste l'algorithme ne peut pas garantir que le chemin trouvé est le plus court mais le temps de calcul pourrait être moins long.
+
+L'heuristique est le terme savant pour parler de la pifométrie. P-A. Champin, 2019.
+
+-------------------------------------------------------------------------------
+
+Cours 3 : Résolution de problème
+
+Un problème peut être modélisé par un graphe d'état où chacun des noeuds est une situation.
+La résolution du problème devient alors une recherche de chemin(s).
+
+La représentation du graphe d'état dans sa totalité est un concepte humain, en réalité on ne charge en mémoire que les noeuds qui nous intéressent pour chaque situation.
+
+Sur un graphe l'heuristique (optimiste) conciste à dire qu'il y a plus de chance de trouver la solution en se dirigeant vers un noeud plus proche de l'état final que vers un noeud plus proche de l'état de départ.
+
+Cas du graphe de Hanoi https://fr.wikipedia.org/wiki/Tours_de_Hano%C3%AF#/media/File:Hanoi-Graph-3-text.png
+
+Il existe cependant des problème qu'on ne neut pas modéliser avec des graphes :
+    - Ceux où le nombre de décision à chaque étape est ou peut être infini
+    - Ceux où le résultat des décisions est inconnu ou incertain
+    - Ceux où il y a plusieurs personnes qui prennent les décision
+
+-------------------------------------------------------------------------------
+
+Cours 4 : Prolog
+
+L'idée est de juste donner des données à la machine et d'utiliser un programme assez générique pour exploiter ces données de façon générale.
+
+Prolog a cependant rencontré ses limites, surtout à cause du coût des calculs exponentiellement croissant avec la complexité du problème donné au programme.
+
+-------------------------------------------------------------------------------
+
+Cours 5 : "Web Sémantique" | "Web de données (liées)"
+
+https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-ia/parts/websem.html
+
+L'idée est de "doubler" les données du web de façon à ce que la machine puisse comprendre les données déjà compréhensibles par les humains.
+
+Le web sémantique utilise le modèle de données RDF, des prédicats binaires et des requêtes en N3
+
+-------------------------------------------------------------------------------
+
+Cours 6 : Deuxième partie de l'introduction à l'IA (avec Serge Fenet)
+
+IA forte -> niveau d'abstraction tellement fort qu'elle a la capacité de résoner sur elle-même
+
+Motivations actuelles de la recherche et utilisation de l'IA :
+    - La puissance de calcul
+    - La non linéarité dans la courbe de temps de calcul (rapport puissance CPU/complexité du problème)
+    - Les structures de données (pas du tout assez bien structurées à l'époque)
+
+Un système complexe est un ensemble de composants en interraction doté de certaines caractéristiques :
+    - Auto-organisation des composants (stimulis extérieurs)
+    - Comportements observés différents selon l'échelle
+    - Comportement global non prévisible de façon analytique (théorie du chaos)
+
+Voir "Computational complexity" de Papadimitriou
+Zoo des complexités : http://www.complexityzoo.com/
+
+-------------------------------------------------------------------------------
+
+Cours 7 : La complexité du monde
+
+Le temps de calcul en IA est utilisé suivant deux axes :
+    - Explorer le monde → parcourir la courbe en allant un peu partout au pif
+    - Exploiter → regarder le voisinage d'un point
+
+-------------------------------------------------------------------------------
+
+Cours 8 : Les limites de l'IA
+
+L'apprentissage par deep learning est biaisé par les données avec lesquels il a appris : https://www.nature.com/articles/d41586-018-05707-8

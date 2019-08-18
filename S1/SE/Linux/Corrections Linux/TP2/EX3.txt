@@ -1,0 +1,25 @@
+﻿Exercice 3 : Les redirections
+
+1. Stocker, dans un fichier texte, la liste des fichiers et répertoires de votre répertoire d’accueil.
+Vérifier que cela a fonctionné.
+
+Stocker la liste des fichiers et repertoires dans un fichier avec :
+ls > ~/liste_repertoires.txt
+et verifier que cela a marché avec :
+cat ~/liste_repertoires.txt
+
+Ce qui donne en une commande :
+ls > ~/liste_repertoires.txt ; cat ~/liste_repertoires.txt
+
+2. Écrire "fin" à la fin de ce fichier.
+Il est évidemment interdit d’utiliser un éditeur de texte.
+
+Utiliser la commande :
+echo fin >> ~/liste_repertoires.txt
+
+3. Essayer de stocker le "man" de la commande "ls".
+
+Utiliser la commande :
+man ls > ~/man_ls.txt
+
+

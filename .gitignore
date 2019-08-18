@@ -1,0 +1,227 @@
+#ls -R -C -1 -a > test.gitignore
+
+
+/"Projets perso"/"Algorithmes de trie"/quicksort
+/"Projets perso"/"Algorithmes de trie"/test
+
+/S1/C/"Controle 2016-2017"/exercice1
+/S1/C/"Controle 2016-2017"/exercice2
+/S1/C/"Controle 2016-2017"/exercice3
+
+/S1/C/Cours/TD/TD5/td5exo1
+/S1/C/Cours/TD/TD5/td5exo2
+/S1/C/Cours/TD/TD5/td5exo3
+/S1/C/Cours/TD/TD5/td5exo4
+/S1/C/Cours/TD/TD5/td5exo5
+/S1/C/Cours/TD/TD5/td5exo5_2
+/S1/C/Cours/TD/TD5/td5exo5_3
+/S1/C/Cours/TD/TD5/td5exo6_2
+/S1/C/Cours/TD/TD5/td5exo7
+/S1/C/Cours/TD/TD5/td5exo7_b
+
+/S1/C/Cours/TD/TD6/td6exo1
+/S1/C/Cours/TD/TD6/td6exo5
+/S1/C/Cours/TD/TD6/td6exo6
+/S1/C/Cours/TD/TD6/td6exo7
+
+/S1/C/TP1/EX1
+/S1/C/TP1/EX2
+/S1/C/TP1/EX3
+/S1/C/TP1/EX4
+/S1/C/TP1/EX5
+/S1/C/TP1/EX6
+
+/S1/C/TP2/EX1
+/S1/C/TP2/EX10
+/S1/C/TP2/EX11
+/S1/C/TP2/EX12
+/S1/C/TP2/EX2
+/S1/C/TP2/EX3
+/S1/C/TP2/EX4
+/S1/C/TP2/EX5
+/S1/C/TP2/EX6
+/S1/C/TP2/EX7
+/S1/C/TP2/EX8
+/S1/C/TP2/test
+
+/S1/C/TP2Bis/EX1
+/S1/C/TP2Bis/EX10
+/S1/C/TP2Bis/EX11
+/S1/C/TP2Bis/EX12
+/S1/C/TP2Bis/EX2
+/S1/C/TP2Bis/EX3
+/S1/C/TP2Bis/EX4
+/S1/C/TP2Bis/EX5
+/S1/C/TP2Bis/EX6
+/S1/C/TP2Bis/EX7
+/S1/C/TP2Bis/EX8
+
+
+/S1/C/TP3/EX1
+/S1/C/TP3/test
+
+/S1/C/"TP3 revision"/switch
+/S1/C/"TP3 revision"/tableaux
+
+/S1/C/TP4/EX1
+/S1/C/TP4/EX2
+
+/S1/C/TP5/EX1
+/S1/C/TP5/EX2
+
+/S1/C/TP6/EX1
+/S1/C/TP6/EX2
+/S1/C/TP6/EX3
+/S1/C/TP6/EX4
+/S1/C/TP6/EX5
+/S1/C/TP6/EX6
+/S1/C/TP6/EX7
+/S1/C/TP6/EX8
+
+/S1/C/TP7/EX1
+/S1/C/TP7/EX2
+/S1/C/TP7/EX3
+
+/S1/SE/Linux/"Corrections Linux"/TP3/EX6/
+
+/S1/SE/Linux/"Corrections Linux"/TP4/fichier
+
+/S2/BD/TP-Java/build/
+/S2/BD/TP-Java/nbproject/private
+
+/S2/IHM/IHM-EX1/build/
+/S2/IHM/IHM-EX1/nbproject/private/
+
+/S2/IHM/IHM2/build/
+/S2/IHM/IHM2/nbproject/private/
+
+/S2/Java/"Cours 2"/EX0/build/
+/S2/Java/"Cours 2"/EX0/nbproject/private/
+
+/S2/Java/"Cours 2"/EX1/build/
+/S2/Java/"Cours 2"/EX1/nbproject/private/
+
+/S2/Java/"Cours 3"/EX1/build/
+/S2/Java/"Cours 3"/EX1/nbproject/private/
+
+/S2/Java/"Cours 4"/EX1/build/
+/S2/Java/"Cours 4"/EX1/nbproject/private
+
+/S2/Java/"Cours perso"/PremierProg/build/
+/S2/Java/"Cours perso"/PremierProg/nbproject/private
+
+/S2/Java/"Java - Drive Etudiant"/Cours/cours_Vincent_Vidal/correction_DS_promo_2016/build/
+/S2/Java/"Java - Drive Etudiant"/Cours/cours_Vincent_Vidal/correction_DS_promo_2016/nbproject/private
+
+/S2/Java/TP1/"TP1 Matteo"/Ex1/build/
+/S2/Java/TP1/"TP1 Matteo"/Ex1/nbproject/private
+
+/S2/Java/TP1/"TP1 Matteo"/Ex2/build/
+/S2/Java/TP1/"TP1 Matteo"/Ex2/nbproject/private
+
+/S2/Java/TP1/"TP1 Matteo"/Ex3/build/
+/S2/Java/TP1/"TP1 Matteo"/Ex3/nbproject/private
+
+/S2/Java/TP1/"TP1 Moi"/EX1/build/
+/S2/Java/TP1/"TP1 Moi"/EX1/nbproject/private
+
+/S2/Java/TP1/"TP1 Moi"/EX1-1/build/
+/S2/Java/TP1/"TP1 Moi"/EX1-1/nbproject/private
+
+/S2/Java/TP1/"TP1 Moi"/EX2/build/
+/S2/Java/TP1/"TP1 Moi"/EX2/nbproject/private
+
+/S2/Java/TP1/"TP1 Moi"/EX3/build/
+/S2/Java/TP1/"TP1 Moi"/EX3/nbproject/private
+
+/S2/Java/TP2/Bibliotheque-1/build/
+/S2/Java/TP2/Bibliotheque-1/nbproject/private
+
+/S2/Java/TP2/EX0/build/
+/S2/Java/TP2/EX0/nbproject/private
+
+/S2/Java/TP3/Biblio-2/build/
+/S2/Java/TP3/Biblio-2/nbproject/private
+
+/S2/Java/TP3/Bibliotheque-2/build/
+/S2/Java/TP3/Bibliotheque-2/nbproject/private
+
+/S2/Java/TP4/Biblio-3/build/
+/S2/Java/TP4/Biblio-3/nbproject/private
+
+/S2/Java/TP4/Bibliotheque-3/build/
+/S2/Java/TP4/Bibliotheque-3/nbproject/private
+
+/S2/Java/TP5/Bibliotheque-4/build/
+/S2/Java/TP5/Bibliotheque-4/nbproject/private
+
+/S2/Java/TP5/Biblio-TP5/build/
+/S2/Java/TP5/Biblio-TP5/nbproject/private
+
+/S2/Java/TP6/Bibliotheque-5/build/
+/S2/Java/TP6/Bibliotheque-5/nbproject/private
+
+/S2/Java/TP6/Biblio-TP6/build/
+/S2/Java/TP6/Biblio-TP6/nbproject/private
+
+/S2/Java/TP7/Bibliotheque-6/build/
+/S2/Java/TP7/Bibliotheque-6/nbproject/private
+
+/S2/Java/TP7/Biblio-TP7/build/
+/S2/Java/TP7/Biblio-TP7/nbproject/private
+
+/S2/Java/TP8/Bibliotheque-7/build/
+/S2/Java/TP8/Bibliotheque-7/nbproject/private
+
+/S2/Java/TP8/Biblio-TP8/build/
+/S2/Java/TP8/Biblio-TP8/nbproject/private
+
+/S2/Ptut/PTUT_S2-S3/
+
+/S3/Algo\ avancé/__pycache__/*
+
+/S3/BDA/TPs/MiniBus/build/
+/S3/BDA/TPs/MiniBus/nbproject/private
+
+/S3/CPOA/CPOA/
+
+/S3/SE/TP1/EX1/monEcho
+
+/S3/SE/TP1/EX2/monCat
+/S3/SE/TP1/EX2/write
+
+/S3/SE/TP1/EX3/monCp
+
+/S3/SE/TP2/lockfileEmpty
+
+/S3/SE/TP3/exempleFork
+/S3/SE/TP3/mesForks
+/S3/SE/TP3/shell1
+/S3/SE/TP3/shell2
+/S3/SE/TP3/test
+
+/S3/SE/TP4/shell1
+
+/S3/Java/Netbeans/PremierProjet/build/
+/S3/Java/Netbeans/PremierProjet/nbproject/private/
+/S3/Java/Netbeans/Projet/Projet-JEE/Projet-JEE/nbproject/private/
+/S3/Java/Netbeans/Projet/Projet-JEE/Projet-JEE/Projet-JEE-war/nbproject/private/
+/S3/Java/Netbeans/Projet/Projet-JEE/Projet-JEE/Projet-JEE-ejb/nbproject/private/
+/S3/Java/Netbeans/Projet/Projet-JEE/Projet-JEE/Projet-JEE-war/build/
+/S3/Java/Netbeans/Projet/Projet-JEE/Projet-JEE/Projet-JEE-ejb/build/
+/S3/Java/Netbeans/Projet/Projet-JEE/Projet-JEE/Projet-JEE-ejb/dist/
+
+/S3/Java/Netbeans/Projet/Java-EE
+
+/S4/JavaScript/js_tp1_guichard_giraud/
+/S4/JavaScript/js_tp2_nadjare_giraud/
+/S4/JavaScript/js_tp3_nadjare_giraud/
+/S4/JavaScript/js_tp6_nadjare_giraud/
+
+/S4/C++/"Cours 3"/menu
+
+/"Projets perso"/Java/Planning/build/
+/"Projets perso"/Java/Planning/dist/
+/"Projets perso"/Java/Planning/nbproject/private/
+
+.~lock.*

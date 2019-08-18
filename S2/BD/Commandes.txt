@@ -1,0 +1,2 @@
+Copie des tables depuis SCOTT
+CREATE TABLE dept as SELECT * FROM SCOTT.dept;

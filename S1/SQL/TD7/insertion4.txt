@@ -1,0 +1,86 @@
+insert into categorie values ('C1','Mensuel');
+insert into categorie values ('C2','Hebdomadaire');
+insert into categorie values ('C3','Guide technique');
+
+
+insert into support values ('S1','PC expert', 'C1');
+insert into support values ('S2','SVM', 'C1');
+insert into support values ('S3','Info Mag.', 'C1');
+insert into support values ('S4','01 Info', 'C2');
+insert into support values ('S5','Le Monde Info', 'C2');
+insert into support values ('S6','SQL Server', 'C3');
+insert into support values ('S7','C++', 'C3');
+
+insert into eleve values ('E1','DUPONT','Pierre','1GR1');
+insert into eleve values ('E2','DURAND','Paul','1GR1');
+insert into eleve values ('E3','ACEDO','Jean','2GR4');
+insert into eleve values ('E4','TRAORE','Amara','G6S2S3');
+insert into eleve values ('E5','FLAUTO','Sylvain','1GR5');
+insert into eleve values ('E6','LOUP','Bergerie','1GR5');
+insert into eleve values ('E7','GARROU','Wolf','1GR3');
+
+insert into pret values ('05/09/06', 'S3', 'E3','01/10/06');
+insert into pret values ('01/09/06', 'S1', 'E1', '01/10/06');
+insert into pret values ('05/05/06', 'S5', 'E3', '06/06/06');
+insert into pret values ('05/04/06', 'S7', 'E7', '05/05/06');
+insert into pret values ('01/04/06', 'S2', 'E3', '04/04/06');
+insert into pret values ('04/10/06', 'S5', 'E7', '10/10/06');
+insert into pret values ('07/07/06', 'S4', 'E3', '08/08/06');
+insert into pret values ('10/10/06', 'S7', 'E3', '');
+insert into pret values ('20/10/06', 'S7', 'E1', '');
+insert into pret values ('07/07/06', 'S1', 'E3', '08/08/06');
+insert into pret values ('09/10/06', 'S6', 'E3', '10/10/98');
+
+insert into village values ('1','Carnac',60,50);
+insert into village values ('2','Loudiac',50,40);
+insert into village values ('3','Yffignac',20,15);
+
+insert into habitant values ('1','Abraracourcix',37,'Guerrier',1);
+insert into habitant values ('2','Antonix',20,'Enfant',2);
+insert into habitant values ('3','Astérix',35,'Guerrier',1);
+insert into habitant values ('4','Assurancetourix',28,'Barde',1);
+insert into habitant values ('5','Davix',25,'Barde',3);
+insert into habitant values ('6','Erix',18,'Enfant',2);
+insert into habitant values ('7','Hervix',31,'Guerrier',2);
+insert into habitant values ('8','Johix',15,'Enfant',3);
+insert into habitant values ('9','Laurix',18,'Enfant',2);
+insert into habitant values ('10','Lionix',20,'Enfant',2);
+insert into habitant values ('11','Leonix',40,'Druide',2);
+insert into habitant values ('12','Obelix',35,'Livreur',1);
+insert into habitant values ('13','Panoramix',60,'Druide',1);
+insert into habitant values ('14','Robix',35,'Chasseur',3);
+
+
+insert into potion values ('1','Force');
+insert into potion values ('2','Intelligence');
+insert into potion values ('3','Rapidité');
+insert into potion values ('4','Gentillesse');
+insert into potion values ('5','Agilité');
+insert into potion values ('6','Gaieté');
+insert into potion values ('7','Silencieux');
+
+insert into ingrédient values ('1','Carotte','Couleur',15);
+insert into ingrédient values ('2','Choux','Goût',5);
+insert into ingrédient values ('3','Mousse','Fraîcheur',10);
+insert into ingrédient values ('4','Thym','Goût',20);
+
+insert into fabriquer values ('11','2');
+insert into fabriquer values ('11','4');
+insert into fabriquer values ('11','6');
+insert into fabriquer values ('13','1');
+insert into fabriquer values ('13','3');
+insert into fabriquer values ('13','5');
+insert into fabriquer values ('13','7');
+
+insert into composer values ('1','2',2);
+insert into composer values ('2','1',1);
+insert into composer values ('2','3',5);
+insert into composer values ('3','2',2);
+insert into composer values ('4','2',3);
+insert into composer values ('4','1',4);
+insert into composer values ('5','3',1);
+insert into composer values ('5','2',1);
+insert into composer values ('6','1',4);
+insert into composer values ('7','2',3);
+insert into composer values ('6','2',2);
+insert into composer values ('2','2',1);

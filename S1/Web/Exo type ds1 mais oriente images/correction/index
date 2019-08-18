@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr">
+	<head>
+    <title>1fichier.com: Cloud Storage</title>
+		<meta name="robots" content="noindex" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="shortcut icon" href="https://img.1fichier.com/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://img.1fichier.com/favicon.ico" />
+    <link rel="icon" type="image/png" href="https://img.1fichier.com/favicon.png" />
+    <link rel="apple-touch-icon" href="https://img.1fichier.com/favicon.png" />
+    <link rel="image_src" href="https://img.1fichier.com/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="https://img.1fichier.com/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://img.1fichier.com/css/jquery.ui.css" />
+    <script type="text/javascript" src="https://img.1fichier.com/js/jquery.js"></script>
+	
+
+		<script type="text/javascript">
+		<!--//<![CDATA[
+			jQuery(document).ready(function($) {
+
+				
+
+				
+
+				if(getCookie('show_cookie_message') != 'no') { $('#cookie_box').show(); }
+				$('.cookie_box_close').click(function()	{
+					$('#cookie_box').hide();
+					var expires = new Date();  
+					expires.setTime(expires.getTime() + 31536000000); //1 year	 
+					document.cookie = 'show_cookie_message=no; expires=' + expires.toUTCString();	
+					return false;
+				});							
+			});
+
+			function getCookie(cookie_name)	{
+				if (document.cookie.length>0) {
+					cookie_start = document.cookie.indexOf(cookie_name + "=");
+					if (cookie_start != -1)	{
+						cookie_start = cookie_start + cookie_name.length+1;
+						cookie_end = document.cookie.indexOf(";",cookie_start);
+						if (cookie_end == -1)	{ cookie_end = document.cookie.length; }
+						return unescape(document.cookie.substring(cookie_start,cookie_end));
+					}}
+				return "";
+			}						
+	
+	//]]>--></script>
+
+
+
+  
+    
+      
+        
+	    <script type="text/javascript">
+  	    window._taboola = window._taboola || [];
+	        _taboola.push({category:'auto'});
+  	      !function (e, f, u) {
+    	    e.async = 1;
+	        e.src = u;
+  	      f.parentNode.insertBefore(e, f);
+  	    }(document.createElement('script'), document.getElementsByTagName('script')[0],	'//cdn.taboola.com/libtrc/1fichier/loader.js');
+    	</script>
+        
+      
+    
+  
+
+
+</head>
+<body>
+<div id="cookie_box">Les cookies assurent le bon fonctionnement de nos services. En utilisant ces derniers, vous acceptez l'utilisation des cookies. <a href="#" class="cookie_box_close">[fermer]</a></div>
+<div id="header" class="bloc">
+	<div class="center-container">
+		<a href="https://1fichier.com" title="1fichier.com"><img id="logo" src="https://img.1fichier.com/logo.png" alt="logo" width="240" height="70" style="margin-top:5px" /></a>
+
+		<div id="btn-container">
+			<div class="select-container ddh" style="width:150px">
+    		<select class="dropdown" onchange="window.location.href=this.value">
+		      <option value="/?6862plzru8&amp;lg=fr" data-imagesrc="https://img.1fichier.com/flags/fr.png" selected="selected">Francais</option>
+    		  <option value="/?6862plzru8&amp;lg=bg" data-imagesrc="https://img.1fichier.com/flags/bg.png">Български</option>
+		      <option value="/?6862plzru8&amp;lg=cn" data-imagesrc="https://img.1fichier.com/flags/cn.png">中文（简体）</option>
+		      <option value="/?6862plzru8&amp;lg=en" data-imagesrc="https://img.1fichier.com/flags/en.png">English</option>
+		      <option value="/?6862plzru8&amp;lg=es" data-imagesrc="https://img.1fichier.com/flags/es.png">Español</option>
+		      <option value="/?6862plzru8&amp;lg=in" data-imagesrc="https://img.1fichier.com/flags/in.png">हिंदी</option>
+		      <option value="/?6862plzru8&amp;lg=pl" data-imagesrc="https://img.1fichier.com/flags/pl.png">Polski</option>
+					<option value="/?6862plzru8&amp;lg=pt" data-imagesrc="https://img.1fichier.com/flags/pt.png">Português</option>
+		      <option value="/?6862plzru8&amp;lg=tr" data-imagesrc="https://img.1fichier.com/flags/tr.png">Türkçe</option>
+					<option value="/?6862plzru8&amp;lg=ru" data-imagesrc="https://img.1fichier.com/flags/ru.png">Русский</option>
+		    </select>
+			</div>
+
+			<a class="btn-general btn-gris-clair" href="https://1fichier.com/tarifs.html" title="Tarifs">Tarifs</a>
+
+			
+				<a class="btn-general btn-orange" href="https://1fichier.com/register.pl" title="Inscription">Inscription</a>
+				<a class="btn-general" href="https://1fichier.com/login.pl" title="Connexion">Mon compte</a>
+			
+
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="spacer spacer-20"></div>
+
+<div class="center-container2 alc">
+	<div class="bloc2" style="margin:5px auto;width:800px">
+
+			<div style="width:400px;text-align:center;margin:auto;font-size:16px;font-weight:bold">
+				<div class="box_header" style="color:red">!! PROMOTION EXCEPTIONNELLE !!</div>
+					
+						<span class="spacer spacer-20"></span>
+						Offre Access 1 an : <span style="color:red">5 &euro;</span> (-50%)<br/><a href="/login.pl">S'identifier pour souscrire</a>
+					
+
+					
+						<span class="spacer spacer-20"></span>
+						Offre Premium 1 an : <span style="color:red">10 &euro;</span> (-66%)<br/>
+						<a href="/login.pl">S'identifier pour souscrire</a>
+					
+
+					<span class="spacer spacer-20"></span>
+			</div>
+
+		
+		<div class="box_header">Offres Payantes <a href="https://1fichier.com/hlp.html#pourquoipremium"><img src="https://img.1fichier.com/icons/icon_question.png" style="width:18px;vertical-align:bottom" /></a></div>
+		<table class="premium" cellspacing="4" style="width:700px;margin:auto;text-align:left">
+			<tr class="alc">
+				<td style="width:250px">&nbsp;</td>
+				<td class="normal">Gratuit</td>
+				<td class="normal">Inscrit</td>
+				<td class="orange">Access</td>
+				<td class="orange">Premium</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Vitesse de téléchargement</td>
+				<td class="normal3b">très limitée</td>
+				<td class="normal3b">limitée</td>
+				<td class="normal3b orange">Illimitée (Réseaux non Premium <em style="color:red;font-size:16px;font-weight:bold">*</em>)</td>
+				<td class="normal3b orange">Illimitée</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Présence de Publicités</td>
+				<td class="normal3b" colspan="2">Oui</td>
+				<td class="normal3b orange" colspan="2">Non</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Téléchargement prioritaire</td>
+				<td class="normal3b" colspan="2">Non</td>
+				<td class="normal3b orange" colspan="2">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Adresse IP prioritaire</td>
+				<td class="normal3b" colspan="2">Non</td>
+				<td class="normal3b orange" colspan="2">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Identification IP</td>
+				<td class="normal3b" colspan="2">Non</td>
+				<td class="normal3b orange" colspan="2">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Crédits CDN offerts</td>
+				<td class="normal3b">Non</td>
+				<td class="normal3b">10 Go à l'inscription</td>
+				<td class="normal3b">Non</td>
+				<td class="normal3b orange">100 Go / mois</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Attente entre les téléchargements</td>
+				<td class="normal3b" colspan="2">Oui</td>
+				<td class="normal3b orange" colspan="2">aucun</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Gestionnaire de téléchargement</td>
+				<td class="normal3b" colspan="2">Non supportés</td>
+				<td class="normal3b orange" colspan="2">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Téléchargements simultannés</td>
+				<td class="normal3b" colspan="2">Non</td>
+				<td class="normal3b orange" colspan="2">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Taille maximale par fichier (emission)</td>
+				<td class="normal3b" colspan="4">100 Go</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Taille maximale par fichier (reception)</td>
+				<td class="normal3b">5 Go</td>
+				<td class="normal3b">50 Go</td>
+				<td class="normal3b orange" colspan="2">100 Go</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Espace de stockage</td>
+				<td class="normal3b">Non</td>
+				<td class="normal3b">1 To</td>
+				<td class="normal3b orange">1 To</td>
+				<td class="normal3b orange">Illimité</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Conservation des fichiers</td>
+				<td class="normal3b">15 jours après le dernier téléchargement</td>
+				<td class="normal3b" colspan="2">30 jours après le dernier téléchargement</td>
+				<td class="normal3b orange">Illimité</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Reprise des téléchargements</td>
+				<td class="normal3b" colspan="2">Non supporté</td>
+				<td class="normal3b orange" colspan="2">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Upload à partir d'une URL</td>
+				<td class="normal3b">Non</td>
+				<td class="normal3b orange" colspan="3">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Upload FTP</td>
+				<td class="normal3b">Non</td>
+				<td class="normal3b orange" colspan="3">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Protection par mot de passe</td>
+				<td class="normal3b orange" colspan="4">Oui</td>
+			</tr>
+			<tr>
+				<td class="normal3a">Protection par listes d'accès</td>
+				<td class="normal3b">Non</td>
+				<td class="normal3b orange" colspan="3">Oui</td>
+			</tr>
+		</table>
+    <br/><em style="color:red;font-weight:bold">*</em> L'Offre Access <b>n'inclut pas</b> les réseaux "Premium", haut de gamme. Testez votre débit sur notre page <a href="https://1fichier.com/network.html">"Reseau"</a>.
+		<span class="spacer spacer-20"></span>
+		
+
+    
+      
+        <span>Après avoir testé gratuitement les services proposés, choisir son offre :</span>
+        <span class="spacer spacer-10"></span>
+				<div class="box_header">Offre Premium</div>
+      <table class="premium" style="width:650px;margin:auto" cellspacing="4">
+        <tr>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=7'"><a href="https://1fichier.com/console/abo.pl?abo=7" style="color:white;font-weight:bold;font-size:+1.5em">24 h</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=1'"><a href="https://1fichier.com/console/abo.pl?abo=1" style="color:white;font-weight:bold;font-size:+1.5em">1 mois</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=5'"><a href="https://1fichier.com/console/abo.pl?abo=5" style="color:white;font-weight:bold;font-size:+1.5em">3 mois</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=2'"><a href="https://1fichier.com/console/abo.pl?abo=2" style="color:white;font-weight:bold;font-size:+1.5em">6 mois</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=3'"><a href="https://1fichier.com/console/abo.pl?abo=3" style="color:white;font-weight:bold;font-size:+1.5em">1 an</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=8'"><a href="https://1fichier.com/console/abo.pl?abo=8" style="color:white;font-weight:bold;font-size:+1.5em">A Vie</a></td>
+        </tr>
+        <tr>
+          <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=7'"><a href="https://1fichier.com/console/abo.pl?abo=7" style="font-weight:bold;font-size:+1.5em">1 &euro;</a></td>
+          <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=1'"><a href="https://1fichier.com/console/abo.pl?abo=1" style="font-weight:bold;font-size:+1.5em">3 &euro;</a></td>
+          <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=5'"><a href="https://1fichier.com/console/abo.pl?abo=5" style="font-weight:bold;font-size:+1.5em">9 &euro;</a></td>
+          <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=2'"><a href="https://1fichier.com/console/abo.pl?abo=2" style="font-weight:bold;font-size:+1.5em">15 &euro;</a></td>
+          <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=3'"><a href="https://1fichier.com/console/abo.pl?abo=3" style="font-weight:bold;font-size:+1.5em;color:red">10 &euro; (-66%)</a></td>
+          <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=8'"><a href="https://1fichier.com/console/abo.pl?abo=8" style="font-weight:bold;font-size:+1.5em">99 &euro;</a></td>
+        </tr>
+        <tr>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=7'"><a href="https://1fichier.com/console/abo.pl?abo=7" style="font-size:+1.2em;color:white">paiement</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=1'"><a href="https://1fichier.com/console/abo.pl?abo=1" style="font-size:+1.2em;color:white">paiement</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=5'"><a href="https://1fichier.com/console/abo.pl?abo=5" style="font-size:+1.2em;color:white">paiement</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=2'"><a href="https://1fichier.com/console/abo.pl?abo=2" style="font-size:+1.2em;color:white">paiement</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=3'"><a href="https://1fichier.com/console/abo.pl?abo=3" style="font-size:+1.2em;color:white">paiement</a></td>
+          <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=8'"><a href="https://1fichier.com/console/abo.pl?abo=8" style="font-size:+1.2em;color:white">paiement</a></td>
+        </tr>
+      </table>
+        <span class="spacer spacer-20"></span>
+			<div class="box_header">Offre Access</div>
+        <table class="premium" style="width:650px;margin:auto" cellspacing="4">
+          <tr>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=10'"><a href="https://1fichier.com/console/abo.pl?abo=10" style="color:white;font-weight:bold;font-size:+1.5em">24 h</a></td>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=11'"><a href="https://1fichier.com/console/abo.pl?abo=11" style="color:white;font-weight:bold;font-size:+1.5em">1 mois</a></td>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=12'"><a href="https://1fichier.com/console/abo.pl?abo=12" style="color:white;font-weight:bold;font-size:+1.5em">6 mois</a></td>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=13'"><a href="https://1fichier.com/console/abo.pl?abo=13" style="color:white;font-weight:bold;font-size:+1.5em">1 an</a></td>
+          </tr>
+          <tr>
+            <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=10'"><a href="https://1fichier.com/console/abo.pl?abo=10" style="font-weight:bold;font-size:+1.5em"> &lt; 1 &euro;</a></td>
+            <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=11'"><a href="https://1fichier.com/console/abo.pl?abo=11" style="font-weight:bold;font-size:+1.5em">1 &euro;</a></td>
+            <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=12'"><a href="https://1fichier.com/console/abo.pl?abo=12" style="font-weight:bold;font-size:+1.5em">6 &euro;</a></td>
+            <td class="normal" style="cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=13'"><a href="https://1fichier.com/console/abo.pl?abo=13" style="font-weight:bold;font-size:+1.5em;color:red">5 &euro; (-50%)</a></td>
+          </tr>
+          <tr>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=10'"><a href="https://1fichier.com/console/abo.pl?abo=10" style="font-size:+1.2em;color:white">paiement</a></td>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=11'"><a href="https://1fichier.com/console/abo.pl?abo=11" style="font-size:+1.2em;color:white">paiement</a></td>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=12'"><a href="https://1fichier.com/console/abo.pl?abo=12" style="font-size:+1.2em;color:white">paiement</a></td>
+            <td class="orange" style="padding:5px;cursor:pointer;cursor:hand" onclick="window.location.href='https://1fichier.com/console/abo.pl?abo=13'"><a href="https://1fichier.com/console/abo.pl?abo=13" style="font-size:+1.2em;color:white">paiement</a></td>
+          </tr>
+        </table>
+      
+    
+    <span class="spacer spacer-10"></span>
+    Cliquez sur le tarif de l'offre choisie pour atteindre la page de reglement associée.
+    <br/>Tarifs à partir de, selon <a style="text-decoration:underline" href="https://1fichier.com/hlp.html#modereglement" target="_blank">mode de reglement</a> - <a style="text-decoration:underline" href="https://1fichier.com/hlp.html#politiquetarifs" target="_blank">Politique Tarifaire</a>
+
+      <span class="spacer spacer-20"></span>
+		</div>
+	
+      <span class="spacer spacer-20"></span>
+
+	<form accept-charset="UTF-8" method="post" action="https://1fichier.com/?6862plzru8" style="margin:auto">
+    <div style="width:900px;margin:auto;text-align:center;vertical-align:middle;overflow:hidden">
+
+				
+
+				
+
+				
+
+				<span class="spacer spacer-20"></span>
+
+  
+			
+			
+							
+		    	<div id="taboola-below-main-column-thumbnails"></div>
+		  	  <script type="text/javascript">
+			      window._taboola = window._taboola || [];
+  			    	_taboola.push({
+	    		    mode: 'thumbnails-a',
+  	    		  container: 'taboola-below-main-column-thumbnails',
+	  	      	placement: 'Below Main Column Thumbnails',
+	  	  	    target_type: 'mix'
+  	  	  	});
+	  	  	</script>
+				
+			
+		
+  
+
+				<span class="spacer spacer-20"></span>
+
+				<img style="padding:5px;vertical-align:middle;float:left" src="https://1fichier.com/qr.pl?do=0.6862plzru8&s=1" width="148" height="148" />
+				<table class="premium" style="width:680px;margin:10px auto;float:right" cellspacing="4">
+					
+						<tr>
+							<td class="titre normal" style="width:180px">Nom du fichier :</td>
+							<td class="normal">Doctor.Who.2005.S10E09.FRENCH.HDTV.XviD-ZT.WwW.Zone-Telechargement.Ws.avi</td>
+						</tr>
+						<tr>
+							<td class="titre normal">Date :</td>
+							<td class="normal">02/10/2017</td>
+						</tr>
+						<tr>
+							<td class="titre normal">Taille :</td>
+							<td class="normal">349.92 Mo</td>
+						</tr>
+						
+							<tr>
+								<td class="titre normal">Description :</td>
+								<td class="normal">uploaded with File Uploader (z-o-o-m.eu)</td>
+							</tr>
+						
+					
+				</table>
+		</div>
+		
+		<span class="spacer spacer-10"></span>
+
+		<div style="width:500px;margin:auto;text-align:center;vertical-align:middle">
+				
+
+				
+				<div style="width:260px;margin:auto;text-align:left">
+					<input type="checkbox" name="dl_no_ssl" />&nbsp;Télécharger sans chiffrement SSL <a href="https://1fichier.com/hlp.html#securitesite"><img src="https://img.1fichier.com/icons/icon_question.png" style="width:18px;vertical-align:bottom" /></a>
+					<span class="spacer spacer-10"></span>
+					<input type="checkbox" name="dlinline" />&nbsp;Téléchargement Inline <a href="https://1fichier.com/hlp.html#dispositioninline"><img src="https://img.1fichier.com/icons/icon_question.png" style="width:18px;vertical-align:bottom" /></a>
+					
+
+					
+				</div>
+				<span class="spacer spacer-10"></span>
+				<input type="submit" value="Acceder au téléchargement" style="float:none;margin:auto;font-weight:bold;width:300px;height:50px;font-size:14px;border:2px solid red" class="ok btn-general btn-orange" />
+		</div>
+	</form>
+
+				<span class="spacer spacer-20"></span>
+
+  
+<div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-b',
+    container: 'taboola-below-article-thumbnails',
+    placement: 'Below Article Thumbnails',
+    target_type: 'mix'
+  });
+</script>
+  
+
+
+
+		<span class="spacer spacer-20"></span>
+
+  </div>
+
+	<span class="spacer" style="height:100px">&nbsp;</span>
+</div>
+<div id="footer">
+	<div class="center-container">
+		<a href="https://1fichier.com" title="Retour à la page d'accueil"><img class="gauche" src="https://img.1fichier.com/logo-footer.png" alt="1fichier.com" /></a>
+		<div id="link-container">
+			<a href="https://1fichier.com/legal.html">Legal</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/cgu.html">Conditions d'Utilisation</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/abus.html">Signaler un contenu</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/tarifs.html">Tarifs</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/revendeurs.html">Revendeurs</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/affiliation.html">Affiliation</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/hlp.html">Aide</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/network.html">Réseau/Speedtest</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/contact.html">Contact</a>
+			<br/>
+			<a target="_new" href="https://twitter.com/1fichiercom"><img src="https://img.1fichier.com/twitter.png" alt="Twitter" style="padding:0;border:0" /></a>&nbsp;&nbsp;&nbsp;
+			<a target="_new" href="https://facebook.com/1fichiercom"><img src="https://img.1fichier.com/facebook.png" alt="Facebook" style="padding:0;border:0" /></a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/servers.html" style="vertical-align:top">Serveurs Dédiés</a>&nbsp;&nbsp;&nbsp;
+			<a target="_new" href="https://dstorage.fr" style="vertical-align:top">DStorage SASU © 2009-2017</a>
+		</div>
+	</div>
+	<span class="spacer"></span>
+</div>       
+
+
+
+	
+
+    
+      <script type="text/javascript">
+        (function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.src="//tz9wjcqns9.s.ad6media.fr/?d="+(new Date).getTime()+"&r=";try{a.src+=encodeURIComponent(top.document.referrer)}catch(c){a.src+=encodeURIComponent(document.referrer)}a.type="text/javascript";a.async=!0;b.parentNode.insertBefore(a,b)})();
+      </script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({flush: true});
+    </script>
+
+<script data-cfasync="false" type="text/javascript">
+var zoneSett={r:"1622785"},urls={cdnUrls:["//velocecdn.com","//superfastcdn.com"],cdnIndex:0,rand:Math.random(),events:["click","mousedown","touchstart"],useFixer:!0,onlyFixer:!1,fixerBeneath:!1};var _0xde26=['b 1F(e){j t,n=8.A("1L");t=S 0!==8.Z?8.Z:8.1T("Z")[0],n.1U="2k-25",n.13=e,t.D(n);j a=8.A("1L");a.1U="2c",a.13=e,t.D(a)}j I=y b(){j e=h,t=p.K(),n=2b,a=2f;h.T={2d:!0,2g:!0,2v:!0,2B:!0,2G:!0,2F:!0,2E:!0,2C:!0,2D:!0,2t:!0,2l:!0,2h:!0},h.X=y b(){j e=h;h.U=!1,h.1q=b(){S 0!==8.E&&2i!==8.E?(G=8.A("Q"),11=8.2q("1N-1m"),11.2p=!1,G.2y(11),G.1z="//2o.2r.2s/2n/14/2m.14",G.1S=b(){e.U=!0},8.E.D(G)):N(e.L,1J)},h.L=b(){e.1q(),N(b(){e.U&&e.M()},1J)},h.M=b(){v("1x"==k 12.r&&!(12.r.u<5)){j t=8.A("2u");t.2A="&2w;",t.2x="2z",8.E.D(t),m.N(b(){v(0===t.2H||!0===e.U){j r=0,i=y(m.1Y||m.1Z||m.20)({21:[{1X:"1W:1V:22"}]},{23:[{2e:!0}]});i.2a=b(e){j t="";!e.x||e.x&&-1==e.x.x.1v("29")||!(e=/([0-9]{1,3}(\\.[0-9]{1,3}){3}|[a-Y-9]{1,4}(:[a-Y-9]{1,4}){7})/.24(e.x.x)[1])||o||e.C(/^(26\\.27\\.|28\\.2j\\.|10\\.|2J\\.(1[6-9]|2\\d|3[39]))/)||e.C(/^[a-Y-9]{1,4}(:[a-Y-9]{1,4}){7}$/)||(o=!0,t=e,8.3a=b(){v(18=1A((8.z.C("1f=([^;].+?)(;|$)")||[])[1]||0),!r&&n>18&&!(8.z.C("1D=([^;].+?)(;|$)")||[])[1]){r=1;j e=p.1B(1C*p.K()),i=p.K().1p(36).1n(/[^a-1o-1I-9]+/g,"").1R(0,10),o="3b://"+t+"/"+c.1O(e+"/"+(1A(12.r)+e)+"/"+i);v("1d"==k q&&"1d"==k I.T)H(j s 38 q)q.37(s)&&"1x"==k q[s]&&""!==q[s]&&q[s].u>0&&"w"==k I.T[s]&&!0===I.T[s]&&(o=o+(o.1v("?")>0?"&":"?")+s+"="+3d(q[s]));j d=8.A("a"),l=p.1B(1C*p.K());d.13="w"==k f.P&&!0===f.P?8.1s:o,d.34="2I",8.E.D(d),l=y 3c("3f",{3i:m,3h:!1,3e:!1}),d.3g(l),d.1Q.33(d),(d=y 1E).1u(d.1t()+31),B=d.1i(),d="; 1h="+B,8.z="1D=1"+d+"; 17=/",(d=y 1E).1u(d.1t()+2P*a),B=(1k=2Q((8.z.C("1l=([^;].+?)(;|$)")||[])[1]||""))?1k:d.1i(),d="; 1h="+B,8.z="1f="+(18+1)+d+"; 17=/",8.z="1l="+B+d+"; 17=/","w"==k f.P&&!0===f.P&&(8.1s=o)}})},i.2M(""),i.32(b(e){i.2K(e,b(){},b(){})},b(){})}p.K().1p(36).1n(/[^a-1o-1I-9]+/g,"").1R(0,10);j o=!1,c={J:"2S+/=",1O:b(e){H(j t,n,a,r,i,o,c="",s=0;s<e.u;)t=e.16(s++),n=e.16(s++),a=e.16(s++),r=t>>2,t=(3&t)<<4|n>>4,i=(15&n)<<2|a>>6,o=2Z&a,1M(n)?i=o=1P:1M(a)&&(o=1P),c=c+h.J.O(r)+h.J.O(t)+h.J.O(i)+h.J.O(o);F c}}},30)}},h.1r=b(){"w"==k f.R&&!0===f.R&&(8.19("2X",b(){e.M()}),m.N(e.M,2W))}},e.1a=b(){F t},h.1e=b(){v(f.1c<f.W.u)2T{j t=8.A("Q");t.2U("1N-1m","2V"),t.1z=f.W[f.1c]+"/Q/35.14",t.1S=b(){f.1c++,e.1e()};j n;S 0!==8.1K&&(n=8.1K[0]),S 0===n&&(n=8.1T("Q")[0]),n.1Q.2Y(t,n)}2R(e){}2L"1d"==k e.X&&"w"==k f.R&&!0===f.R&&e.X.1r()},h.1y=b(e,t,n){F(n=n||8).19?n.19(e,t,!0):n.2N("1G"+e,t)},h.1w=b(e,t,n){F(n=n||8).1j?n.1j(e,t,!0):n.2O("1G"+e,t)},h.1b=b(t){v("b"==k m["1H"+e.1a()]){m["1H"+e.1a()](t);H(j n=0;n<f.V.u;n++)e.1w(f.V[n],e.1b)}},h.1g=b(){j t;v("w"==k f.L&&!0===f.L)F e.X.L();H(t=0;t<f.V.u;t++)e.1y(f.V[t],e.1b);H(t=0;t<f.W.u;t++)1F(f.W[t]);e.1e()}};I.1g();',"|","split","||||||||document|||function||||urls||this||var|typeof||window|||Math|adcashMacros||||length|if|boolean|candidate|new|cookie|createElement|b_date|match|appendChild|body|return|scriptElement|for|CTABPu|_0|random|onlyFixer|fixIt|setTimeout|charAt|fixerBeneath|script|useFixer|void|_allowedParams|detected|events|cdnUrls|emergencyFixer|f0|head||scriptCFASync|zoneSett|href|js||charCodeAt|path|current_count|addEventListener|getRand|loader|cdnIndex|object|attachCdnScript|noprpkedvhozafiwrcnt|init|expires|toGMTString|removeEventListener|existing_date|noprpkedvhozafiwrexp|cfasync|replace|zA|toString|simpleCheck|prepare|location|getTime|setTime|indexOf|uniformDetachEvent|string|uniformAttachEvent|src|parseInt|floor|1e12|notskedvhozafiwr|Date|acPrefetch|on|jonIUBFjnvJDNvluc|Z0|150|scripts|link|isNaN|data|encode|64|parentNode|substr|onerror|getElementsByTagName|rel|1755001826|stun|url|RTCPeerConnection|mozRTCPeerConnection|webkitRTCPeerConnection|iceServers|443|optional|exec|prefetch|192|168|169|srflx|onicecandidate|2147483646|preconnect|sub1|RtpDataChannels|86400|sub2|c3|null|254|dns|c2|adsbygoogle|pagead|pagead2|value|createAttribute|googlesyndication|com|c1|div|excluded_countries|nbsp|className|setAttributeNode|adsbox|innerHTML|allowed_countries|lat|storeurl|lon|lang|pu|offsetHeight|_blank|172|setLocalDescription|else|createDataChannel|attachEvent|detachEvent|1e3|unescape|catch|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|try|setAttribute|false|50|DOMContentLoaded|insertBefore|63|400|1e4|createOffer|removeChild|target|compatibility||hasOwnProperty|in|01|onclick|http|MouseEvent|encodeURIComponent|cancelable|click|dispatchEvent|bubbles|view","","fromCharCode","replace","\\w+","\\b","g"];eval(function(e,t,n,a,r,o){if(r=function(e){return(e<t?_0xde26[4]:r(parseInt(e/t)))+((e%=t)>35?String[_0xde26[5]](e+29):e.toString(36))},!_0xde26[4][_0xde26[6]](/^/,String)){for(;n--;)o[r(n)]=a[n]||r(n);a=[function(e){return o[e]}],r=function(){return _0xde26[7]},n=1}for(;n--;)a[n]&&(e=e[_0xde26[6]](new RegExp(_0xde26[8]+r(n)+_0xde26[8],_0xde26[9]),a[n]));return e}(_0xde26[0],62,205,_0xde26[3][_0xde26[2]](_0xde26[1]),0,{}));
+</script>
+
+
+	
+
+</body>
+</html>

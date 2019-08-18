@@ -1,0 +1,9 @@
+Bureau
+Documents
+Images
+Modèles
+Musique
+Public
+SELINUX
+Téléchargements
+Vidéos

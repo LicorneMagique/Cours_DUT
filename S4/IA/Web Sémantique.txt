@@ -1,0 +1,87 @@
+---------------- data ----------------
+
+@prefix s: <http://example.org/simpsons#>.
+@prefix f: <http://example.org/family#>.
+
+s:Abraham a f:Man.
+s:Mona a f:Woman.
+s:Clancy a f:Man.
+s:Jackie a f:Woman.
+s:Herb a f:Man.
+s:Homer a f:Man.
+s:Marge a f:Woman.
+s:Patty a f:Woman.
+s:Selma a f:Woman.
+
+s:Bart a f:Man.
+s:Lisa a f:Woman.
+s:Maggie a f:Woman.
+s:Ling a f:Woman.
+
+s:Herb f:parent s:Abraham.
+s:Homer f:parent s:Abraham.
+s:Homer f:parent s:Mona.
+s:Marge f:parent s:Clancy.
+s:Marge f:parent s:Jackie.
+s:Patty f:parent s:Clancy.
+s:Patty f:parent s:Jackie.
+s:Selma f:parent s:Clancy.
+s:Selma f:parent s:Jackie .
+s:Bart f:parent s:Homer.
+s:Bart f:parent s:Marge.
+s:Lisa f:parent s:Homer.
+s:Lisa f:parent s:Marge.
+s:Maggie f:parent s:Homer.
+s:Maggie f:parent s:Marge.
+s:Ling f:parent s:Selma.
+
+---------------- vocab ----------------
+
+@prefix f: <http://example.org/family#> .
+@prefix mv: <http://example.org/meta-vocabulary#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+
+f:parent mv:inverseOf f:child.
+
+f:parent mv:subPropertyOf f:ancestor.
+(f:parent f:ancestor) mv:composeTo f:ancestor.
+
+
+---------------- meta ----------------
+
+@prefix mv: <http://example.org/meta-vocabulary#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+
+# mv:inverseOf
+{
+    ?p1 mv:inverseOf ?p2.
+    ?s ?p1 ?o.
+} => {
+    ?o ?p2 ?s.
+} .
+
+# mv:subPropertyOf
+{
+    ?p1 mv:subPropertyOf ?p2.
+    ?s ?p1 ?o.
+} => {
+    ?s ?p2 ?o.
+} .
+
+# mv:composeTo
+{
+    (?p1 ?p2) mv:composeTo ?p3.
+    ?x ?p1 ?y.
+    ?y ?p2 ?z.
+    ?x log:notEqualTo ?z .
+} => {
+    ?x ?p3 ?z
+} .
+
+---------------- query ----------------
+
+@prefix s: <http://example.org/simpsons#> .
+@prefix f: <http://example.org/family#> .
+
+{ ?x f:cousin ?y. } => { ?x f:cousin ?y. }.
+{ s:Bart f:ancestor ?x. } => { s:Bart f:ancestor ?x. }.

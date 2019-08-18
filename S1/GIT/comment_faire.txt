@@ -1,0 +1,30 @@
+La premiere fois :
+
+echo "# Projet-web"o >> README.md
+echo README.md
+git init
+git add README.md
+git commit -m "premiere save"
+git remote add origin http://github.com/LicorneMagique/projet-web.git
+git push origin -u master
+
+
+git checkout master
+
+Pour récupérer les fichiers avant de travailler :
+git pull
+
+Pour initialiser un dossier
+git clone https://github.com/LicorneMagique/Projet-web.git
+
+pour sauvegarder :
+git push
+
+pour re extraire les fichiers de l'archive git (en écrasant les modifications) :
+git checkout -f HEAD
+
+SSH:
+ssh-keygen
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+Puis il faut ajouter la clé publique sur github

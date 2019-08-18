@@ -1,0 +1,27 @@
+R1 : SELECT nom_type_hebergement FROM type_hebergement;
+
+R2 : SELECT nom_zone FROM zone;
+
+R3 : SELECT * FROM habitation;
+
+R4 : SELECT nom_type_hebergement FROM type_hebergement WHERE nombre_de_place>4;
+
+R5 : SELECT nohabitation  FROM habitation WHERE code_zone=4;
+
+R6 : SELECT nom_zone, code_zone FROM zone WHERE nom_zone LIKE "le%";
+
+R7 : SELECT nohabitation, nom_zone FROM habitation hab, zone zo WHERE hab.code_zone=zo.code_zone;
+
+R8 : SELECT nom_equipement FROM equipement eq, typ_hebergement tyh, possesion po WHERE po.code_equipement=eq.code_equiepement AND tyh.code_type_hebergement=po.code_type_possesion;
+
+R9 : SELECT nohabitation, nombre_de_place FROM habitation hab, type_hebergement tyh WHERE hab.code_type_hebergement=tyh.code_type_hebergement;
+
+R10 : SELECT nombre_de_place FROM type_hebergement tyh, habitation hab, zone zo WHERE tyh.code_type_hebergement=hab.code_type_hebergement AND hab.code_zone=zo.code_zone AND nom_zone="Far_west";
+
+R11 : SELECT MIN(nombre_de_place) FROM type_hebergement;
+
+R12 : SELECT MAX(nombre_de_place) FROM type_hebergement;
+
+R13 : SELECT COUNT(nohabitation) FROM habitation;
+
+R14 : SELECT COUNT(nohabitation) FROM habitation hab, zone zo WHERE hab.code_zone=zo.code_zone AND nom_zone="Far-west";   

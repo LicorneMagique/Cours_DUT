@@ -1,0 +1,61 @@
+insert into Etud values ('1', 'BALLAND','Laurence','VANDOEUVRE','54500','' );
+insert into Etud values ('2','BRUNET','Aranud','PARIS','750151','' );
+insert into Etud values ('3','CASTILLO','J-Christophe','LILLE','59000','');
+insert into Etud values ('4','CRESSENT','Valerie','LE HAVRE','76620','');
+insert into Etud values ('5','DURON','David','CREST','26400','');
+insert into Etud values ('6','LAMOUREUX','Bernard','PARIS','75012','');
+insert into Etud values ('7','LHELGUEN','Herve','QUIMPER','29000','');
+insert into Etud values ('8','PONTOIZEAU','J-Paul','PARIS','95400','0168341704');
+insert into Etud values ('9','RIBES','J-Christophe','SAINTES','17400','');
+insert into Etud values ('10','SERRI','Olivier','DIJON','21000','0380221122');
+insert into Etud values ('11','VIDJAYANE','Velradjou','DIJON','21000','0380224466');
+insert into Etud values ('12','VIDOVIC','Mirko','LYON','69006','');
+
+
+
+insert into Lycee values ('100', 'LE CASTEL','DIJON','21');
+insert into Lycee values ('120', 'LOUIS PERGAUD','BESANCON','25');
+insert into Lycee values ('130', 'CHAPTAL','QUMPER','29');
+insert into Lycee values ('140', 'OZENNE','TOULOUSE','31');
+insert into Lycee values ('150', 'GUSTAVE EIFFEL','BORDEAUX','33');
+insert into Lycee values ('160', 'JEAN MERMOZ','MONTPELLIER','34');
+insert into Lycee values ('170', 'ILE DE FRANCE','RENNES','35');
+insert into Lycee values ('180', 'LA COLINIERE','NANTES','44');
+insert into Lycee values ('190', 'CARCOUET','NANTES','44');
+insert into Lycee values ('200', 'BOUCHARDON','CHAUMONT','52');
+insert into Lycee values ('210', 'FREDERIC CHOPIN','NANCY','54');
+insert into Lycee values ('220', 'RAOUL FOLLEREAU','NEVERS','58');
+insert into Lycee values ('230', 'GASTON BERGER','LILLE','59');
+insert into Lycee values ('240', 'ANDRE MALRAUX','BETHUNE','62');
+insert into Lycee values ('250', 'LA MARTINIERE','LYON','69');
+insert into Lycee values ('260', 'LAMARTINE','MACON','71');
+insert into Lycee values ('270', 'TURGOT','PARIS','75');
+insert into Lycee values ('280', 'LOUIS ARMAND','PARIS','75');
+insert into Lycee values ('290', 'BESSIERES','PARIS','75');
+insert into Lycee values ('300', 'GUSTAVE FLAUBERT','ROUEN','76');
+insert into Lycee values ('310', 'CHAPTAL','MENDE','48');
+
+
+insert into Stage values ('1','17-APR-93','22-APR-93');
+insert into Stage values ('2','10-APR-93','15-APR-93');
+insert into Stage values ('3','10-APR-93','22-APR-93');
+insert into Stage values ('4','04-FEB-94','09-FEB-94');
+insert into Stage values ('5','11-FEB-94','16-FEB-94');
+
+
+insert into Affectation values ('1','210','Gallot','3');
+insert into Affectation values ('2','280','Richard','1');
+insert into Affectation values ('2','270','Gaubert','2');
+insert into Affectation values ('3','240','Van de Walle','3');
+insert into Affectation values ('4','300','Moricet','3');
+insert into Affectation values ('5','100','Gregorek','3');
+insert into Affectation values ('6','280','Richard','1');
+insert into Affectation values ('6','270','Gaubert','2');
+insert into Affectation values ('7','130','Le Meur','3');
+insert into Affectation values ('8','280','Richerd','1');
+insert into Affectation values ('8','270','Gaubert','2');
+insert into Affectation values ('9','170','Tarillon','3');
+insert into Affectation values ('10','100','Gregorej','3');
+insert into Affectation values ('11','100','Lepoutre','3');
+insert into Affectation values ('12','100','Lepoutre','3');
+

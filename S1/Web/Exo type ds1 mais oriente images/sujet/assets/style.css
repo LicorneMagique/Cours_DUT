@@ -1,0 +1,97 @@
+body
+{
+  background-image : url("images/fondBeige.jpg");
+
+  padding-left : 2em;
+  padding-right : 2em;
+  margin : auto;
+  
+  max-width : 60rem;
+  
+}
+
+footer ul
+{
+	display : inline;
+}
+
+#corps
+{
+	padding-left : 0.5em;
+	padding-right : 0.5em;
+}
+
+section h1
+{
+	text-transform : uppercase;
+}
+
+section article
+{
+	float : left;
+	width : 66%;
+	margin-right : 2%;
+	display : inline-block;
+}
+
+section aside section
+{
+	float : right;
+	width : 32%;
+	
+}
+
+nav
+{
+	text-align : center;
+	margin-top : 5em;
+}
+
+header ul li
+{
+	display : inline;
+}
+
+body
+{
+	border-bottom : 5px solid yellow;
+}
+
+header img
+{
+	float : left;
+}
+
+header ul
+{
+	border-bottom : 5px solid green;
+	padding-bottom : 0.4em;
+}
+
+header a
+{
+	padding-bottom : 0.5em;
+
+	text-decoration : none;
+	color : black;
+
+	border-top : 5px solid green;
+	border-right : 5px solid green;
+	border-left : 5px solid green;
+
+	padding-top : 0.5em;
+	padding-right : 0.2em;
+	padding-left : 0.2em;
+	
+	border-top-left-radius : 10px;
+	border-top-right-radius : 10px;
+}
+
+section aside section
+{
+	background-color : LightGreenjj;
+	display : vertical-align;
+	border-top-right-radius : 10px;
+}
+
+

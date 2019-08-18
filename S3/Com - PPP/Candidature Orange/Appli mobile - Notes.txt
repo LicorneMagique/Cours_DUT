@@ -1,0 +1,17 @@
+Je vais reecrire une appli mobile pour android et ios
+Je vais faire ca avec le framework Flutter
+Je vais donc traduire le framework Ionic en Flutter
+
+J'ai envie d'explorer de nouveaux frameworks logiciels
+Je suis autonome, je suis curieux, j'ai envie d'innover
+j'ai ete forme sur les outils de bureautique
+
+Dans le cadre de mon dut j'ai pu acquerir des bases solides en developpement dans differents langages (JAVA, PHP, C) ainsi qu'en modelisation (UML) et traitements sur les bases de donnees (SQL). Cette formation etant principalement axee sur le cote pratique, j'ai desormais une certaine experience dans ces domaines.
+De plus je me suis autoforme sur plusieurs langages independament du DUT, pour realiser des projets personnels.
+Notament GoogleScript, Python, JavaScript et Bootstrap. J'ai la volonté de m'autoformer et je souhaiterais en apprendre
+daventage sur le developpement d'applications mobiles. Ce stage me permettrait de me former sur de nouveaux Frameworks
+tout en mettant a profit mes competences actuelles.
+
+
+Je suis quelqu’un de rigoureux, sérieux et autonome. Appréciant le contact et le travail en équipe,
+j'ai envie d'explorer de nouvelles technologies et d'innover.

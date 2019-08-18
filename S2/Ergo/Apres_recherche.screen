@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="1" x="184" y="176" measuredWidth="601" measuredHeight="385">
+    <screen xsi:type="model:Screen" href="Avant_recherche.screen#/"/>
+    <overrides>
+      <widgets ref="4" text="N° contrat,N° Immatriculation, Marque,Modèle,Conducteur&#xA;1X547F,145SD69,Renault,Twingo,Alex Martin&#xA;25454F,1458WD75,Peugeot,207 SW,Ludovic Maindron"/>
+      <widgets ref="10" text="145"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,87 @@
+﻿Projet : L3 + Master en alternance
+Sur la section formation du site de l'universite :
+http://licence-info.univ-lyon1.fr/
+
+http://www.univ-lyon2.fr/recherche/www3-ed-512-infomaths-informatique-et-mathematique-de-lyon--300030.kjsp
+
+-> Explications des differentes L3 informatique :
+Elles sont a CPGE sauf informatique fondamental qui est a l'ENS Lyon
+
+-> Preference pour la L3 info classique :
+http://offre-de-formations.univ-lyon1.fr/parcours-12/informatique.html
+
+-> On arrive donc pour les semestres 5 et 6 qui sont des complements de formation specialises en info.
+L'annee se termine par une stage de trois mois
+
+-> Entrée en L3 :
+Un étudiant ayant validé un DUT, un BTS ou venant de classe préparatoire aux grandes écoles (CPGE) peut présenter un dossier à la commission pédagogique qui peut valider certaines UE et lui proposer un parcours personnalisé.
+Environ 200 places
+
+-> Spécificités et conditions d'accès :
+Voir rubrique "Public concerné et pré-requis" : pas trouve, a recherche
+
+Accès en troisième année :
+https://fst-informatique.univ-lyon1.fr/formation/candidatures/candidatures-695727.kjsp
+-> Pour déposer un dossier pour l'admission en troisième année (L3) vous devez utiliser l'application e-candidat :
+https://ecandidat.univ-lyon1.fr/
+En cas de question particulière ou pour avoir des information concernant la procédure DAP, merci de consulter la page des contacts :
+http://licence-info.univ-lyon1.fr
+
+-> mail de contact :
+licence.informatique@univ-lyon1.fr
+
+-> Compétences acquises dans cette formation :
+vu - Connaître les principes d'algorithmique afin de pouvoir concevoir un programme pertinent répondant à un problème donné;
+vu - Connaître les différents paradigmes de programmation : itérative, récursive, procédurale, fonctionnelle, orientée objet;
+vu - Savoir mettre en œuvre des algorithmes en utilisant des langages de programmation variés et leurs outils de mise au point associés;
+vu - Savoir mettre en œuvre (implantation), évaluer et choisir les différents types de données selon le problème posé;
+pas vu - Savoir analyser un algorithme/programme afin d'en connaitre les coûts mémoire et d'exécution;
+vu - Concevoir et réaliser en programmation orientée objet;
+vu - Lire ou exprimer des spécifications complexes avec des formalismes abstraits (UML);
+vu - Savoir planifier les étapes du développement d'un projet informatique;
+vu - Connaître l’architecture matérielle et logicielle des ordinateurs;
+vu - Connaître les différents systèmes d’exploitation;
+vu - Connaître l'architecture d'Internet, ses principaux protocoles, l'adressage et le routage IP;
+pas vu - Savoir mettre en œuvre un réseau local et le raccorder à Internet;
+pas vu - Connaître les principes et les contraintes de la programmation concurrente;
+vu - Utiliser une base de données relationnelle;
+vu - Concevoir un schema de base de donnée relationnelle;
+pas vu - Optimiser les performances d'une base de données relationnelle;
+
+
+-> Programme :
+-> S5 :
+http://offre-de-formations.univ-lyon1.fr/ue-296-12/reseaux.html
+http://offre-de-formations.univ-lyon1.fr/ue-292-12/algorithmique,-programmation-et-complexite.html
+http://offre-de-formations.univ-lyon1.fr/ue-12086-12/logique-classique.html
+http://offre-de-formations.univ-lyon1.fr/ue-8163-12/theorie-des-languages-formels.html
+http://offre-de-formations.univ-lyon1.fr/ue-16650-12/transversale-5.html
+http://offre-de-formations.univ-lyon1.fr/ue-16374-12/base-de-donnees-avancees.html
+
+-> S6 :
+http://offre-de-formations.univ-lyon1.fr/ue-295-12/algorithmique-et-programmation-orientee-objet.html
+http://offre-de-formations.univ-lyon1.fr/ue-8160-12/analyse-de-donnees.html
+optionnel :
+    http://offre-de-formations.univ-lyon1.fr/ue-17755-12/analyse-matricielle-et-algebre-lineaire-appliquee-b.html
+    http://offre-de-formations.univ-lyon1.fr/ue-8165-12/algorithmique-numerique.html
+    http://offre-de-formations.univ-lyon1.fr/ue-8166-12/optimisation.html
+http://offre-de-formations.univ-lyon1.fr/ue-16377-12/projet-informatique.html
+http://offre-de-formations.univ-lyon1.fr/ue-16371-12/stage-de-decouverte-de-l-informatique-en-entreprises.html
+http://offre-de-formations.univ-lyon1.fr/ue-16381-12/trip-:-rechercher-un-stage,-un-emploi.html
+http://offre-de-formations.univ-lyon1.fr/ue-16375-12/programmation-concurrente.html
+
+Liste des debouches qui m'interessent : a faire
+
+Liste des poursuites qui m'interessent : a faire
+
+
+
+
+
+
+
+
+Je m'oriente vers tel type d'[école | étude | cursus] pour tel ou tel raison...
+Le PPP du S1 m'a fait prendre conscience de ...
+Au S2...
+

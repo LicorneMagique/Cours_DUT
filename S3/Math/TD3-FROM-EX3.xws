@@ -1,0 +1,478 @@
+// xcas version=1.4.9-69 fontsize=14 font=0 currentlevel=21 pixon=1
+// fltk 7Fl_Tile 19 -1027 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -1027 1866 25 14 0
+25 ,
+u1:=matrix(1,4,[1,1,a,0]),
+// fltk N4xcas10Log_OutputE 19 -1002 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -1001 1866 20 14 0 1
+[[1,1,a,0]]
+]
+,
+// fltk 7Fl_Tile 19 -979 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -979 1866 25 14 0
+19 ,
+u2:=matrix[1,a,1,0],
+// fltk N4xcas10Log_OutputE 19 -954 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -953 1866 20 14 0 1
+matrix[1,a,1,0]
+]
+,
+// fltk 7Fl_Tile 19 -931 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -931 1866 25 14 0
+19 ,
+u3:=matrix[a,1,1,0],
+// fltk N4xcas10Log_OutputE 19 -906 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -905 1866 20 14 0 1
+matrix[a,1,1,0]
+]
+,
+// fltk 7Fl_Tile 19 -883 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -883 1866 25 14 0
+19 ,
+u4:=matrix[0,1,1,a],
+// fltk N4xcas10Log_OutputE 19 -858 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -857 1866 20 14 0 1
+matrix[0,1,1,a]
+]
+,
+// fltk 7Fl_Tile 19 -835 1866 101 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -835 1866 25 14 0
+34 ,
+test(a):=matrix(4,4,[u1,u2,u3,u4]),
+// fltk N4xcas10Log_OutputE 19 -810 1866 56 14 0
+// Interpr√®te test£// Attention: u1,u2,u3,u4,declar√©(s) comme variable(s) globale(s). Si vous avez besoin de variables symboliques, d√©clarez les en local et faites purge£// lors de la compilation test£
+,
+// fltk N4xcas8EquationE 19 -754 1866 20 14 0 1
+ (a)->matrix(4,4,[u1,u2,u3,u4])
+]
+,
+// fltk 7Fl_Tile 19 -732 1866 130 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -732 1866 25 14 0
+7 ,
+test(a),
+// fltk N4xcas10Log_OutputE 19 -707 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -706 1866 104 14 0 1
+[[1,1,a,0],[1,a,1,0],[a,1,1,0],[0,1,1,a]]
+]
+,
+// fltk 7Fl_Tile 19 -600 1866 130 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -600 1866 25 14 0
+8 ,
+test(-2),
+// fltk N4xcas10Log_OutputE 19 -575 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -574 1866 104 14 0 1
+[[1,1,a,0],[1,a,1,0],[a,1,1,0],[0,1,1,a]]
+]
+,
+// fltk 7Fl_Tile 19 -468 1866 41 14 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 19 -468 1866 40 14 0
+Rage de l'exo 3£EX4
+,
+// fltk N4xcas10Log_OutputE 19 -428 1866 1 14 0
+
+]
+,
+// fltk 7Fl_Tile 19 -425 1866 102 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -425 1866 25 14 0
+34 ,
+A:=matrix(3,3,[1,0,1,0,1,0,1,0,1]),
+// fltk N4xcas10Log_OutputE 19 -400 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -399 1866 76 14 0 1
+[[1,0,1],[0,1,0],[1,0,1]]
+]
+,
+// fltk 7Fl_Tile 19 -321 1866 102 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -321 1866 25 14 0
+35 ,
+B:=matrix(3,3,[2,0,-1,1,1,0,2,0,1]),
+// fltk N4xcas10Log_OutputE 19 -296 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -295 1866 76 14 0 1
+[[2,0,-1],[1,1,0],[2,0,1]]
+]
+,
+// fltk 7Fl_Tile 19 -217 1866 74 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 -217 1866 25 14 0
+29 ,
+C:=matrix(2,3,[1,2,3,-1,0,1]),
+// fltk N4xcas10Log_OutputE 19 -192 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 -191 1866 48 14 0 1
+[[1,2,3],[-1,0,1]]
+]
+,
+// fltk 7Fl_Tile 19 -141 1866 236 14 0
+[
+// fltk N4xcas7EditeurE 19 -141 1866 147 14 0
+189 ,
+fonct(M):={
+  if (size(M) != size(tran(M))) {print("La Matrice n'est pas P1")}
+  else {
+    if (det(M) != 0) {print("La Matrice est P2")}
+    else {print("La Matrice n'est pas P2")}
+  }
+  },
+// fltk N4xcas10Log_OutputE 19 6 1866 69 14 0
+// Interpr√®te fonct£// Succ√®s£// lors de la compilation fonct£
+,
+// fltk N4xcas8EquationE 19 75 1866 20 14 0 1
+expr(" (M)->[if ((size(M))<>(size(tran(M)))) print(""La Matrice n'est pas P1""); else if ((det(M))<>0) print(""La Matrice est P2""); else print(""La Matrice n'est pas P2""); ; ]",0)
+]
+,
+// fltk N4xcas12History_FoldE 19 97 1866 233 14 0
+
+// fltk N4xcas12History_PackE 19 -227 1832 557 14 0
+[
+// fltk 7Fl_Tile 29 -227 1822 85 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 29 -227 1822 45 14 0
+8 ,
+purge(A),
+// fltk N4xcas10Log_OutputE 29 -182 1822 33 14 0
+
+,
+// fltk N4xcas8EquationE 29 -149 1822 20 14 0 1
+[[1,1,1],[-1,-1,m-1],[2,3,2]]
+]
+,
+// fltk 7Fl_Tile 29 -140 1822 101 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 29 -140 1822 25 14 0
+42 ,
+A(m):= matrix(3,3,[1,1,1,-1,-1,m-1,2,3,2]),
+// fltk N4xcas10Log_OutputE 29 -115 1822 56 14 0
+// Interpr√®te A£// Succ√®s£// lors de la compilation A£
+,
+// fltk N4xcas8EquationE 29 -59 1822 20 14 0 1
+ (m)->matrix(3,3,[1,1,1,-1,-1,m-1,2,3,2])
+]
+,
+// fltk 7Fl_Tile 29 -37 1822 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 29 -37 1822 25 14 0
+10 ,
+rank(A(m)),
+// fltk N4xcas10Log_OutputE 29 -12 1822 1 14 0
+
+,
+// fltk N4xcas8EquationE 29 -11 1822 20 14 0 1
+3
+]
+,
+// fltk 7Fl_Tile 29 11 1822 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 29 11 1822 25 14 0
+9 ,
+det(A(m)),
+// fltk N4xcas10Log_OutputE 29 36 1822 1 14 0
+
+,
+// fltk N4xcas8EquationE 29 37 1822 20 14 0 1
+-m
+]
+,
+// fltk 7Fl_Tile 29 59 1822 25 14 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 29 59 1822 24 14 0
+Si m!=0 alors la matrice est inversible
+,
+// fltk N4xcas10Log_OutputE 29 83 1822 1 14 0
+
+]
+,
+// fltk 7Fl_Tile 29 86 1822 138 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 29 86 1822 25 14 0
+7 ,
+A(m)^-1,
+// fltk N4xcas10Log_OutputE 29 111 1822 1 14 0
+
+,
+// fltk N4xcas8EquationE 29 112 1822 112 14 0 1
+[[(3*m-1)/m,-1/m,-1],[-2,0,1],[1/m,1/m,0]]
+]
+,
+// fltk 7Fl_Tile 29 226 1822 102 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 29 226 1822 25 14 0
+15 ,
+tran(ker(A(0))),
+// fltk N4xcas10Log_OutputE 29 251 1822 1 14 0
+
+,
+// fltk N4xcas8EquationE 29 252 1822 76 14 0 1
+[[1],[0],[-1]]
+]
+]
+,
+// fltk 7Fl_Tile 19 119 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 119 1866 25 14 0
+8 ,
+purge(A),
+// fltk N4xcas10Log_OutputE 19 144 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 145 1866 20 14 0 1
+"No such variable A"
+]
+,
+// fltk 7Fl_Tile 19 167 1866 102 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 167 1866 25 14 0
+38 ,
+A:=matrix(3,3,[1,4,-2,1,-2,-1,2,2,-3]),
+// fltk N4xcas10Log_OutputE 19 192 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 193 1866 76 14 0 1
+[[1,4,-2],[1,-2,-1],[2,2,-3]]
+]
+,
+// fltk 7Fl_Tile 19 271 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 271 1866 25 14 0
+6 ,
+det(A),
+// fltk N4xcas10Log_OutputE 19 296 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 297 1866 20 14 0 1
+0
+]
+,
+// fltk 7Fl_Tile 19 319 1866 25 14 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 19 319 1866 24 14 0
+La matrice n'est donc pas inversible
+,
+// fltk N4xcas10Log_OutputE 19 343 1866 1 14 0
+
+]
+,
+// fltk 7Fl_Tile 19 346 1866 46 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 346 1866 25 14 0
+30 ,
+solve(det(A-lambda)=0, lambda),
+// fltk N4xcas10Log_OutputE 19 371 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 372 1866 20 14 0 1
+list[-3,-1,0]
+]
+,
+// fltk 7Fl_Tile 19 394 1866 137 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 394 1866 25 14 0
+57 ,
+u1:=tran(ker(A+3)); u2:=tran(ker(A+1)); u3:=tran(ker(A));,
+// fltk N4xcas10Log_OutputE 19 419 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 420 1866 111 14 0 1
+[[1],[-1],[0]],[[-1],[0],[-1]],[[-4/3],[-1/6],[-1]]
+]
+,
+// fltk 7Fl_Tile 19 533 1866 102 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 533 1866 25 14 0
+11 ,
+A*u1; -3*u1,
+// fltk N4xcas10Log_OutputE 19 558 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 559 1866 76 14 0 1
+[[-3],[3],[0]],[[-3],[3],[0]]
+]
+,
+// fltk 7Fl_Tile 19 637 1866 138 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 637 1866 25 14 0
+31 ,
+P:=blockmatrix(1,3,[u1,u2,u3]);,
+// fltk N4xcas10Log_OutputE 19 662 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 663 1866 112 14 0 1
+[[1,-1,-4/3],[-1,0,-1/6],[0,-1,-1]]
+]
+,
+// fltk 7Fl_Tile 19 777 1866 64 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 777 1866 25 14 0
+6 ,
+det(P),
+// fltk N4xcas10Log_OutputE 19 802 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 803 1866 38 14 0 1
+-1/2
+]
+,
+// fltk 7Fl_Tile 19 843 1866 41 14 0
+[
+// fltk N4xcas23Comment_Multiline_InputE 19 843 1866 40 14 0
+La famille {u1,u2,u3} est libre car elle am√©ricaine et elle est compos√©e de 3 vecteurs dans R^3 de dimension 3 donc c'est une base de R^3£La matrice P est la matrice de passage de la base canonique √† la base {u1,u2,u3}
+,
+// fltk N4xcas10Log_OutputE 19 883 1866 1 14 0
+
+]
+,
+// fltk 7Fl_Tile 19 886 1866 102 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 886 1866 25 14 0
+15 ,
+changebase(A,P),
+// fltk N4xcas10Log_OutputE 19 911 1866 1 14 0
+
+,
+// fltk N4xcas8EquationE 19 912 1866 76 14 0 1
+[[-3,0,0],[0,-1,0],[0,0,0]]
+]
+,
+// fltk 7Fl_Tile 19 990 1866 27 14 0
+[
+// fltk N4xcas16Xcas_Text_EditorE 19 990 1866 26 14 0
+0 ,
+,
+// fltk N4xcas10Log_OutputE 19 1016 1866 1 14 0
+
+]
+// context 1784 giac archive
+7 0 17 8 0 0 'cas_setup' 7 0 12 0 0 0
+0 0 0
+0 0 0
+0 1 0
+0 0 0
+7 0 2 1 Í-Åôóq=
+1 VÁûØ“<
+0 12 0
+7 0 4 0 4 0
+0 100 0
+0 0 0
+0 25 0
+0 0 0
+0 1 0
+0 0 0
+0 1 0
+8 0 0 'xyztrange' 7 0 16 1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1      $¿
+1      $@
+1 afffffˆø
+1 ÅôôôôôÒ?
+0 1 0
+1        
+1      ?
+0 3 0
+7 0 0 7 0 0 8 0 15 7 1 2 7 11 3 7 0 3 0 1 0
+0 4 0
+0 -2 0
+7 0 3 0 1 0
+0 -2 0
+0 -1 0
+7 0 3 0 2 0
+0 2 0
+0 -3 0
+6 1 A 8 0 15 7 1 2 8 0 73 7 1 3 7 1 1 6 1 m 7 1 1 0 0 0
+8 0 0 'matrix' 7 1 3 0 3 0
+0 3 0
+7 0 9 0 1 0
+0 1 0
+0 1 0
+0 -1 0
+0 -1 0
+8 0 1 7 1 2 6 1 m 0 -1 0
+0 2 0
+0 3 0
+0 2 0
+6 2 A1 8 0 15 7 1 2 7 11 3 7 0 3 0 1 0
+0 1 0
+0 1 0
+7 0 3 0 -1 0
+0 -1 0
+8 0 1 7 1 2 6 1 m 0 -1 0
+7 0 3 0 2 0
+0 3 0
+0 2 0
+6 2 Am 8 0 15 7 1 2 7 11 2 7 0 3 0 1 0
+0 2 0
+0 3 0
+7 0 3 0 -1 0
+0 0 0
+0 1 0
+6 1 C 8 0 15 7 1 2 7 11 3 7 0 3 0 0 0
+0 0 0
+0 0 0
+7 0 3 0 0 0
+0 0 0
+0 0 0
+7 0 3 0 0 0
+0 0 0
+0 0 0
+6 1 D 8 0 15 7 1 2 7 0 3 7 0 3 0 1 0
+0 -1 0
+10 0 -4 0
+0 3 0
+7 0 3 0 -1 0
+0 0 0
+10 0 -1 0
+0 6 0
+7 0 3 0 0 0
+0 -1 0
+0 -1 0
+6 1 P 8 0 15 7 1 2 8 0 73 7 1 3 7 1 1 6 1 M 7 1 1 0 0 0
+7 32 1 8 0 70 7 0 3 8 0 39 7 1 2 8 0 0 size 6 1 M 8 0 0 size 8 0 0 'tran' 6 1 M 8 0 0 print 12 23 |La Matrice n'est pas P1 8 0 70 7 0 3 8 0 39 7 1 2 8 0 0 'det' 6 1 M 0 0 0
+8 0 0 print 12 17 |La Matrice est P2 8 0 0 print 12 23 |La Matrice n'est pas P2 6 5 fonct 8 0 15 7 1 2 8 0 73 7 1 3 7 1 1 6 1 a 7 1 1 0 0 0
+8 0 0 'matrix' 7 1 3 0 4 0
+0 4 0
+7 0 4 6 2 u1 6 2 u2 6 2 u3 6 2 u4 6 4 test 8 0 15 7 1 2 7 11 3 7 0 1 0 1 0
+7 0 1 0 -1 0
+7 0 1 0 0 0
+6 2 u1 8 0 15 7 1 2 7 11 3 7 0 1 0 -1 0
+7 0 1 0 0 0
+7 0 1 0 -1 0
+6 2 u2 8 0 15 7 1 2 7 11 3 7 0 1 10 0 -4 0
+0 3 0
+7 0 1 10 0 -1 0
+0 6 0
+7 0 1 0 -1 0
+6 2 u3 8 0 15 7 1 2 7 11 4 0 0 0
+0 1 0
+0 1 0
+6 1 a 6 2 u4 8 0 0 'xcas_mode' 0 0 0
+

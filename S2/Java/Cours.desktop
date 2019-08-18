@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Cours
+Exec=/usr/bin/google-chrome-stable http://universite-lyon.academia.edu/MohammedBelkhatir/M2103-POO
+Terminal=false
+Icon=browser

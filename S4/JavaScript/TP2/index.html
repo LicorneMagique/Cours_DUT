@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>TP2</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script async src="index.js"></script>
+    </head>
+    
+	<body>
+        <h1>
+            <nav id="heure">00</nav> :
+            <nav id="minute">00</nav> :
+            <nav id="seconde">00</nav>
+        </h1>
+
+		<form id="alarm_template" method="POST" style="display:none">
+			<input type="checkbox" name="activated" />
+			<input type="number" name="heure" value="0" min="-1" max="24" /> :
+			<input type="number" name="minute" value="0" min="-1" max="60" />
+			<input type="text" name="nom" />
+			<select class="son" name="son">
+				<option value="0">son 1</option>
+				<option value="1">son 2</option>
+				<option value="2">son 3</option>
+			</select>
+			<input type="submit" value="−" />
+		</form>
+		<audio id="audio_template" style="display:none">
+			<source src="" type="audio/mp3">
+		</audio>
+		<button id="add_alarm">+</button>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+h1 {
+	color : red;
+	text-align: right;
+	
+}
+
+#michel {
+	color: red;
+	text-align: right;
+}
+
+h2 {
+	font-weight: bold;
+	background-color: rgb(208, 208, 208);
+	font-size: 11pt;
+}
+
+strong {
+	font-weight: normal;
+	color: green;
+	text-decoration: underline;
+	
+}
+
+h3 {
+	font-variant: small-caps;
+	font-size: 12pt;
+}
+
+#michelle {
+	color : black;
+	
+}

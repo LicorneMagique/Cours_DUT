@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TD1 JS GIRAUD / GUICHARD</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+
+    <body>
+
+        <!--Créez un formulaire contenant les champs suivants : Prénom, Nom, Age, Identifant, Mot de passe (2 fois),et une case à cocher « J’accèpte les CGU ».-->
+
+        <form action="" id="form"  method="post">
+            <h1>Formulaire d'inscription</h1>
+            <div>
+                <div>
+                    <label for="fName">Prenom</label>
+                    <input id="fName"  type="text">
+                </div>
+                <div>
+                    <label for="lName">Nom</label>
+                    <input id="lName" type="text">
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input id="age"class="tested" type="number">
+                </div>
+                <div>
+                    <label for="id">Identifiant</label>
+                    <input id="id" class="tested" type="text">
+                </div>
+                <div>
+                    <label for="pwd">Mot de passe</label>
+                    <input id="pwd" class="tested" type="password">
+                    <span id="pwdPercent"></span>
+                </div>
+                <div>
+                    <label for="pwdC">Mot de passe (confirmation)</label>
+                    <input id="pwdC" class="tested" type="password">
+                </div>
+                <div>
+                    <label for="cgu">J'accepte les Conditions Générales d'Utilisation</label>
+                    <input id="cgu" class="tested" type="checkbox">
+                </div>
+            </div>
+
+            <button>S'inscrire</button>
+            <div id="errors"></div>
+        </form>
+    </body>
+</html>

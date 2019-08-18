@@ -1,0 +1,3 @@
+Le DS de promo 2017-2018 avait :
+-10 points sur la programmation assembleur ARM
+-10 points sur les micro-instructions (au DS l'exercice était un copier-coller de l'exemple du cours)

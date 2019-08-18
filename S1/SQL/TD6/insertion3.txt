@@ -1,0 +1,54 @@
+insert into age values( '1', 'Interdit aux moins de 12 ans');
+insert into age values('2','Interdit aux moins de 16 ans');
+insert into age values('3','Tous publics');
+
+insert into nationalite values('1','Française');
+insert into nationalite  values('2','Américaine');
+insert into nationalite  values('3','Anglaise');
+insert into nationalite  values('4','Italienne');
+insert into nationalite  values('5','Australienne');
+insert into nationalite  values('6','Polonaise');
+insert into nationalite  values('7','Hollandaise');
+
+insert into films values('1','Le bonheur est dans le pré','1','90','3','1'); 
+insert into films values('2','Les trois frères','1','90','3','1'); 
+insert into films values('3','Seven','2','90','1','2'); 
+insert into films values('4','XY','1','90','3','1'); 
+insert into films values('5','Maudite Aphrodite','1','120','3','2'); 
+insert into films values('6','Local heroe','1','90','3','3'); 
+insert into films values('7','ET','6','120','3','2'); 
+insert into films values('8','Le bal','2','150','3','4'); 
+insert into films values('9','Permis de tuer','3','120','3','2'); 
+insert into films values('10','la lecon de piano','2','120','3','5'); 
+insert into films values('11','Les aventuriers de arche perdue','3','120','3','2'); 
+insert into films values('12','Rambo3','3','90','1','2'); 
+insert into films values('13','Vendredi13','5','90','2','2'); 
+insert into films values('14','Shining','5','90','2','2'); 
+insert into films values('15','ascenseur','6','90','2','7'); 
+insert into films values('16','La liste de Schindler','2','120','3','2'); 
+insert into films values('17','Fair games','4','90','1','2'); 
+
+insert into semaine values('1','1ere semaine');
+insert into semaine values('2','2eme semaine');
+insert into semaine values('3','3eme semaine');
+insert into semaine values('4','4eme semaine');
+insert into semaine values('5','5eme semaine');
+
+insert into entree values('1','1','5123');
+insert into entree values('1','2','4678');
+insert into entree values('1','3','5231');
+insert into entree values('1','4','4678');
+insert into entree values('1','5','13456');
+insert into entree values('2','1','4538');
+insert into entree values('2','2','5123');
+insert into entree values('2','3','4789');
+insert into entree values('2','4','4652');
+insert into entree values('2','5','11436');
+insert into entree values('3','1','1785');
+insert into entree values('3','3','1231');
+insert into entree values('3','4','589');
+insert into entree values('3','5','245');
+insert into entree values('4','1','426');
+
+
+

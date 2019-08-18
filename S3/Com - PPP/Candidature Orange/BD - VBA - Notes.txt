@@ -1,0 +1,7 @@
+Je vais participer à la mise en place et à l'automatisation des tableaux de bords du pilotage de la production (excel) et métier (acess VBA SQL)
+Je vais reporter et alimenter les bases en données, gérer l'espace collaboratif de la direction via SharePoint, effectuer des analyses des données et identifier des écarts, faire des recommandations pour améliorer les ventes.
+J'aime les études marketings (recherches à faire), les nouvelles technologies et le domaine de l'informatique.
+J'ai un bon esprit d'analyse, je suis à l'aise avec les chiffres.
+Je maitrise le langage SQL et je suis prêt à me former sur Acess, le langage VBA qui est similaire au langage utilisé dans l'un des mes projets, et les outils de BI dans lesquels j'ai déjà quelques notions.
+
+Dans le cadre de mon DUT j'ai pu acquérir des bases solides en manipulations de bases de données. Cette formation étant principalement axée sur le côté pratique, j'ai désormais une certaine maitrise des langages SQL et PL/SQL. Je suis à l'aise avec les chiffres et je suis habitué à analyser des données grace à ces langages. Me former sur Microsoft Access n'est pas un problème.

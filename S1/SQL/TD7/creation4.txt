@@ -1,0 +1,63 @@
+create table categorie
+(codecat varchar(100) PRIMARY KEY ,
+libcat varchar(100)
+);
+
+create table support
+(codesup varchar(100) PRIMARY KEY,
+ libsup varchar(100), 
+codecat varchar(100) references categorie(codecat)
+);
+
+create table eleve
+(codeel varchar(100) PRIMARY KEY,
+ nomel varchar(100),
+ prenomel varchar(100),
+ classeel varchar(100)
+);
+
+create table pret
+(datepret varchar(8), 
+codesup varchar(100) references support(codesup), 
+codeel varchar(100) references eleve(codeel), 
+dateretour varchar(8),
+constraint pk_pret primary key (datepret , codesup,codeel)
+);
+
+create table village 
+(NumVillage varchar(1) PRIMARY KEY, 
+NomVillage varchar(100), 
+NbHab integer, 
+NbHuttes integer
+);
+
+create table habitant 
+(NumHabitant varchar(2) PRIMARY KEY,
+ NomHabitant varchar(100),
+ Age integer, 
+Qualité varchar(100), 
+NumVillage varchar(1) references village(NumVillage)
+);
+
+create table potion	
+(NumPotion varchar(1)PRIMARY KEY,
+ Conséquence varchar(100)
+);
+
+create table ingrédient 
+(NumIngredient varchar(1)PRIMARY KEY,
+ NomIngrédient varchar(100),
+ Libellé varchar(100), 
+QtéStock integer
+);
+
+create table fabriquer
+(NumHabitant varchar(2) references habitant(NumHabitant),
+NumPotion varchar(1) references potion(NumPotion )
+);
+
+create table composer
+(NumPotion varchar(1) references potion(NumPotion),
+ NumIngrédient varchar(1) references ingrédient(NumIngredient),
+ Quantité integer
+);

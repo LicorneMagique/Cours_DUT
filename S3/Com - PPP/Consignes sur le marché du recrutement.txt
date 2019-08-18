@@ -1,0 +1,43 @@
+﻿Communication d’insertion  - S3
+
+Le marché du recrutement
+
+
+
+En consultant quelques sites...
+
+RhoneAlpesJob.com | bien pour stage
+lesjeudis.com | pas orienté stage
+indeed.fr | bien pour stage Bourg-en-Bresse
+aktiveo.com
+jobintree.com 
+jobntic.com =< chooseyourboss.com
+carriere-info.fr | pas orienté stage
+developpez.com 
+talentsdunumerique.com | pas orienté stage
+bacplusdeux.com
+jobs-stages.letudiant.fr
+vip-stages.com
+aidostage.com/stage
+stages.fr
+studentjob.fr
+studyrama.com
+leguidesmétiers.com
+lemondeinformatique.fr
+
++  éventuellement les sites issus de votre recherche personnelle
+
+https://www.leguidedesmetiers.fr/fr/secteur/informatique
+Liste des métiers de l'informatique avec descriptifs des technologies/formations
+
+https://www.indeed.fr/emplois?as_and=informatique&as_phr=&as_any=&as_not=&as_ttl=&as_cmp=&jt=internship&st=&as_src=&salary=&radius=25&l=Bourg-en-Bresse+%2801%29&fromage=any&limit=10&sort=&psf=advsrch
+
+1) Trouvez des éléments d’information sur le marché de l’emploi en informatique
+2) Trouvez des informations sur des technologies qui vous intéressent
+3) Notez les « événements » : salon du recrutement, conférences, forum…
+4) Informez-vous sur une ou des entreprises dont les offres d’emplois vous ont intéressé
+5) Identifiez des entreprises auxquelles vous pourriez envoyer des candidatures spontanées
+6) Relevez une offre qui vous intéresse et rédigez la lettre de motivation correspondante
+
+... vous constituerez un petit dossier avec ces éléments en y insérant CV et lettre de motivation.
+Vous présenterez le tout sous la forme d’un rapport que vous intitulerez « Rapport sur le marché de l’emploi informatique ».

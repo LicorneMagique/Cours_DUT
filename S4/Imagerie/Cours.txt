@@ -1,0 +1,4 @@
+adrien.peytavie@univ-lyon1.fr chercheur Liris (prof IUT Bourg-en-Bresse)
+
+Ressource :
+https://threejs.org/

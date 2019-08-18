@@ -1,0 +1,26 @@
+create table equipement
+(
+code_equipement varchar(100) PRIMARY KEY ,
+nom_equipement varchar(100)
+);
+create table type_hebergement
+(code_type_hebergement varchar(100) PRIMARY KEY,
+ nom_type_hebergement varchar(100), 
+nombre_de_place integer
+);
+create table possession 
+(code_equipement varchar(100) references equipement(code_equipement),
+ code_type_hebergement varchar(100) references type_hebergement(code_type_hebergement),
+constraint pk_poss primary key (code_equipement, code_type_hebergement)
+); 
+create table zone
+(code_zone varchar(100) PRIMARY KEY,
+ nom_zone varchar(100)
+);
+create table habitation 
+(
+nohabitation varchar(100) PRIMARY KEY, 
+remarques_particulieres varchar(100), 
+code_zone varchar(100) references zone(code_zone), 
+code_type_hebergement varchar(100) references type_hebergement(code_type_hebergement)
+);

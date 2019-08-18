@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.3.0.3248"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes" Selected="Yes">
+		<Model Expanded="Yes" ID="{8B4BEF4B-CD16-4AAA-A30F-46C215B2A875}" Name="Diagramme de classes UML_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de classes UML_1.moo"/>
+		<Model Expanded="Yes" ID="{58FAEC8D-E37B-4C28-9BD9-F9B735DC69FC}" Name="Définition de cas d&#39;utilisation_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Définition de cas d&#39;utilisation_1.moo"/>
+		<Model Expanded="Yes" ID="{EE5ABBFB-508B-474B-A3A4-51FD6496B8E0}" Name="Diagramme d&#39;activités UML_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme d&#39;activités UML_1.moo"/>
+		<Model Expanded="Yes" ID="{023618BA-65D7-407C-92F0-FC815EB3DC43}" Name="Diagramme de séquence UML_1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de séquence UML_1.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>

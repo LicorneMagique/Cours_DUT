@@ -1,0 +1,190 @@
+/* nettoyage : */
+DROP VIEW vue_train;
+DROP TABLE reseau;
+DROP TABLE trafic;
+DROP TABLE train;
+DROP TABLE wagon;
+DROP TABLE ligne;
+
+CREATE TABLE ligne (
+nuligne NUMBER(2),
+rang NUMBER(1),
+nomgare VARCHAR2(50),
+CONSTRAINT pk_ligne PRIMARY KEY (nuligne, rang));
+
+CREATE TABLE wagon (
+nuwagon NUMBER(4) PRIMARY KEY,
+typewagon VARCHAR2(50),
+poidsvide NUMBER(2),
+capacité NUMBER(2),
+etat VARCHAR2(50),
+nomgare VARCHAR2(50));
+
+CREATE TABLE train (
+nutrain NUMBER(4),
+nuwagon NUMBER(4),
+CONSTRAINT pk_train PRIMARY KEY (nutrain, nuwagon));
+
+CREATE TABLE trafic (
+nutrain NUMBER(4),
+nuligne NUMBER(2),
+nujour DATE,
+CONSTRAINT pk_trafic PRIMARY KEY (nutrain, nuligne, nujour));
+
+CREATE TABLE reseau (
+nomgareorigine VARCHAR2(50),
+nomgaredest VARCHAR(50),
+nuligne NUMBER(2),
+nomgarearrivee VARCHAR2(50),
+CONSTRAINT pk_reseau PRIMARY KEY (nomgareorigine, nomgaredest, nuligne, nomgarearrivee));
+
+
+INSERT INTO ligne VALUES (10, 1, 'nantes');
+INSERT INTO ligne VALUES (10, 2, 'angers');
+INSERT INTO ligne VALUES (10, 3, 'saumur');
+INSERT INTO ligne VALUES (10, 4, 'tours');
+INSERT INTO ligne VALUES (11, 1, 'nantes');
+INSERT INTO ligne VALUES (11, 2, 'tours');
+INSERT INTO ligne VALUES (13, 1, 'angers');
+INSERT INTO ligne VALUES (13, 2, 'paris');
+INSERT INTO ligne VALUES (13, 3, 'lyon');
+INSERT INTO ligne VALUES (13, 4, 'beziers');
+INSERT INTO ligne VALUES (15, 1, 'tours');
+INSERT INTO ligne VALUES (15, 2, 'bordeaux');
+INSERT INTO ligne VALUES (16, 1, 'orleans');
+INSERT INTO ligne VALUES (16, 2, 'tours');
+INSERT INTO ligne VALUES (16, 3, 'poitiers');
+INSERT INTO ligne VALUES (21, 1, 'bordeaux');
+INSERT INTO ligne VALUES (21, 2, 'toulouse');
+INSERT INTO ligne VALUES (30, 1, 'toulouse');
+INSERT INTO ligne VALUES (30, 2, 'beziers');
+
+INSERT INTO wagon VALUES (1004, 'frigo', 10, 30, 'libre', 'tours');
+INSERT INTO wagon VALUES (1104, 'citerne', 6, 15, 'charge', 'paris');
+INSERT INTO wagon VALUES (1105, 'frigo', 10, 30, 'libre', 'orleans');
+INSERT INTO wagon VALUES (1106, 'frigo', 10, 30, 'charge', 'tours');
+INSERT INTO wagon VALUES (2019, 'plat', 7, 20, 'libre', 'angers');
+
+INSERT INTO train VALUES (4002, 1104);
+INSERT INTO train VALUES (4002, 1105);
+INSERT INTO train VALUES (4002, 1106);
+INSERT INTO train VALUES (4051, 1004);
+INSERT INTO train VALUES (4051, 2019);
+
+INSERT INTO trafic VALUES (4002, 10, '12/03/13');
+INSERT INTO trafic VALUES (4002, 10, '14/03/13');
+INSERT INTO trafic VALUES (4051, 13, '12/03/13');
+
+INSERT INTO reseau VALUES ('angers', 'beziers', 10, 'tours');
+INSERT INTO reseau VALUES ('bordeaux', 'beziers', 21, 'toulouse');
+INSERT INTO reseau VALUES ('saumur', 'tours', 10, 'tours');
+INSERT INTO reseau VALUES ('toulouse', 'beziers', 30, 'beziers');
+INSERT INTO reseau VALUES ('tours', 'beziers', 15, 'bordeaux');
+INSERT INTO reseau VALUES ('angers', 'beziers', 13, 'paris');
+INSERT INTO reseau VALUES ('paris', 'beziers', 13, 'lyon');
+INSERT INTO reseau VALUES ('lyon', 'beziers', 13, 'beziers');
+
+/*question A.1*/
+SELECT nuwagon
+FROM wagon
+WHERE typewagon='frigo' AND nomgare='tours';
+
+/*question A.2*/
+SELECT DISTINCT typewagon
+FROM wagon JOIN train ON wagon.nuwagon=train.nuwagon
+WHERE nutrain=4002;
+
+/*question A.3*/
+SELECT nuligne
+FROM ligne l
+WHERE nomgare='tours' AND
+    rang!=1 AND
+    rang<(
+        SELECT MAX(rang)
+        FROM ligne
+        WHERE nuligne=l.nuligne);
+/*ou*/
+SELECT nuligne
+FROM ligne l
+WHERE nomgare='tours' AND
+    rang!=1 AND
+    rang<(
+        SELECT COUNT(nuligne)
+        FROM ligne
+        WHERE nuligne=l.nuligne);
+
+/*question A.4*/
+SELECT nutrain
+FROM trafic t JOIN reseau r
+ON t.nuligne=r.nuligne
+WHERE nujour='12/03/13' AND
+    nomgareorigine='angers' AND
+    nomgaredest='beziers';
+
+/*question A.5*/
+SELECT nuwagon
+FROM train JOIN trafic ON train.nutrain=trafic.nutrain
+JOIN reseau r ON trafic.nuligne=r.nuligne
+WHERE nujour='12/03/13' AND
+    nomgareorigine='angers' AND
+    nomgaredest='beziers';
+
+/*question A.6*/
+SELECT nuligne /*--pour comprendre--, COUNT(nuligne)*/
+FROM trafic
+GROUP BY nuligne
+HAVING COUNT(nuligne)=(SELECT COUNT(DISTINCT nujour) FROM trafic);
+
+/*question A.7*/
+SELECT nomgare
+FROM ligne
+WHERE nuligne=10 AND
+    rang=(
+        SELECT MAX(rang)
+        FROM ligne
+        WHERE nuligne=10);
+
+/*question A.8*/
+SELECT SUM(capacité)
+FROM wagon w JOIN train t
+ON w.nuwagon=t.nuwagon
+WHERE etat='charge' AND
+    nutrain=4002;
+
+/*question A.9*/
+SELECT DISTINCT nomgarearrivee
+FROM reseau
+WHERE nomgarearrivee!='beziers'
+CONNECT BY PRIOR nomgarearrivee=nomgareorigine
+START WITH nomgareorigine='angers';
+
+/*question A.10*/
+SELECT DISTINCT nutrain as train, COUNT(nuwagon) as "NOMBRE DE WAGONS"
+FROM train
+GROUP BY nutrain;
+
+/*question A.11*/
+SELECT DISTINCT nutrain as "TRAIN DE 2 WAGONS OU PLUS"
+FROM train
+HAVING COUNT(nuwagon)>=2
+GROUP BY nutrain;
+
+/*question A.12*/
+CREATE VIEW vue_train
+AS (
+    SELECT nutrain, t.nuwagon, typewagon, capacité
+    FROM wagon w JOIN train t
+    ON w.nuwagon=t.nuwagon);
+
+
+/*question B.1*/
+SELECT table_name /*--pour comprendre-- : 'SELECT *' */
+FROM user_tables;
+
+/*question B.2*/
+SELECT owner, table_name
+FROM all_tables;
+
+/*question B.3*/
+SELECT constraint_name, table_name
+FROM user_constraints;

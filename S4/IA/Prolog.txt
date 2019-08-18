@@ -1,0 +1,64 @@
+Sites prog : https://swish.swi-prolog.org/
+Site cours : https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-ia/parts/prolog.html
+
+Comment ça marche :
+-Atome : identifiant commençant par une minuscule
+-Prédicat : décrit une relation entre un ou plusieurs objets du monde (suivi du ou des paramètres entre parenthèses)
+-Variable : identifiant commençant par une majuscule ou "_" si on ne veut pas afficher la variable
+
+Base de connaissance (programme) :
+homme(pac).
+matiere(ia).
+matiere(bd).
+enseigne(pac, ia).
+enseigne(sf, ia).
+enseigne(pac, algo).
+titre(ia, "Introduction à l'IA").
+titre(algo, "Algorithmique").
+
+Questions qu'on peut lui poser :
+enseigne(pac, X), titre(X, Y)
+
+pere(habraham, herb).
+pere(habraham, homer).
+pere(clancy, marge).
+pere(clancy, patty).
+pere(clancy, selma).
+pere(homer, bart).
+pere(homer, lisa).
+pere(homer, maggie).
+
+mere(mona, homer).
+mere(jackie, marge).
+mere(jackie, patty).
+mere(jackie, selam).
+mere(marge, bart).
+mere(marge, lisa).
+mere(marge, maggie).
+mere(selma, ling).
+
+parent(X, Y) :- pere(X, Y).
+parent(X, Y) :- mere(X, Y).
+
+freresoeur(X, Y) :- parent(Z, X), parent(Z, Y), X \= Y.
+
+couz(X, Y) :- parent(Z, X), parent(Q, Y), freresoeur(Z, Q).
+
+ancetre(X, Y) :- parent(X, Y).
+ancetre(X, Y) :- parent(X, Z), ancetre(Z, Y).
+
+contient([X|_], X).
+contient([_|T], X) :- contient(T, X).
+
+lignee([]).
+lignee([_]).
+lignee([H1, H2|T]) :-
+    parent(H2, H1),
+    lignee(H2|T).
+
+concat(X, [], X).
+concat([], X, X).
+concat([H|T], X, [H|T2]) :- concat(T, X, T2).
+
+----------------------------------------------------------------------------
+

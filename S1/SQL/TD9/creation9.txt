@@ -1,0 +1,31 @@
+create table Etud 
+(noetud varchar(100) PRIMARY KEY ,
+nom varchar(100),
+pren varchar(100),
+loc varchar(100),
+cp varchar(100), 
+tel varchar(100)
+);
+
+create table Lycee
+(nolycee varchar(100) PRIMARY KEY,
+ libelle varchar(100), 
+ville varchar(100),
+dpt varchar(100)
+);
+
+create table Stage
+(periode varchar(100) PRIMARY KEY,
+ datedeb varchar(100),
+ datefin varchar(100)
+ );
+
+create table Affectation
+(noetud varchar(100) references Etud(noetud), 
+nolycee varchar(100) references Lycee(nolycee), 
+maitre varchar(100), 
+periode varchar(100) references Stage(periode),
+constraint pk_aff primary key (nolycee,noetud)
+);
+
+

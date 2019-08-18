@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Cours C
+Exec=firefox http://liris.cnrs.fr/~snndiaye/fichiers/Cours_C/
+Terminal=false
+Icon=browser

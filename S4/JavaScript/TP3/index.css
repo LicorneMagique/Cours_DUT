@@ -1,0 +1,79 @@
+html {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#adventure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding : 2.5rem;
+    padding-bottom: 1.5rem;
+    width: 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s linear;
+    margin-top: 10%;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background: #d0e0ef;
+    border-radius: 1rem;
+    padding: 0.6em 1.2em;
+    font-size: 17px;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+h1 {
+	color: red;
+}
+
+h2 {
+	color: green;
+}
+
+#won_before_scores {
+	color: blue;
+}
+
+#clicks {
+	margin-bottom: 2rem;
+	text-align: right;
+	width: 100%;
+}
+
+.blink {
+	animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+li {
+	list-style: none;
+	text-align: center;
+}
+
+ul {
+	padding: 0;
+}

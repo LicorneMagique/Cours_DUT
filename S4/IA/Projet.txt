@@ -1,0 +1,12 @@
+Projet 7 : Optimisation combinatoire [programmation par contrainte]
+
+→ Plan du dossier
+    - Topo sur le sujet (4 à 5 pages)
+        - Historique du développement
+        - Explication des concepts
+        - Un exemple d'implémentation
+            1) Algorithmes génériques
+        - Domaines d'application
+        - Limitations
+
+maximisation de la qualite
